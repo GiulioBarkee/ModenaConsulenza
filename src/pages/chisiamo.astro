@@ -130,7 +130,8 @@ import Footer from '../components/Footer.astro';
             <p>La nostra collaborazione con Studio Train, specializzato in controllo di gestione, ci permette di offrire servizi ancora più performanti. La partnership mira a potenziare l'efficacia della gestione aziendale, attraverso un monitoraggio delle performance più dettagliato e una strategia ottimizzata.</p>
         </div>
         <div class="col-60 relative">
-         <img src="/src/assets/studiotrain.png" alt="">
+            <a href=""><img src="/src/assets/studiotrain.png" alt=""></a>
+         
         </div>
     </div>
           
@@ -186,16 +187,17 @@ import Footer from '../components/Footer.astro';
 
 .hero4b2-bottom { width: 85%; z-index: 10; position: relative; top: 5rem; left: 50%; transform: translateX(-50%);}
 .hero4b2-bottom img{}
-.hero5b{height: 108vh;}
+.hero5b{height: auto;}
 
-.hero5b .cover__wallet{  background-color: #FFD100}
-.hero5b .container{top:70%; z-index: 10;}
+.hero5b .cover__wallet{  background-color: #FFD100; margin-top: 10%;}
+.hero5b .container{top:70%; z-index: 10; position: relative!important; top: 5rem;}
 .hero5b .container h4{width: 70%; color: white;}
 .hero5b .container p{color: white; }
 .hero5b a{position: absolute; right: 11%; bottom: 20%;}
 
 
 @media only screen and (max-width: 768px) {
+    .hero5b .container{ top: 13rem;}
   .hero1 h2 { font-size: 2.3rem; margin:0 auto; margin-top: 70px; padding-top: 100px;  text-align: center;}
   .hero1 h3 { font-size: 2.3rem; margin: 0 auto; margin-top: 0px; text-align: center; }
   .hero1 p {  font-size: 0.9rem; text-align: center;   width: 100%;top: 45%; font-weight: 400; position: static;}
@@ -282,7 +284,7 @@ import Footer from '../components/Footer.astro';
 .hero5b{height: auto;
     margin-bottom: 25%; text-align: center;}
 
-    .hero5b .container{position: static; margin-top: 45%;}
+    .hero5b .container{position: static; }
 .hero5b .container h4{ width: 100%;text-align: center;font-size: 1.6rem;
      margin-left: 0; margin-bottom: 0; }
      .hero5b a{position: static; margin: 15% auto;}
@@ -296,7 +298,8 @@ import Footer from '../components/Footer.astro';
     }
 
 }
-
+.hero5b .grid--hero7 .col-60{display: contents ;margin  : 0 auto; }
+.hero5b .grid--hero7 .col-60 img{position: static;  width: 70%;}
 
 
 </style>

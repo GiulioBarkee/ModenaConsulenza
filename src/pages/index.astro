@@ -127,12 +127,12 @@ import Footer from '../components/Footer.astro';
                 <p>La nostra collaborazione con Studio Train, specializzato in controllo di gestione, ci permette di offrire servizi ancora più performanti. La partnership mira a potenziare l'efficacia della gestione aziendale, attraverso un monitoraggio delle performance più dettagliato e una strategia ottimizzata.</p>
             </div>
             <div class="col-60 relative">
-                <a href=""><img src="/src/assets/studiotrain.png" alt="">
+                <a href=""><img src="/src/assets/studiotrain.png" alt=""></a>
             </div>
         </div>
     </div>
     <img class="hero7-img" src="/src/assets/hero7-img.png" alt="">
-    
+
     <Footer></Footer>
 
 </Layout>
@@ -149,7 +149,7 @@ import Footer from '../components/Footer.astro';
 .hero2{ background-color: white; height: 50vh ; }
 .hero2 .col-left{position: relative;}
 .grid .col-50{height: 100%;}
-.hero2-servizi{padding-left:100px; font-size:clamp(1.8rem, 1rem + 5vw,3.5rem); font-weight: 500; }
+.hero2-servizi{padding-left:100px; font-size:clamp(1.8rem, 1rem + 5vw,3.5rem); font-weight: 500; width: 60%; }
 .hero2b{hei}
 
 .hero3{height: 30vh; width: 100%; background-color: white; }
@@ -193,7 +193,12 @@ import Footer from '../components/Footer.astro';
     .grid--hero6b .col-60 h4{ color: white; font-size: clamp(1.6rem, 1rem + 5vw,2.6rem); font-weight: 400; padding-right: 7%; margin-top: 0;}
     .grid--hero6b .col-40 p{  color: white; margin-bottom: 100px; line-height: 30px; font-weight: 400;}
 .grid--card{margin-top: 5rem;}
-
+.hero7-img{    width: 87%;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    top: 8rem;
+    z-index: 2;}
 .hero7 .grid--hero7{padding-top: 20rem;}
     @media (max-width: 768px) {
         .hero7 .grid--hero7{padding-top:6rem;}
@@ -223,9 +228,8 @@ import Footer from '../components/Footer.astro';
     .grid--hero7 .col-60 img{margin: 0 auto; transform: translate(0); position: static; margin-top: 9%;}
     .hero7{min-height: 175vh;
     height: auto;
-    margin-bottom: 20%;}
-    .hero7-img{margin-top: 8rem!important;}
-    }
+    margin-bottom: 2rem}
+
 
     .hero7-img{ width: 87%; border-radius: 20px; display: flex; align-items: center;z-index: 50; margin: 0 auto; max-width: 1850px; position: relative; top: 8rem;}
 

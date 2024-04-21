@@ -47,6 +47,8 @@
 .button:hover{ background: #002169; transition: all 0.3s cubic-bezier(.215, .61, .355, 1); }
 .button__hero5:hover{ background: #FFD100; transition: all 0.3s cubic-bezier(.215, .61, .355, 1); }
 .hero5b .button__hero5:hover{ transform: scale(1.2); transition: all 0.3s cubic-bezier(.215, .61, .355, 1); background-color: #002169;}
+
+
 /* ! Grid System */
 .grid { margin: 0 auto;  display: flex; flex-flow: row; flex-wrap: wrap; position: relative;; max-width: 1850px;}
 .grid--hero { margin: 0 auto;  display: flex; flex-flow: row; flex-wrap: wrap; position: relative; ; max-width: 1850px;}
@@ -141,8 +143,7 @@
     .hero7 .cover__wallet{background-color: white;}
     .hero7 .cover__wallet h4{width: 40%;}
 
-.grid--hero7 .col-60 img,
-.grid--hero7  .col-60 a {width: 50%; height: auto;
+.grid--hero7 .col-60 img{width: 50%; height: auto;
     display: flex;
     align-items: center;
     position: absolute;
@@ -158,7 +159,7 @@
 
 
     /*cover waller*/
-    .cover__wallet{width: 87%; border-radius: 40px;  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); height: 450px; margin: 0 auto; overflow: hidden;}
+    .cover__wallet{width: 87%; border-radius: 40px;  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); height: auto; margin: 0 auto; overflow: hidden;}
     @media (max-width: 768px) {
       .cover__wallet{height: auto;}
     }

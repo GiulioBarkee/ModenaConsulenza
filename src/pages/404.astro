@@ -1,0 +1,37 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title='Modena-Consulenza'>
+<Header></Header>
+<div class="hero-error">
+    <div class="grid-error">
+        <div class="col-30">
+<a href="" class="button btn-error">TORNA ALLA HOME</a>
+</div>
+<div class="col-70">
+<img src="/src/assets/404.png" alt="">
+</div>
+</div>
+<h4>La pagina che cerchi non è stata trovata</h4>
+</div>
+
+
+<Footer></Footer>
+</Layout>
+
+<style>
+    .hero-error{height: auto; background-color: #002169; padding-top: 12rem;}
+   .grid-error{display: flex; height: 100%; width: 100%; }
+   .grid-error .col-30{    display: flex;
+    justify-content: center;
+    align-items: flex-end;}
+.grid-error .col-70{display: flex ; justify-content: center;}
+    .grid-error img{width: 60%;}
+ .hero-error h4{width: 100%; color: white; font-size: 4rem; font-weight: 500; text-align: center;     padding-bottom: 5rem;
+    margin-bottom: 0;}
+    .btn-error{color:#FFD100; background-color: #fff;}
+    .btn-error:hover{transform: scale(1.2); transition: all 0.3s cubic-bezier(.215, .61, .355, 1)}
+</style>
