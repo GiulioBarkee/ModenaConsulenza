@@ -1,0 +1,92 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+<Layout title='Modena Consulenza'>
+    <Header></Header>
+    <div class="hero1d relative">
+        <div class="container grid--hero1d">
+            <div class="herocontatti-contenuto-left col-50">
+                <h2>Contattaci ora,
+                    siamo a tua
+                    <span style="color:#FFD100; font-style: italic;">disposizione!</span>
+                </h2>
+                <p>Richiedi senza impegno una consulenza gratuita per la tua impresa.</p>
+                <a href="" class="button">CONTATTACI</a>
+            </div>
+            <div class="hero1d-image col-50">
+                <img src="/src/assets/hero1d.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="hero__form"></div>
+
+    <div class="hero__contatti">
+        <div class="grid">
+            <div class="col-50">
+                <h4>Contatti</h4>
+            </div>
+            <div class="col-25">
+                <p>+39 (0) 59 220522</p>
+                <p>+39(0) 59 210161</p>
+                <p>+39 (0) 59 4396905</p>
+                <p>+39 (0)59 211132</p>
+                <p>info@modenaconsulenza.it</p>
+            </div>
+            <div class="col-25">
+                <p>Via Bellini, 70/2</p>
+                <p>41121 - Modena (MO)</p>
+                <p class="zero__opacity">cl,dooc</p>
+                <p>Lun - Ven:</p>
+                <p>8.30 - 12.00/ 14.00 - 18.30</p>
+            </div>
+        </div>
+    </div>
+
+    <Footer></Footer>
+</Layout>
+
+
+<style>
+.hero1d { background-color: #002169;  min-height: 113vh;  height: auto; display: flex;
+    justify-content: center;
+    width: 100%;}
+.container { display: flex; }
+.grid--hero1d { max-width: 1850px; margin: 0 auto; }
+.col-50 { width: 50%; position: relative; }
+.herocontatti-contenuto-left { display: flex; flex-direction: column; gap: 20px; padding: 100px; padding-top: 200px; }
+.hero1d-image { width: 50%; }
+.hero1d-image img { width: 100%;
+    max-height: 60rem;
+    object-fit: cover;
+    height: 100%;
+    border-radius: 30px;
+    position: relative;
+    top: 5rem;}
+.herocontatti-contenuto-left a { width: 7rem; font-size: 1.13rem; text-align: center; }
+.herocontatti-contenuto-left h2,
+.herocontatti-contenuto-left p { color: white; }
+.herocontatti-contenuto-left h2 { font-size: clamp(2rem,1rem + 5vw,5rem); font-weight: 500; line-height: 80px; }
+.herocontatti-contenuto-left p { width: 50%; font-size: 1.13rem; }
+.herocontatti-contenuto-left a:hover { transform: scale(1.2); background-color: #FFD100; }
+.hero__form { height: 85vh; }
+.hero__contatti { background-color: #EDEEF0; padding-bottom: 6%; }
+.hero__contatti .grid p { font-weight: 400; font-size: 1.13rem; line-height: 14px; }
+.hero__contatti .grid h4 { font-size: 3.5rem; font-weight: 500; margin-left: 100px; }
+.hero__contatti .col-25 { margin-top: 200px; }
+@media (max-width: 768px) {
+
+    .herocontatti-contenuto-left { padding: 0; width: 90%; margin: 0 auto; padding-top: 40%; }
+    .hero__contatti .grid h4 { margin-left: 0; }
+    .hero__contatti .col-25 { margin-top: 0; }
+    .hero__contatti .col-50{width: 100%;}
+    .herocontatti-contenuto-left h2 { font-size: 2rem; line-height: 130%; text-align: center; }
+    .herocontatti-contenuto-left p { text-align: center; margin: 10% auto; }
+    .herocontatti-contenuto-left a { margin: 10% auto; width: auto; }
+
+}
+
+
+</style>
