@@ -58,7 +58,7 @@ import Footer from '../components/Footer.astro';
     <h3>Da oltre 10 anni aiutiamo i nostri clienti a realizzare i loro progetti.</h3>
     <div class="hero3b__paragrafi">
     <p class="mb-3">Modena Consulenza nasce come team di esperti caratterizzato da competenze professionali trasversali, che gli permette di sostenere e promuove una qualità e affidabilità maggiore nei servizi offerti rispetto ad altri studi di consulenza presenti sul mercato.</p>
-   <p>L’obiettivo ultimo di Modena Consulenza è lo sviluppo del cliente attraverso un portafoglio di servizi a lui dedicati per la realizzazione dei propri progetti.</p>
+   <p class="hero3b__padding-bottom">L’obiettivo ultimo di Modena Consulenza è lo sviluppo del cliente attraverso un portafoglio di servizi a lui dedicati per la realizzazione dei propri progetti.</p>
 </div>
     <a href="" class="button">Contattaci</a>
 </div>
@@ -130,8 +130,9 @@ import Footer from '../components/Footer.astro';
             <p>La nostra collaborazione con Studio Train, specializzato in controllo di gestione, ci permette di offrire servizi ancora più performanti. La partnership mira a potenziare l'efficacia della gestione aziendale, attraverso un monitoraggio delle performance più dettagliato e una strategia ottimizzata.</p>
         </div>
         <div class="col-60 relative">
+            <div class="scale">
             <a href=""><img src="/src/assets/studiotrain.png" alt=""></a>
-         
+        </div>
         </div>
     </div>
           
@@ -153,19 +154,19 @@ import Footer from '../components/Footer.astro';
 <style>
 .hero1{height: auto; width: 100%; max-width: 1850px; margin: 0 auto; }
 .hero1 img{width: 92%; height: auto; border-radius: 30px; position: relative; left: -30px; bottom: -5rem; z-index: 100}
-.hero1 h2{     font-size: clamp(1.8rem, 1rem + 5vw, 5.5rem)!important; font-weight: 500; margin-left: 100px; margin-top: 0; padding-top: 17rem;}
-.hero1 h3{margin-left: 22rem;     font-size: clamp(1.8rem, 1rem + 5vw, 5.5rem)!important;  font-weight: 500; margin-top: -100px;}
+.hero1 h2{     font-size: clamp(1.8rem,1rem + 5vw,5.5rem)!important; font-weight: 500; margin-left: 100px; margin-top: 0; padding-top: 17rem;}
+.hero1 h3{margin-left: 22rem;   font-size: clamp(1.8rem,1rem + 5vw,5.5rem)!important;  font-weight: 500; margin-top: -100px;}
 .hero1 p{        position: absolute;
     width: 33%;
     right: 0.1rem;
     top: 12.5rem;
     font-weight: 400;
-    font-size: clamp(1rem,0.1rem + 3vw,1.5rem);}
+    font-size: clamp(1rem, 0.1rem + 3vw, 1.5rem)}
 
 .hero2b{height: 100%;  background-color: #002169; padding-bottom: 20%;}
 .hero2b h3{width: 70%;  color: white; font-size: 2.3rem; font-weight: 500; padding-left: 15%}
 .grid__hero2b h4,
-.gridb__hero2b h4{font-size:clamp(1.5rem, 1rem + 5vw,6.5rem); color: white; font-weight: 500; margin-top: 15%; padding-left: 5%; margin-bottom: 0; }
+.gridb__hero2b h4{font-size:clamp(1.5rem,1rem + 5vw,6.5rem); color: white; font-weight: 500; margin-top: 15%; padding-left: 5%; margin-bottom: 0; }
 .grid__hero2b p,
 .gridb__hero2b p{color:white; margin-top: 0; padding-left: 7%; font-size:  1.3rem; font-weight: 500;}
 .hero2bleft{width: 34%; position: absolute; bottom: -20%;z-index: 10; left: 6.5%;}
@@ -193,11 +194,17 @@ import Footer from '../components/Footer.astro';
 .hero5b .container{top:70%; z-index: 10; position: relative!important; top: 5rem;}
 .hero5b .container h4{width: 70%; color: white;}
 .hero5b .container p{color: white; }
-.hero5b a{position: absolute; right: 11%; bottom: 20%;}
+.hero5b a{position: static;}
+.container a{    position: absolute;
+    right: 7%;
+    top: 65%;
+    font-weight: 600;
+    font-size: 1.13rem;}
 
-
+    .hero5b .grid--hero7{top: 5rem;}
 @media only screen and (max-width: 768px) {
-    .hero5b .container{ top: 13rem;}
+
+   
   .hero1 h2 { font-size: 2.3rem; margin:0 auto; margin-top: 70px; padding-top: 100px;  text-align: center;}
   .hero1 h3 { font-size: 2.3rem; margin: 0 auto; margin-top: 0px; text-align: center; }
   .hero1 p {  font-size: 0.9rem; text-align: center;   width: 100%;top: 45%; font-weight: 400; position: static;}
@@ -210,7 +217,7 @@ import Footer from '../components/Footer.astro';
   .grid__hero4b{ width: 100%; right: 0;}
   .grid__hero4b2{max-width: 100%;}
   .grid--hero7{max-width: 0; margin: 0;}
-  .grid__hero2b{padding-top: 35%; width: 80%; height: auto; margin: 0 auto}
+  .grid__hero2b{padding-top: 25%; width: 80%; height: auto; margin: 0 auto}
   .grid__hero2b h4,
   .gridb__hero2b h4{font-size: 2rem; }
   .grid__hero2b p,
@@ -234,9 +241,11 @@ import Footer from '../components/Footer.astro';
 
   .hero2bleft,
   .hero2bright{bottom: -8%;}
-  .hero3b{height: 100%; margin-bottom: 50%;}
+  .hero3b{height: 100%; margin-bottom: 40%;}
   .hero3b h3 {line-height: 30px; width: 80%;margin: 0 auto;padding-top: 28%; font-size: 1.8rem; text-align: center;}
-.hero4b{height: 100%;}
+.hero3b__padding-bottom{padding-bottom: 3rem;}
+
+  .hero4b{height: 100%;}
   .hero3b__paragrafi { width: 80%; font-size: 1rem; margin-top: 12% !important;margin: 0 auto;text-align: center;}
 
   .hero3b a{     font-size: 1rem;left: 50%;text-align: center;margin-left: 50%;transform: translateX(-50%); position: static;}
@@ -269,25 +278,26 @@ import Footer from '../components/Footer.astro';
     .grid--hero7{margin-top: 25%; max-width: 100%; width: 100%;}
     .grid--hero7 h2{font-size: 2rem; text-align: center; line-height: 140%; }
     .grid--hero7 p{text-align: center; margin: 0 auto; width: 90%;}
-
+.hero5b .grid--hero7{padding-top: 15%; margin-top: 0; top: auto;}
     .grid--hero7 .col-60 img {
     position: static;
     left: 0;
     transform: translate(0);
     margin: 0 auto;
     margin-top: 10%;
+    padding: 5%!important;
 } 
 
 
 
 
 .hero5b{height: auto;
-    margin-bottom: 25%; text-align: center;}
+     text-align: center;}
 
     .hero5b .container{position: static; }
-.hero5b .container h4{ width: 100%;text-align: center;font-size: 1.6rem;
-     margin-left: 0; margin-bottom: 0; }
-     .hero5b a{position: static; margin: 15% auto;}
+.hero5b .container h4{ width: 80%;text-align: center;font-size: 1.6rem;
+     margin-left: 0; margin-bottom: 0; margin: 6% auto;}
+     .hero5b a{position: static; margin: 15% auto; margin-top: 0;}
 
      .hero5b .container p{margin:0 auto; width: 90%; text-align: center;  font-size:  1rem; margin-top: 5%; }
 .cover__wallet{ height: auto;}
@@ -295,13 +305,13 @@ import Footer from '../components/Footer.astro';
 .hero1 span  {
         margin-left: 0!important; /* Rimuove il margine aggiunto */
 
-    }
 
 }
-.hero5b .grid--hero7 .col-60{display: contents ;margin  : 0 auto; }
-.hero5b .grid--hero7 .col-60 img{position: static;  width: 70%;}
+;}
+.hero5b .container p{
 
-
+    padding-bottom: 4rem;
+}
 </style>
 
 

@@ -4,7 +4,7 @@
 .mt-2{margin-top: 20px}
 .mt-3{margin-top: 40px}
 .mt-4{margin-top: 100px!important }
-.pt-hero{padding-top: 243px;}
+.pt-hero{padding-top: 11rem;}
 
 .mb-0{margin-bottom: 0}
 .mb-1{margin-bottom: 10px}
@@ -55,7 +55,7 @@
 .grid--center{justify-content: center; flex-wrap: wrap; max-width: 1850px;}
 .grid--card{width: 90%; margin: 0 auto; flex-wrap: wrap; max-width: 1850px;}
 
-.grid--hero6{display: flex; width: 75%; margin-left:15%; margin-bottom: 100px; flex-wrap: wrap; max-width: 1850px;}
+.grid--hero6{display: flex; width: 75%; margin-left:15%; margin-bottom: 4rem; flex-wrap: wrap; max-width: 1850px;}
 .grid--hero6b{display: flex; width: 75%; margin-left: 15%; ; max-width: 1850px;}
 .grid--hero7{width: 90%; margin: 0 auto; height: 518px; margin-top: 11%; display: flex; flex-wrap: wrap; max-width: 1850px;}
 .grid--footer{width: 88%;
@@ -75,8 +75,11 @@
   top: -16rem;}
 .grid__hero4b2{max-width: 88%!important; margin: 0 auto; display: flex; flex-wrap: wrap;; max-width: 1850px;  position: relative; top: -6rem;}
 
+
+.grid__servizi-bottom{max-width: 100%; height: auto; display: flex; flex-wrap: wrap; padding: 10rem 5rem ; padding-bottom: 5rem;}
      
  .grid__hero1c{margin: 0 auto;  display: flex;flex-flow: row;flex-wrap: wrap;position: relative;width: 75%;margin-top: 90px;margin-right: 0px; max-width: 1850px;}
+ 
 
       @media (max-width: 768px) {
         .grid{text-align: center;}
@@ -128,7 +131,11 @@
 .zero__opacity{opacity: 0;}
 .border-left{border-left: 1px solid #FFD100;}
 
-
+.scale{    position: relative;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transform: scale(0.7);}
 
 
 
@@ -143,7 +150,7 @@
     .hero7 .cover__wallet{background-color: white;}
     .hero7 .cover__wallet h4{width: 40%;}
 
-.grid--hero7 .col-60 img{width: 50%; height: auto;
+.grid--hero7 .col-60 img{width: 40%; height: auto;
     display: flex;
     align-items: center;
     position: absolute;
@@ -159,18 +166,23 @@
 
 
     /*cover waller*/
-    .cover__wallet{width: 87%; border-radius: 40px;  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); height: auto; margin: 0 auto; overflow: hidden;}
+    .cover__wallet{width: 80%; border-radius: 40px;  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); height: auto; margin: 0 auto; overflow: hidden;}
     @media (max-width: 768px) {
-      .cover__wallet{height: auto;}
+      .cover__wallet{height: auto; }
+      .cover__wallet h4{font-size: clamp(1.5rem,1rem + 4vw ,2.5rem) !important;}
+      .hero5b .cover__wallet h4{font-size: clamp(1.5rem,1rem + 4vw ,2rem) !important;}
     }
+
+
 .cover__wallet img{position: absolute; width: 100%; height: 100%; }
 .cover__wallet h4{width: 50%;
-    font-size: 3.5rem;
+  font-size: clamp(2rem, 1rem + 2vw, 3.21rem)!important;
     margin-left: 10%;
     font-weight: 600; margin-bottom: 50px; }
 .cover__wallet p{   width: 50%;
     margin-left: 10%;
-    font-size: 1.13rem;}
+    font-size: 1.13rem; }
+    .cover__wallet p{padding-bottom: 3rem;}
 
 
     /* card */

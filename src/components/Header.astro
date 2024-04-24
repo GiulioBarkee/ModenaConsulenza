@@ -1,7 +1,7 @@
 <header class="header">
   <div class="header__content">
     <a class="header__logo" href="#">
-      <img class="header__logo" src="/src/assets/Logo-ModenaConsulenza.png" alt="">
+      <img class="header__logo" src="/src/assets/Risorsalogo.svg" alt="">
     </a>
     <ul class="header__menu">
       <li><a href="http://localhost:4321/">Home</a></li>
@@ -22,7 +22,27 @@
   let item = document.querySelector('.icon-hamburger');
   item.addEventListener("click", function() {
         document.body.classList.toggle('menu-open');
-  });
+      });
+
+      window.addEventListener('scroll', function(e) {
+  var header = document.querySelector('.header');
+  if(window.scrollY > 300){
+    header.classList.add('scroll-down');
+  } else {
+    header.classList.remove('scroll-down');
+  }
+});
+
+//         let header = document.querySelector('.header');
+
+// header.addEventListener('scroll', function(e) {
+//   if(window.scrollY > 300){
+//     header.classList.add('scroll-down');
+//   } else {
+//     header.classList.remove('scroll-down');
+//   }
+// });
+
 
 
 </script>
@@ -35,17 +55,17 @@
 
 .header{ background-color: var(--menu-bg); position: fixed; top:62px;  left:50%; z-index: 9999; width: 85%; padding: 10px 15px;  border-radius: 80px; transform: translateX(-50%);  box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.1); max-width: 1850px;}
 .header__content{width: 100%;margin: 0 auto; display: flex;justify-content: space-between;}
-
+.header .button{border-radius:  80px; white-space: nowrap;}
 .header__logo,
 .header__quick{display: flex; align-items: center;color:var(--menu-color); width: 40%;}
 
 .header__logo img{width: 100%; margin-left: 15px;}
-.header__quick{justify-content: flex-end; text-align: cener;}
+.header__quick{justify-content: flex-end; text-align: center;}
 .header__quick{width: 25%;}
 
 .header__menu{padding: 0;margin: 0; width: 100%;   display: flex;  justify-content: flex-end;}
 .header__menu li{display: flex; align-items: center; }
-.header__menu li a{color:var(--menu-color); opacity: 0.8;display: block;padding: 16px;font-size: 18px; font-weight:500; text-decoration: none; }
+.header__menu li a{color:var(--menu-color); opacity: 0.8;display: block;padding: 0 1rem;font-size: 1rem; font-weight:500; text-decoration: none; white-space: nowrap; }
 
 .header__menu li a.current {text-decoration: underline;}
 .header__menu li a:hover{text-decoration: underline;}
@@ -67,7 +87,7 @@
   .menu-open .icon-hamburger span:nth-child(1){transform: rotate(45deg) translateY(9px);}
   .menu-open .icon-hamburger span:nth-child(2){transform: rotate(-45deg) translateY(-9px);}
 
-  .header__quick{display: flex; justify-content: flex-end; width: 50%; }
+  .header__quick{display: flex; justify-content: flex-end; width: 50% ; padding-right: 1rem; }
   .header__quick a {display: none; }
   .menu-open  .header__quick a{display: block;position: fixed;
     top: 700%;
@@ -77,4 +97,7 @@
   
 .header{top: 0px; width: 100%; border-radius: 0;}
 }
+
+.scroll-down{top: 0; max-width: 100%; width: 100%; border-radius: 0; transition: all 1s cubic-bezier(.215, .61, .355, 1);}
+.scroll-down .header__quick{transition: all 1s cubic-bezier(.215, .61, .355, 1);}
 </style>

@@ -4,7 +4,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 ---
 
-<Layout title='Modena-Consulenza'>
+<Layout title='404 - Modena Consulenza'>
 <Header></Header>
 <div class="hero-error">
     <div class="grid-error">
@@ -30,8 +30,16 @@ import Footer from '../components/Footer.astro';
     align-items: flex-end;}
 .grid-error .col-70{display: flex ; justify-content: center;}
     .grid-error img{width: 60%;}
- .hero-error h4{width: 100%; color: white; font-size: 4rem; font-weight: 500; text-align: center;     padding-bottom: 5rem;
-    margin-bottom: 0;}
+ .hero-error h4{width: 80%; color: white; font-size: 4rem; font-weight: 500; text-align: center;     padding: 5rem 0;
+    margin-bottom: 0; margin: 0 auto;}
     .btn-error{color:#FFD100; background-color: #fff;}
     .btn-error:hover{transform: scale(1.2); transition: all 0.3s cubic-bezier(.215, .61, .355, 1)}
+
+    @media (max-width: 768px) {
+        .hero-error h4{
+    font-size: 2rem;
+    margin: 0 auto;
+    
+    }
+}
 </style>

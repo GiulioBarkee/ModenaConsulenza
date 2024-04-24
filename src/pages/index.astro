@@ -19,10 +19,15 @@ import Footer from '../components/Footer.astro';
             <img src="/src/assets/hero-img.png" alt="">
         </div>
     </div>
+
+    <a href="#hero2" class="frecciadown"> 
+        <img src="/src/assets/frecciadown.png" alt="">
+    </a>
+    
     </div>
 
 
-    <div class="hero2">
+    <div class="hero2" id="hero2">
         <div class="grid">
             <div class="col-50 col-left mt-4">
                 <h2 class="hero2-servizi ">Scopri i <span style="color:#FFD100; font-style: italic;">servizi</span> di Modena Consulenza</h2>
@@ -127,11 +132,15 @@ import Footer from '../components/Footer.astro';
                 <p>La nostra collaborazione con Studio Train, specializzato in controllo di gestione, ci permette di offrire servizi ancora più performanti. La partnership mira a potenziare l'efficacia della gestione aziendale, attraverso un monitoraggio delle performance più dettagliato e una strategia ottimizzata.</p>
             </div>
             <div class="col-60 relative">
+                <div class="scale">
                 <a href=""><img src="/src/assets/studiotrain.png" alt=""></a>
+                </div>
             </div>
         </div>
+
+        <img class="hero7-img" src="/src/assets/hero7-img.png" alt="">
+
     </div>
-    <img class="hero7-img" src="/src/assets/hero7-img.png" alt="">
 
     <Footer></Footer>
 
@@ -139,29 +148,46 @@ import Footer from '../components/Footer.astro';
 
 <style is:global>
 
-    .hero{background-color: #002169;}
+    .hero{background-color: #002169; position: relative;}
 .space{height: 5vh;}
 .contenuto-left{padding-left:100px; padding-right: 100px;}
 .col-35 img{  width: 100%; height: 100%; object-fit: cover;}
 
-.contenuto-left h2{font-weight: 500; font-size: clamp(2rem, 1rem + 5vw,5rem);line-height: 130%; color: #fff;}
-.contenuto-left p{color: white; font-weight: 500;font-size: 20px;line-height:130% ;}
-.hero2{ background-color: white; height: 50vh ; }
+.contenuto-left h2{font-weight: 500; font-size: clamp(2rem,1rem + 5vw,4.6rem);line-height: 120%; color: #fff;}
+.contenuto-left p{color: white; font-weight: 500;font-size: 1.13rem;line-height:130% ;  padding-bottom: 12rem}
+
+.frecciadown{position: absolute; bottom: 3%; right: 50%; }
+
+
+
+.hero2{ background-color: white; height: auto ; }
 .hero2 .col-left{position: relative;}
 .grid .col-50{height: 100%;}
-.hero2-servizi{padding-left:100px; font-size:clamp(1.8rem, 1rem + 5vw,3.5rem); font-weight: 500; width: 60%; }
-.hero2b{hei}
+.hero2-servizi{padding-left:5rem; font-size:clamp(1.8rem, 1rem + 5vw,3.5rem); font-weight: 500; width: 80%; }
 
-.hero3{height: 30vh; width: 100%; background-color: white; }
-.col-60 p{font-weight: 400; font-size: 18px ; line-height: 30px; padding: 1% 2%; margin-left: 28%}
+
+
+.hero3{height: auto; width: 100%; background-color: white; }
+.col-60 p{font-weight: 400;  font-size: 1.1rem; ; line-height: 140%;; padding: 1% 2%; margin-left: 22%}
 .hero4{background-color: white;}
+.hero4 .card h4{text-align: left; font-size: 1.8rem; padding-bottom: 8rem;}
+.hero4 .card p{text-align: left;  padding-bottom: 1rem;}
+
+@media (max-width: 768px) {
+    .contenuto-left p{padding-bottom: 0;}
+    .hero4 .card h4{text-align: center; padding-bottom: 0;}
+    .hero4 .card p{text-align: center;}
+    .grid--hero6 .col-20{align-items: center!important; justify-content: center!important;}
+    .hero .col-35 {height: 20rem;}
+    .frecciadown{display: none;}
+}
 
 
-.hero5{min-height: 100vh; background-color: white;padding-top: 80px; }
+.hero5{height: auto; background-color: white;padding-top: 80px; padding-bottom: 15rem; }
 .cover__wallet{width: 87%; border-radius: 40px;  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); min-height: 450px; margin: 0 auto; overflow: hidden;  height: auto;}
 .cover__wallet img{position: absolute; width: 100%; height: 100%; }
 .cover__wallet h4{width: 53%!important;
-    font-size: clamp(1.8rem, 1rem + 5vw,3.5rem);
+    font-size: clamp(1.8rem,1rem + 5vw,3.5rem);
     margin-left: 10%;
     font-weight: 600; margin-bottom: 50px; }
 .cover__wallet p{   width: 50%;
@@ -175,7 +201,8 @@ import Footer from '../components/Footer.astro';
     font-size: 1.13rem;}
 
     .hero6{min-height: 130vh; padding-bottom: 5rem;}
-    .hero6 img{position: absolute;right: 0;top: -200px;width: 65%; height: auto; }
+    .hero6 img{position: absolute;right: 0;top: -200px;width: 65%; height: auto; max-height: 600px;
+    object-fit: cover; }
 
 .col-80,
 .col-20,
@@ -187,51 +214,54 @@ import Footer from '../components/Footer.astro';
     align-items: end;
     margin-bottom: 8%;}
 
-    .grid--hero6 h2{    font-size: clamp(1.8rem, 1rem + 5vw,5.5rem); line-height: 1; color: white; font-weight: 500; text-align: left;}
+    .grid--hero6 h2{    font-size: clamp(1.8rem,1rem + 5vw,5.5rem); line-height: 1; color: white; font-weight: 500; text-align: left;}
 
     .grid--hero6b .col-40{margin-left: 70px}
-    .grid--hero6b .col-60 h4{ color: white; font-size: clamp(1.6rem, 1rem + 5vw,2.6rem); font-weight: 400; padding-right: 7%; margin-top: 0;}
+    .grid--hero6b .col-60 h4{ color: white; font-size: clamp(1.6rem,1rem + 5vw,2.6rem); font-weight: 400; padding-right: 7%; margin-top: 0;}
     .grid--hero6b .col-40 p{  color: white; margin-bottom: 100px; line-height: 30px; font-weight: 400;}
 .grid--card{margin-top: 5rem;}
 .hero7-img{    width: 87%;
     margin: 0 auto;
     display: flex;
     position: relative;
-    top: 8rem;
+    top: 5rem;
     z-index: 2;}
-.hero7 .grid--hero7{padding-top: 20rem;}
+.hero7 .grid--hero7{padding-top: 15rem;}
     @media (max-width: 768px) {
-        .hero7 .grid--hero7{padding-top:6rem;}
-        .grid--hero7 p{text-align: center; }
+        .hero7 .grid--hero7{padding-top:1rem; display: inline;}
+       .hero7 .grid--hero7 p{text-align: center;  }
      .contenuto-left{width: 90%;
     margin: 0 auto; padding: 0;}
     .contenuto-left h2{font-size: 2rem; line-height: 130%; text-align: center;}
     .contenuto-left p{text-align: center;}
     .pt-hero{padding-top: 10rem;}
-    .hero2-servizi{font-size: 2rem; padding-left: 0; width: 80%; margin: 0 auto; text-align: center;}
+    .hero2-servizi{font-size: 3rem; padding-left: 0; width: 80%; margin: 0 auto; text-align: center;}
     .hero3 .col-60 p{margin: 0  auto; font-size: 1rem; width: 80%;}
     .cover__wallet{text-align: center; padding-bottom: 2rem;}
-    .cover__wallet h4{width: 90%!important; margin: 10% auto; text-align: center;;}
-    .cover__wallet p{width: 90%; margin: 5% auto; text-align: center;}
+    .cover__wallet h4{width: 80%!important; margin: 10% auto; text-align: center;;}
+    .cover__wallet p{width: 80%; margin: 5% auto; text-align: center;}
     .cover__wallet a{position: static;  margin: auto;}
     .grid--hero6b{flex-wrap: wrap; width: 90%; margin: 0 auto;}
     .grid--hero6b h4,
     .grid--hero6b p{text-align: center; margin: 5% auto; }
-    .grid--hero6b .col-60 h4{padding-right: 0; }
-    .grid--hero6b .col-40{margin: 0 auto}
-    .col-35 img{; height: 70% ; padding-top: 6rem;}
+    .grid--hero6b .col-60 h4{padding-right: 0; font-size: 1.7rem }
+    .grid--hero6b .col-40{margin: 0 auto; width: 80%;}
+    .col-35 img{; height: 90% ; padding-top: 6rem;}
     .grid--hero6 h2{text-align: center;}
     .hero6 img{top: -10rem; left: 50%; transform: translateX(-50%);}
-.grid--hero7 h2{    line-height: 130%;
+
+.hero7 .grid--hero7 h2{padding-top: 23.5rem!important;}
+    .grid--hero7 h2{    line-height: 130%;
     text-align: center;
     padding-top: 18rem;}
     .grid--hero7 .col-60 img{margin: 0 auto; transform: translate(0); position: static; margin-top: 9%;}
     .hero7{min-height: 175vh;
     height: auto;
     margin-bottom: 2rem}
+    .hero5b .grid--hero7{margin-top: 11%!important;}
 
 
-    .hero7-img{ width: 87%; border-radius: 20px; display: flex; align-items: center;z-index: 50; margin: 0 auto; max-width: 1850px; position: relative; top: 8rem;}
+    .hero7-img{ width: 87%; border-radius: 20px; display: flex; align-items: center;z-index: 50; margin: 0 auto; max-width: 1850px; position: relative; top: 0rem;}
 
 
 /* .cover__wallet {
@@ -261,7 +291,7 @@ import Footer from '../components/Footer.astro';
 .grid--hero7 .col-40,
 .grid--hero7 .col-60{ width: 90%; margin: 0 auto;}
 
-
+    }
 
 @media (min-width: 768px) {
     .grid--hero7 {
@@ -281,3 +311,26 @@ import Footer from '../components/Footer.astro';
 
 </style>
 
+<script>
+    // Seleziona l'elemento con classe "frecciadown"
+const frecciaDown = document.querySelector('.frecciadown');
+
+// Aggiungi un gestore di eventi per l'evento di clic
+frecciaDown.addEventListener('click', function(event) {
+    // Impedisci il comportamento predefinito dell'ancora (scorrimento istantaneo)
+    event.preventDefault();
+
+    // Ottieni l'elemento di destinazione (hero2)
+    const hero2 = document.getElementById('hero2');
+
+    // Calcola la posizione dell'elemento di destinazione rispetto alla finestra visualizzata
+    const offsetTop = hero2.offsetTop;
+
+    // Effettua lo scorrimento della pagina in modo animato utilizzando il metodo scrollIntoView()
+    window.scroll({
+        top: offsetTop,
+        behavior: 'smooth' // Aggiungi l'effetto di animazione
+    });
+});
+
+</script>
