@@ -1,0 +1,16 @@
+---
+
+const{ title, text,button,type} = Astro.props
+
+---
+<div class="cover__wallet relative ">
+    <img src="/src/assets/hero5-img.png" alt="">
+    <h4>{title}</h4>
+<p>{text}</p>
+    <a href="" class="button__hero5">{button}</a>
+</div>
+<style define:vars={{type}}>
+    .cover__wallet {
+        background: var(--type);
+    }
+</style>
