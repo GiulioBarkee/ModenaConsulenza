@@ -33,15 +33,16 @@
   }
 });
 
-//         let header = document.querySelector('.header');
+//sottolineare pagina corrente
+  const currentPageUrl = window.location.href;
 
-// header.addEventListener('scroll', function(e) {
-//   if(window.scrollY > 300){
-//     header.classList.add('scroll-down');
-//   } else {
-//     header.classList.remove('scroll-down');
-//   }
-// });
+  const headerLinks = document.querySelectorAll('.header__menu li a');
+
+  headerLinks.forEach(link => {
+    if (link.href === currentPageUrl) {
+      link.classList.add('current');
+    }
+  });
 
 
 
@@ -100,4 +101,10 @@
 
 .scroll-down{top: 0; max-width: 100%; width: 100%; border-radius: 0; transition: all 1s cubic-bezier(.215, .61, .355, 1);}
 .scroll-down .header__quick{transition: all 1s cubic-bezier(.215, .61, .355, 1);}
+.header__menu li a.current {
+  text-decoration: underline;
+}
+
 </style>
+
+
