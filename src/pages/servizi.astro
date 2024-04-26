@@ -21,7 +21,7 @@ import Footer from '../components/Footer.astro';
     <div class="col-33 ">
   <div class="card grey relative">
       <div class="card__img">
-          <img src="/src/assets/01.png" alt="">
+          <img src="/public/assets/01.png" alt="">
       </div>
       <h4>Controllo <br> di gestione</h4>
       <p>Assistiamo le imprese nel definire budget e rendiconti per accrescere la loro competitività ed efficienza nel mercato odierno.</p>
@@ -32,7 +32,7 @@ import Footer from '../components/Footer.astro';
     <div class="col-33 ">
       <div class="card yellow relative">
           <div class="card__img">
-              <img src="/src/assets/02.png" alt="">
+              <img src="/public/assets/02.png" alt="">
           </div>
           <h4>Pianificazione fiscale</h4>
       <p>Moduliamo la pianificazione fiscale delle imprese per aiutarle a gestire il carico fiscale in maniera strategica e accurata.</p>
@@ -43,14 +43,14 @@ import Footer from '../components/Footer.astro';
         <div class="col-33 ">
           <div class="card blue relative">
               <div class="card__img">
-                  <img src="/src/assets/03.png" alt="">
+                  <img src="/public/assets/03.png" alt="">
               </div>
               <h4>Transactions <br> (M&A)</h4>
       <p>Aiutiamo le imprese nelle acquisizioni e vendite con analisi e strategie volte a massimizzare i vantaggi e ridurre i rischi.</p>
       <img src="" alt="">
             </div>
             </div>
-            <img class="hero1c--img" src="/src/assets/hero1c.png" alt="">
+            <img class="hero1c--img" src="/public/assets/hero1c.png" alt="">
  </div>
 </div>
 
@@ -83,11 +83,11 @@ import Footer from '../components/Footer.astro';
     </div>
 </div>
 </div>
-<img class="acc-1-img" src="/src/assets/acc-1.png" alt="">
+<img class="acc-1-img" src="/public/assets/acc-1.png" alt="">
 </div>
 
 <div class="cover__wallet relative  ">
-  <img src="/src/assets/hero5-img.png" alt="">
+  <img src="/public/assets/hero5-img.png" alt="">
   <h4>Il servizio Easy Wallet</h4>
   <p>È il controllo di gestione per liberi professionisti che comprende la stesura del budget economico finanziario e la verifica a consuntivo. </p>
 <a href="" class="button__hero5">Richiedi informazioni</a>
@@ -151,7 +151,7 @@ import Footer from '../components/Footer.astro';
 </div>
 </div>
 
-<img class="bottom-img" src="/src/assets/bottom-servizi.png" alt="">
+<img class="bottom-img" src="/public/assets/bottom-servizi.png" alt="">
 
 <div class="grey-servizi">
 
@@ -189,7 +189,7 @@ import Footer from '../components/Footer.astro';
   </div>
 </div>
 <div class="cover__wallet relative  ">
-  <img src="/src/assets/hero5-img.png" alt="">
+  <img src="/public/assets/hero5-img.png" alt="">
   <h4>Non conosci i costi di gestione della tua azienda?</h4>
 <p>Modena Consulenza può aiutarti a ottenere una visione chiara e dettagliata delle tue gestione aziendale.</p>
 <a href="" class="button__hero5">CONTATTACI</a>
@@ -236,7 +236,7 @@ import Footer from '../components/Footer.astro';
 .title-accordion::before {
   content: "";
     display: block;
-    background-image: url(/src/assets/01y.png);
+    background-image: url(/public/assets/01y.png);
     background-size: cover;
     position: absolute;
     /* bottom: -20px; */
@@ -246,12 +246,12 @@ import Footer from '../components/Footer.astro';
     z-index: -1;
 }
 .due::before {
-    background-image: url(/src/assets/02y.png);
+    background-image: url(/public/assets/02y.png);
     width: 213px;
   }
 
   .tre::before {
-    background-image: url(/src/assets/03y.png);
+    background-image: url(/public/assets/03y.png);
     width: 213px;
   }
 .title-accordion:after {
@@ -291,11 +291,13 @@ import Footer from '../components/Footer.astro';
 
     .grey-servizi{min-height:70vh; height: auto; background-color: #EDEEF0; margin-top: -12rem;}
     .grey-servizi .title-accordion{font-size: 1.3rem;
-  font-weight: 500; padding-top: 1.8rem;}
+  font-weight: 500; padding-top: 1.8rem; ;}
   .grey-servizi h3{        font-size: clamp(1.5rem, 1rem + 5vw,2.2rem);
     font-weight: 500;
     line-height: 110%;
 }
+
+
 .p-secondo{padding-top: 1.5rem;
 font-size: 0.8rem;
 width: 80%;
