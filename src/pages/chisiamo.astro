@@ -50,6 +50,7 @@ import Footer from '../components/Footer.astro';
         </div>
         </div>
     </div>
+    
    <img class="hero2bleft" src="/public/assets/hero2b1.png" alt="">
    <img class="hero2bright" src="/public/assets/hero2b2.png" alt="">
 </div>
@@ -180,14 +181,20 @@ import Footer from '../components/Footer.astro';
 .hero3b__paragrafi .button {padding: 10px 34px}
 
 .hero4b{height: auto; background-color: #002169;  width: 100%; }
-.piastrina p{width: 80%; font-size: 1.4rem; color: white; font-weight: 300; text-transform: uppercase; width: 100%;}
-.piastrina h4{font-size: 1.5rem; color: white; margin-bottom: 0;}
+.piastrina p{width: 80%; font-size: 1rem; color: white; font-weight: 300; text-transform: uppercase; width: 100%; margin-top: 0; text-align: left; line-height:150%}
+.piastrina h4{font-size: 1.3rem; color: white; margin-bottom: 0; text-align: left; font-weight: 500;  }
 
 .piastrina{; text-align: center; }
 .piastrina img{max-width: 100%;}
 
+.piastrina-left,
+.piastrina-right { text-align: left;}
+.piastrina h4 {font-weight: 500; margin-bottom: 0; font-size: 1.3rem}
+.piastrina-left p,
+.piastrina-right p{margin-top: 0; font-size: 1.2rem; line-height: 150%;}
 
-.hero4b2-bottom { width: 85%; z-index: 10; position: relative; top: 5rem; left: 50%; transform: translateX(-50%);}
+
+.hero4b2-bottom { width: 85%; z-index: 10; position: relative; top: 5rem; left: 52%; transform: translateX(-50%);}
 .hero4b2-bottom img{}
 .hero5b{height: auto;}
 
@@ -203,7 +210,7 @@ import Footer from '../components/Footer.astro';
 
     .hero5b .grid--hero7{top: 5rem;}
     .hero5b .container h4{width: 80%!important;}
-
+    .grid__hero4b2 .col-25{width: 23%;}
 
     @media (max-width: 1068px) {
     
@@ -215,13 +222,17 @@ import Footer from '../components/Footer.astro';
 
 
     }
+    @media (max-width:1300px) {
+        .hero2b{padding-bottom: 13%;}
+     .hero2bleft{display: none;} 
+    }
 @media only screen and (max-width: 768px) {
-
+    .hero2b{padding-bottom: 20%;}
    
 .hero1{height: auto; margin-bottom:-5rem; }
   .hero1 img { width: 80%;top: 85%; left: 50%; transform: translateX(-50%)}
 
-  .hero2b{height: 100%;}
+  .hero2b{height: 100%; padding-bottom: -3rem;}
 .hero2b h3{    width: 80%;font-size: 1.4rem; text-align: center; margin: 0 auto; padding-left:0}
   .gridb__hero2b{margin: 0; padding-bottom: 2rem; }
   .grid__hero4b{ width: 100%; right: 0;}
@@ -251,14 +262,14 @@ import Footer from '../components/Footer.astro';
 
   .hero2bleft,
   .hero2bright{bottom: -8%;}
-  .hero3b{height: 100%; margin-bottom: 40%;}
-  .hero3b h3 {line-height: 30px; width: 80%;margin: 0 auto;padding-top: 28%; font-size: 1.8rem; text-align: center;}
+  .hero3b{height: 100%; margin-bottom: 28%;}
+  .hero3b h3 {line-height: 30px; width: 80%;margin: 0 auto; font-size: 1.8rem; text-align: center;}
 .hero3b__padding-bottom{padding-bottom: 3rem;}
 
   .hero4b{height: 100%;}
   .hero3b__paragrafi { width: 80%; font-size: 1rem; margin-top: 12% !important;margin: 0 auto;text-align: center;}
 
-  .hero3b a{     font-size: 1rem;left: 50%;text-align: center;margin-left: 50%;transform: translateX(-50%); position: static;}
+  .hero3b a{     font-size: 1rem;left: 50%;text-align: center; position: static; margin-bottom: 3rem;}
 
 
   .grid__hero4b {width: 100%;;
@@ -269,19 +280,16 @@ import Footer from '../components/Footer.astro';
 
     .piastrina h4{font-size: 1rem;}
     .piastrina p{font-size: 0.8rem}
-/* 
-    .piastrina-left {
-    transform: scale(0.35);width: 100%;position: absolute;left: -23%;}
 
-    .piastrina-right { transform: scale(0.35); width: 100%; position: absolute;left: 23%; } */
     
-    .grid__hero4b .col-50 {width: 50%!important;}
+    .grid__hero4b .col-50 { width: 40% !important;
+        margin: 0 auto;}
     .grid__hero4b2{ max-width: 100%; }
 
 
 
     .grid__hero4b2 .col-25 {
-    width: 50% !important; height: auto}
+    width: 50% !important; height: auto; padding-bottom: 2rem;}
 
     .grid__hero4b2 img{width: 100%;}
 

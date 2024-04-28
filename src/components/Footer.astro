@@ -185,4 +185,25 @@
   .policy{padding-left: 0;}
 }
 
+.contatti-footer,
+.contatti-footer .footer__grid{padding: 0; margin: 0 auto; height: 90%; }
+.contatti-footer{min-height: 60vh; height: 60vh;}
+@media (max-width: 1384px) {
+    .contatti-footer{min-height: 60vh;
+    height: auto;
+    padding-bottom: 8rem;}
+    .contatti-footer .footer__grid{padding-top: 3rem;}
+}
 </style>
+
+<script>window.addEventListener('DOMContentLoaded', () => {
+    // Verifica se la pagina corrente è la pagina dei contatti
+    const isContattiPage = window.location.pathname.includes('contatti');
+
+    if (isContattiPage) {
+        // Se la pagina è quella dei contatti, aggiungi una classe al footer
+        const footer = document.querySelector('.footer');
+        footer.classList.add('contatti-footer');
+    }
+});
+</script>
