@@ -8,7 +8,7 @@ import Footer from '../components/Footer.astro';
 <Header></Header>
 <div class="hero1 relative">
     <div>
-   <h2>La nostra storia <br><span style="margin-left: 10rem ">ha inizio a Modena</span></h2>
+   <h2>La nostra storia <br><span style="margin-left: 30%; position:relative; top: -1.5rem ">ha inizio a Modena</span></h2>
     <p>Siamo uno studio di commercialisti che <br>
         opera a livello locale e internazionale.</p>
 </div>
@@ -57,10 +57,10 @@ import Footer from '../components/Footer.astro';
 <div class="hero3b relative">
     <h3>Da oltre 10 anni aiutiamo i nostri clienti a realizzare i loro progetti.</h3>
     <div class="hero3b__paragrafi">
+        <a href="" class="button">Contattaci</a>
     <p class="mb-3">Modena Consulenza nasce come team di esperti caratterizzato da competenze professionali trasversali, che gli permette di sostenere e promuove una qualità e affidabilità maggiore nei servizi offerti rispetto ad altri studi di consulenza presenti sul mercato.</p>
    <p class="hero3b__padding-bottom">L’obiettivo ultimo di Modena Consulenza è lo sviluppo del cliente attraverso un portafoglio di servizi a lui dedicati per la realizzazione dei propri progetti.</p>
 </div>
-    <a href="" class="button">Contattaci</a>
 </div>
 
 <div class="hero4b relative">
@@ -152,37 +152,38 @@ import Footer from '../components/Footer.astro';
 </Layout>
 
 <style>
-.hero1{height: auto; width: 100%; max-width: 1850px; margin: 0 auto; }
-.hero1 img{width: 92%; height: auto; border-radius: 30px; position: relative; left: -30px; bottom: -5rem; z-index: 100}
-.hero1 h2{     font-size: clamp(1.8rem,1rem + 5vw,5.5rem)!important; font-weight: 500; margin-left: 100px; margin-top: 0; padding-top: 17rem;}
+.hero1{height: auto; width: 100%; max-width: 1850px; margin: 0 auto; margin-bottom: -18rem;}
+.hero1 img{width: 91%; height: auto; border-radius: 30px; position: relative; left: -30px; bottom: 2.5rem; z-index: 100}
+.hero1 h2{     font-size: clamp(1.8rem,1rem + 4.8vw,5.5rem)!important; font-weight: 500; margin-left: 5.5rem; margin-top: 0; padding-top: 13rem;}
 .hero1 h3{margin-left: 22rem;   font-size: clamp(1.8rem,1rem + 5vw,5.5rem)!important;  font-weight: 500; margin-top: -100px;}
 .hero1 p{        position: absolute;
     width: 33%;
-    right: 0.1rem;
-    top: 12.5rem;
+    right: 0.6rem;
+    top: 15rem;
     font-weight: 400;
-    font-size: clamp(1rem, 0.1rem + 3vw, 1.5rem)}
+    font-size: clamp(0.6rem,1rem + 12vw,1.1rem)!important;}
 
 .hero2b{height: 100%;  background-color: #002169; padding-bottom: 20%;}
-.hero2b h3{width: 70%;  color: white; font-size: 2.3rem; font-weight: 500; padding-left: 15%}
+.hero2b h3{width: 70%;  color: white;font-size: clamp(1.2rem, 1rem + 2vw,2.3rem); font-weight: 500; padding-left: 5.5rem}
+.grid__hero2b{display: flex; padding-top: 20rem;}
 .grid__hero2b h4,
 .gridb__hero2b h4{font-size:clamp(1.5rem,1rem + 5vw,6.5rem); color: white; font-weight: 500; margin-top: 15%; padding-left: 5%; margin-bottom: 0; }
 .grid__hero2b p,
 .gridb__hero2b p{color:white; margin-top: 0; padding-left: 7%; font-size:  1.3rem; font-weight: 500;}
-.hero2bleft{width: 34%; position: absolute; bottom: -20%;z-index: 10; left: 6.5%;}
-.hero2bright{width: 50.5%; position: absolute; bottom: -20%;z-index: 10; right: 5%;}
+.hero2bleft{width: 34%; position: absolute; bottom: -20%;z-index: 10; left: 5.5rem;}
+.hero2bright{width: 50.5%; position: absolute; bottom: -20%;z-index: 10; right: 7rem;}
 .hero3b{height: auto;
-    margin-bottom: 19rem;}
-.hero3b h3{line-height:50px; font-weight: 500; width: 50%; margin-left: 6.5%; padding-top: 20%; font-size: 2.8rem;}
-.hero3b__paragrafi{width: 40%; font-size: 1.1rem; margin-top: 10%; margin-left: 52%;}
-.hero3b a{text-transform: uppercase; font-size: 1.13rem; font-weight: 500; position: absolute; top: 65%; left:  23%}
-
+    margin-bottom: 22rem;}
+.hero3b h3{line-height:130%; font-weight: 500; width: 50%; margin-left: 5.5rem; padding-top: 20%; font-size: 2.8rem;}
+.hero3b__paragrafi{width: 44%; font-size: 1.1rem; margin-top: 10%; margin-left: 51%; position: relative;}
+.hero3b a{text-transform: uppercase; font-size: 1.13rem; font-weight: 500; position: absolute; top: 65%; left:  -68%}
+.hero3b__paragrafi .button {padding: 10px 34px}
 
 .hero4b{height: auto; background-color: #002169;  width: 100%; }
 .piastrina p{width: 80%; font-size: 1.4rem; color: white; font-weight: 300; text-transform: uppercase; width: 100%;}
 .piastrina h4{font-size: 1.5rem; color: white; margin-bottom: 0;}
 
-.piastrina{transform: scale(0.85); text-align: center; }
+.piastrina{; text-align: center; }
 .piastrina img{max-width: 100%;}
 
 
@@ -197,31 +198,40 @@ import Footer from '../components/Footer.astro';
 .hero5b a{position: static;}
 .container a{    position: absolute;
     right: 7%;
-    top: 65%;
     font-weight: 600;
     font-size: 1.13rem;}
 
     .hero5b .grid--hero7{top: 5rem;}
+    .hero5b .container h4{width: 80%!important;}
+
+
+    @media (max-width: 1068px) {
+    
+        .hero1 h2 { font-size: 2.3rem; margin:0 auto; margin-top: 4rem; padding-top: 5.5rem;  text-align: center; }
+  .hero1 p {  font-size: 0.9rem; text-align: center;   width: 100%;top: 45%; font-weight: 400; position: static;}
+  .hero1 span  {
+        margin-left: 0!important; /* Rimuove il margine aggiunto */}
+        .hero1 img{ bottom: -3rem;}
+
+
+    }
 @media only screen and (max-width: 768px) {
 
    
-  .hero1 h2 { font-size: 2.3rem; margin:0 auto; margin-top: 70px; padding-top: 100px;  text-align: center;}
-  .hero1 h3 { font-size: 2.3rem; margin: 0 auto; margin-top: 0px; text-align: center; }
-  .hero1 p {  font-size: 0.9rem; text-align: center;   width: 100%;top: 45%; font-weight: 400; position: static;}
-.hero1{height: auto;}
+.hero1{height: auto; margin-bottom:-5rem; }
   .hero1 img { width: 80%;top: 85%; left: 50%; transform: translateX(-50%)}
 
   .hero2b{height: 100%;}
 .hero2b h3{    width: 80%;font-size: 1.4rem; text-align: center; margin: 0 auto; padding-left:0}
-  .gridb__hero2b{margin: 0; }
+  .gridb__hero2b{margin: 0; padding-bottom: 2rem; }
   .grid__hero4b{ width: 100%; right: 0;}
   .grid__hero4b2{max-width: 100%;}
   .grid--hero7{max-width: 0; margin: 0;}
-  .grid__hero2b{padding-top: 25%; width: 80%; height: auto; margin: 0 auto}
+  .grid__hero2b{padding-top: 8rem; width: 80%; height: auto; margin: 0 auto; flex-wrap: wrap;}
   .grid__hero2b h4,
   .gridb__hero2b h4{font-size: 2rem; }
   .grid__hero2b p,
-  .gridb__hero2b p{font-size: 1rem;}
+  .gridb__hero2b p{font-size: 0.6rem;}
   .gridb__hero2b {width: 100%; gap: 0;}
 
   .grid__hero2b .col-30,
@@ -295,7 +305,7 @@ import Footer from '../components/Footer.astro';
      text-align: center;}
 
     .hero5b .container{position: static; }
-.hero5b .container h4{ width: 80%;text-align: center;font-size: 1.6rem;
+.hero5b .container h4{ width: 80%t;text-align: center;font-size: 1.6rem;
      margin-left: 0; margin-bottom: 0; margin: 6% auto;}
      .hero5b a{position: static; margin: 15% auto; margin-top: 0;}
 
@@ -308,10 +318,6 @@ import Footer from '../components/Footer.astro';
 
 }
 ;}
-.hero5b .container p{
-
-    padding-bottom: 4rem;
-}
 </style>
 
 

@@ -4,13 +4,14 @@
 .mt-2{margin-top: 20px}
 .mt-3{margin-top: 40px}
 .mt-4{margin-top: 100px!important }
-.pt-hero{padding-top: 11rem;}
+.pt-hero{padding-top: 13.5rem;}
 
 .mb-0{margin-bottom: 0}
 .mb-1{margin-bottom: 10px}
 .mb-2{margin-bottom: 20px}
-.mb-3{margin-bottom: 40px}
+.mb-3{margin-bottom: 3.2rem}
 .mb-4{margin-bottom: 100px}
+.mb-6r{margin-bottom: 6.5rem;}
 
 .p-0{padding: 0}
 .p-1{padding: 10px}
@@ -36,13 +37,13 @@
 
 .button { 
   font-size: 1rem; background: #FFD100; color:#fff;
-  text-decoration: none;padding: 14px 25px; display: inline-block;
-  border-radius: 18px; font-weight: 700;
+  text-decoration: none;padding: 8px 34px; display: inline-block;
+  border-radius: 18px; font-weight: 400;
 }
 
 .button__hero5{  font-size: 1rem; background: #002169; color:#fff;
-  text-decoration: none;padding: 14px 25px; display: inline-block;
-  border-radius: 18px; font-weight: 700; text-transform: uppercase;}
+  text-decoration: none;padding: 10px 34px; display: inline-block;
+  border-radius: 18px; font-weight: 500; text-transform: uppercase; font-size: 1.1rem;}
 
 .button:hover{ background: #002169; transition: all 0.3s cubic-bezier(.215, .61, .355, 1); }
 .button__hero5:hover{ background: #FFD100; transition: all 0.3s cubic-bezier(.215, .61, .355, 1); }
@@ -53,27 +54,36 @@
 .grid { margin: 0 auto;  display: flex; flex-flow: row; flex-wrap: wrap; position: relative;; max-width: 1850px;}
 .grid--hero { margin: 0 auto;  display: flex; flex-flow: row; flex-wrap: wrap; position: relative; ; max-width: 1850px;}
 .grid--center{justify-content: center; flex-wrap: wrap; max-width: 1850px;}
-.grid--card{width: 90%; margin: 0 auto; flex-wrap: wrap; max-width: 1850px;}
+.grid--card{width: 91.5%; margin: 0 auto; flex-wrap: wrap; max-width: 1850px; margin-bottom: 1.5rem;}
 
-.grid--hero6{display: flex; width: 75%; margin-left:15%; margin-bottom: 4rem; flex-wrap: wrap; max-width: 1850px;}
-.grid--hero6b{display: flex; width: 75%; margin-left: 15%; ; max-width: 1850px;}
+.grid--hero6{display: flex; width: 75%; margin-left:15%; margin-bottom: 4rem; flex-wrap: wrap; max-width: 1850px; }
+.grid--hero6b{display: flex; width: 80%; margin-left: 15%; ; max-width: 1850px;     padding-top: 2.5rem; padding-bottom: 16rem;}
 .grid--hero7{width: 90%; margin: 0 auto; height: 518px; margin-top: 11%; display: flex; flex-wrap: wrap; max-width: 1850px;}
+.hero7 .grid--hero7{margin-top: 0;}
 .grid--footer{width: 88%;
  ; margin: 0 auto;  display: flex; flex-flow: row; flex-wrap: wrap; position: relative;; max-width: 1850px; padding-top: 18rem;}
-  .grid__hero2b{margin: 0 auto;  display: flex; flex-flow: row; flex-wrap: wrap; position: relative; height: auto;
+  .grid__b{margin: 0 auto;  display: flex; flex-flow: row; flex-wrap: wrap; position: relative; height: auto;
     padding-top: 15rem;; max-width: 1850px;}
-  .gridb__hero2b{margin-left:22rem;  display: flex; flex-flow: row; flex-wrap: wrap; position: relative; min-height: 30vh;
-    ; max-width: 800px; gap: 90px; max-width: 1850px;}
+  .gridb__hero2b{    margin-left: 30rem;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    position: relative;
+    min-height: 30vh;
+    max-width: 800px;
+    gap: 1rem;
+    max-width: 1850px;}
  
-.grid__hero4b{width: 53%;
+.grid__hero4b{width: 48%;
   display: flex;
   position: relative;
   top: -23%;
-  flex-wrap: wrap;
+
   max-width: 1850px;
-  left: 40%;
-  top: -16rem;}
-.grid__hero4b2{max-width: 88%!important; margin: 0 auto; display: flex; flex-wrap: wrap;; max-width: 1850px;  position: relative; top: -6rem;}
+  left: 47%;
+  top: -18rem; gap: 3.5rem}
+.grid__hero4b2{max-width: 88%!important; margin: 0 auto; display: flex; flex-wrap: wrap; max-width: 1850px;  position: relative; top: -6rem;}
+
 
 
 .grid__servizi-bottom{max-width: 100%; height: auto; display: flex; flex-wrap: wrap; padding: 10rem 5rem ; padding-bottom: 5rem;}
@@ -82,10 +92,15 @@
  
 
       @media (max-width: 768px) {
+        .grid__hero4b2{flex-wrap: wrap;}
         .grid{text-align: center;}
         .grid--footer{padding-top: 5rem;}
         .gridb__hero2b{margin: 0 auto;}
         .grid__hero4b{left: 0; top: -9rem}
+        .grid--hero6{margin-bottom: 0;}
+        .grid--hero6b{padding-bottom: 9rem;}
+        .containerp{padding: 0 4rem!important; }
+
       }
 /* .col{ flex: 1;} */
 
@@ -135,20 +150,36 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
-  transform: scale(0.7);}
+  transform: scale(0.8);}
 
 
 
 /* hero 7 */
 .hero7{ height: auto; background-color: white; max-width: 1850px; margin: 0 auto;}
 .grid--hero7 h2{font-size: clamp(1.8rem, 1rem + 5vw,4rem);  font-weight: 500; padding: 4%; line-height:130%}
-.grid--hero7 p{padding-left: 4%; }
+.grid--hero7 p{padding-left: 4%; font-size: 1.1rem;}
 .container{width: 100%;
-    top: -10%;
+    top: -11%;
     position: absolute;}
+    .hero7 .container{position: relative;
+    top: -11rem;}
 
     .hero7 .cover__wallet{background-color: white;}
     .hero7 .cover__wallet h4{width: 40%;}
+    .cover__wallet h4{    width: 53% !important;
+      font-size: clamp(1.8rem,1rem + 5vw,4rem);
+      margin-left: 7rem;
+      font-weight: 500;
+      margin-top: 6rem;
+      line-height: 135%; margin-bottom: 2.5rem;}
+  .cover__wallet p{   width: 48%;
+      margin-left: 7rem;
+      font-size: 1.13rem;
+  margin-bottom: 6rem;}
+  
+  .button__hero5{    position: absolute;
+      right: 7%;
+      bottom: 6rem;}
 
 .grid--hero7 .col-60 img{width: 40%; height: auto;
     display: flex;
@@ -166,28 +197,34 @@
 
 
     /*cover waller*/
-    .cover__wallet{width: 80%; border-radius: 40px;  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); height: auto; margin: 0 auto; overflow: hidden;}
+    .cover__wallet{width: 88.5%!important; border-radius: 40px;  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); height: auto; margin: 0 auto; overflow: hidden;}
     @media (max-width: 768px) {
-      .cover__wallet{height: auto; }
+      .cover__wallet{height: auto; width: 82%!important; display: flex;
+        flex-flow: column;}
       .cover__wallet h4{font-size: clamp(1.5rem,1rem + 4vw ,2.5rem) !important;}
       .hero5b .cover__wallet h4{font-size: clamp(1.5rem,1rem + 4vw ,2rem) !important;}
+      .grid--hero7 p{padding-left: 0;}
     }
 
 
 .cover__wallet img{position: absolute; width: 100%; height: 100%; }
-.cover__wallet h4{width: 50%;
+ /* .container .cover__wallet h4{width: 50%;
   font-size: clamp(2rem, 1rem + 2vw, 3.21rem)!important;
     margin-left: 10%;
-    font-weight: 600; margin-bottom: 50px; }
-.cover__wallet p{   width: 50%;
+    font-weight: 600; margin-bottom: 50px; } */
+/* .cover__wallet p{   width: 50%;
     margin-left: 10%;
     font-size: 1.13rem; }
-    .cover__wallet p{padding-bottom: 3rem;}
+   */
 
 
     /* card */
-    .card{padding:20px;box-shadow: 0 5px 20px rgba(0,0,0,.1);border-radius: 10px;overflow: hidden;margin: 4% auto ; min-height: 20rem;
-      height: auto;width: 80%;  display: block;background-position: center center;background-size:cover}
+    .card{box-shadow: 0 5px 20px rgba(0,0,0,.1);border-radius: 20px;overflow: hidden;margin: 4% auto ; min-height: 25rem;
+      height: 100%;width: 90%;  display: block;background-position: center center;background-size:cover}
+
+      @media (max-width: 768px) {
+        .card{height: auto ;}
+      }
 .card__img img{
     display: block;
     background-position: center center;
@@ -195,19 +232,25 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    overflow: hidden; height: 70%;}
+    overflow: hidden; height: 82%;}
 
     .card h4{ width: 80%;
       text-align: center;
-      margin: 10% auto;
+
     font-size: 1.5rem;
-    font-weight: 500; }
+    font-weight: 500; margin: 0;
+   }
 
     .card p{
-  margin-top: 20%!important;
-    margin: 0 auto;
+
+      
       font-weight: 400;
-      font-size: 1rem;  text-align: center; width: 90%;}
+      font-size: 1.1rem;  text-align: center; width: 100%; line-height: 150%;}
+
+      .cardetta{height: 100%; display: flex; flex-flow: column;}
+
+      .containerh4{display: flex; flex-flow: column; height: 50%; justify-content: flex-start; padding: 3rem 4rem;}
+      .containerp{display: flex; flex-flow: column; height: 50%; justify-content: flex-end; padding: 4rem;}
 
     .yellow h4,
 .yellow p,

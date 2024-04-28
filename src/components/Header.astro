@@ -54,19 +54,20 @@
 /* Menu */
 :root { --menu-bg: #fff; --menu-color: #002169; }
 
-.header{ background-color: var(--menu-bg); position: fixed; top:62px;  left:50%; z-index: 9999; width: 85%; padding: 10px 15px;  border-radius: 80px; transform: translateX(-50%);  box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.1); max-width: 1850px;}
+.header{ background-color: var(--menu-bg); position: fixed; top:3.5rem;  left:50%; z-index: 9999; width: 86%; padding: 15px 20px;  border-radius: 40px; transform: translateX(-50%);  box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.1); max-width: 1850px;}
 .header__content{width: 100%;margin: 0 auto; display: flex;justify-content: space-between;}
-.header .button{border-radius:  80px; white-space: nowrap;}
+.header .button{border-radius:  18px; white-space: nowrap;}
 .header__logo,
 .header__quick{display: flex; align-items: center;color:var(--menu-color); width: 40%;}
+.header__logo{width: 27.5%; padding-left: 0.25rem;}
 
-.header__logo img{width: 100%; margin-left: 15px;}
+.header__logo img{width: 100%; margin-left: 1rem;}
 .header__quick{justify-content: flex-end; text-align: center;}
 .header__quick{width: 25%;}
 
-.header__menu{padding: 0;margin: 0; width: 100%;   display: flex;  justify-content: flex-end;}
+.header__menu{margin: 0; width: 100%;   display: flex;  justify-content: flex-end;}
 .header__menu li{display: flex; align-items: center; }
-.header__menu li a{color:var(--menu-color); opacity: 0.8;display: block;padding: 0 1rem;font-size: 1rem; font-weight:500; text-decoration: none; white-space: nowrap; }
+.header__menu li a{color:var(--menu-color); opacity: 0.8;display: block;padding: 0 1.6rem;font-size: 1.1rem; font-weight:500; text-decoration: none; white-space: nowrap; }
 
 .header__menu li a.current {text-decoration: underline;}
 .header__menu li a:hover{text-decoration: underline;}
@@ -100,7 +101,7 @@
 }
 
 .scroll-down{top: 0; max-width: 100%; width: 100%; border-radius: 0; transition: all 1s cubic-bezier(.215, .61, .355, 1);}
-.scroll-down .header__quick{transition: all 1s cubic-bezier(.215, .61, .355, 1);}
+.scroll-down .header__quick{transition: all 1s cubic-bezier(.215, .61, .355, 1); margin-right: 1rem;}
 .header__menu li a.current {
   text-decoration: underline;
 }
