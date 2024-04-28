@@ -11,15 +11,18 @@ import Footer from '../components/Footer.astro';
             <div class="herocontatti-contenuto-left col-50">
                 <h2>Contattaci ora,
                     siamo a tua
-                    <span style="color:#FFD100; font-style: italic;">disposizione!</span>
+                    <span style="color:#FFD100; font-style: italic;">disposizione</span>!
                 </h2>
                 <p>Richiedi senza impegno una consulenza gratuita per la tua impresa.</p>
                 <a href="" class="button">CONTATTACI</a>
             </div>
             <div class="hero1d-image col-50">
-                <img src="/public/assets/hero1d.png" alt="">
+         
             </div>
         </div>
+        <div class="img-container">
+        <img src="/public/assets/hero1d.png" alt="">
+    </div>
     </div>
 
     <div class="hero__form">
@@ -32,23 +35,23 @@ import Footer from '../components/Footer.astro';
                     <div class="form-grid">
                         <div class="form-group">
                             <input type="text" id="nome" name="nome" required>
-                            <label for="nome">Nome</label>
+                            <label for="nome">Nome*</label>
                         </div>
                         <div class="form-group">
                             <input type="text" id="cognome" name="cognome" required>
-                            <label for="cognome">Cognome</label>
+                            <label for="cognome">Cognome*</label>
                         </div>
                         <div class="form-group">
                             <input type="tel" id="telefono" name="telefono" required>
-                            <label for="telefono">Telefono</label>
+                            <label for="telefono">Telefono*</label>
                         </div>
                         <div class="form-group">
                             <input type="email" id="email" name="email" required>
-                            <label for="email">Email</label>
+                            <label for="email">Email*</label>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group big-message">
                             <textarea id="messaggio" name="messaggio" rows="4" required></textarea>
-                            <label for="messaggio">Messaggio</label>
+                            <label for="messaggio">Messaggio*</label>
                         </div>
                     </div>
                     <button class="button" type="submit">INVIA</button>
@@ -83,6 +86,11 @@ import Footer from '../components/Footer.astro';
 
 
 <style>
+
+
+    .img-container {position: absolute; top: 0; right: 0; height: 105%; width: 41vw;     border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;; overflow: hidden;}
+    .img-container img{object-fit: cover; height: 100%; width:100%;}
 .hero1d {
     background-color: #002169;
     min-height: fit-content;
@@ -91,6 +99,7 @@ import Footer from '../components/Footer.astro';
     justify-content: center;
     width: 100%;
     height: 100%;
+    padding-bottom: 3rem;
 }
 .container {
     display: flex;
@@ -112,9 +121,9 @@ import Footer from '../components/Footer.astro';
 .herocontatti-contenuto-left {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 100px;
-    padding-top: 200px;
+    gap: 4.2rem;
+    padding-left: 5.5rem;
+    padding-top: 11.5rem;
 }
 .hero1d-image {
     width: 50%;
@@ -134,19 +143,22 @@ import Footer from '../components/Footer.astro';
     width: 7rem;
     font-size: 1.13rem;
     text-align: center;
+    padding: 10px 34px;
 }
 .herocontatti-contenuto-left h2,
 .herocontatti-contenuto-left p {
     color: white;
 }
 .herocontatti-contenuto-left h2 {
-    font-size: clamp(2rem, 1rem + 5vw, 5rem);
+    font-size: clamp(2rem, 1rem + 5vw, 5.5rem);
     font-weight: 500;
-    line-height: 80px;
+    line-height: 100%;
+    margin-bottom: 0;
 }
 .herocontatti-contenuto-left p {
-    width: 50%;
-    font-size: 1.13rem;
+    width: 55%;
+    font-size: 1.1rem;
+    font-weight: 400;
 }
 .herocontatti-contenuto-left a:hover {
     transform: scale(1.2);
@@ -158,7 +170,7 @@ import Footer from '../components/Footer.astro';
 }
 .hero__contatti {
     background-color: #EDEEF0;
-    padding-bottom: 6%;
+    padding-bottom: 5.5rem;
 }
 .hero__contatti .grid p {
     font-weight: 400;
@@ -175,33 +187,41 @@ import Footer from '../components/Footer.astro';
 }
 .grid-form {
     display: flex;
-    margin-top: 8rem;
+    margin: 0 auto;
+    margin-top: 9.5rem;
+    max-width: 1850px;
+    gap: 4rem;
+    
 }
 .grid-form .col-40 {
     display: flex;
     justify-content: center;
-    padding-left: 5rem;
+    width: 44%;
+   
 }
 .grid-form .col-40 h3 {
-    font-size: clamp(1.8rem, 1rem + 5vw, 3rem);
-    margin-top: 0; font-weight: 500; width: 90%;
+    font-size: clamp(1.8rem, 1rem + 5vw, 3.3rem);
+    margin-top: 0; font-weight: 500; width: 110%; line-height: 120%; padding-left: 5.5rem;
 }
 
+.big-message{flex-grow: 1; }
 
-form{ text-align: center;}
+form{ text-align: center; max-width: 100%;}
 .form-group {
-    width: 50%;
+    width: 20rem;
     position: relative;
-    margin-bottom: 20px;
+
 }
 .form-group input,
 .form-group textarea {
-    width: 125%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    width: 88%;
+    padding: 20px;
+    border: 1px solid #A4B5DB;
+    border-radius: 8px;
     font-size: 1rem;
+   
 }
+
 .form-group label {
     position: absolute;
     top: 50%;
@@ -223,13 +243,12 @@ form{ text-align: center;}
 .form-group textarea:focus + label,
 .form-group input:not(:placeholder-shown) + label,
 .form-group textarea:not(:placeholder-shown) + label {
-    top: 5px;
-    left: 10px;
-    transform: translateY(0) scale(0.8);
+   
+    left: 1rem;
+
     background-color: white;
     padding: 0 5px;
-    color: #002169;
-    
+    color: black;    
 }
 
 
@@ -250,18 +269,23 @@ width: 50%;
     transition: all 1s cubic-bezier(.215, .61, .355, 1);
 }
 
-.grid-form .button{background-color: #002169;}
+.grid-form .button{background-color: #002169; width: 100%; padding: 18px 34px; margin-top: 2rem; font-weight: 600; font-size: 1.1rem;}
 .grid-form .button:hover{background-color: #ffd100;}
+textarea .label{top: 24%}
 @media (max-width: 768px) {
+    .hero1d{flex-wrap: wrap;}
+    .img-container{position: relative;}
     .grid--hero1d {
         display: flex;
         flex-wrap: wrap;
+  
     }
     .herocontatti-contenuto-left {
         padding: 0;
         width: 90%;
         margin: 0 auto;
         padding-top: 28%;
+        gap: 0;
     }
     .hero__contatti .grid h4 {
         margin-left: 0;
@@ -284,6 +308,7 @@ width: 50%;
     .herocontatti-contenuto-left a {
         margin: 10% auto;
         width: auto;
+        margin-top: 0;
     }
     .hero1d-image img {
         border-top-left-radius: 30px;
@@ -292,6 +317,7 @@ width: 50%;
     .grid-form {
         display: flex;
         flex-direction: column;
+      align-items: center;
     }
     .col-40,
     .col-60 {
@@ -299,19 +325,22 @@ width: 50%;
     }
 }
 .form-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 20px;
+    display: flex;
     justify-items: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+   
 }
 .grid-form a {
     margin-left: 50%;
 }
+.grid-form .col-60{width: 50%;}
 @media (max-width: 768px) {
     .grid-form {
         display: flex;
         flex-direction: column;
+        margin-top: 5rem;
     }
 
     .grid-form .col-40{padding-left: 0;}
@@ -319,9 +348,11 @@ width: 50%;
     .col-60 {
         width: 100%;
     }
+    .grid-form .col-40{width: 100%;}
 
-    .grid-form .col-40 h3{ width: 80%; margin: 0 auto; text-align: center; padding-bottom: 4rem;}
+    .grid-form .col-40 h3{ width: 80%; margin: 0 auto; text-align: center; padding-bottom: 1rem; padding-left: 0;}
 }
+
 
 
 

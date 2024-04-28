@@ -56,10 +56,20 @@
     </div>
 
     <div class="footer__bottom">
+        <div class="grid-footer">
+            <div class="col-50">
+                <div class="policy">
         <p><a href="">Privacy Policy</a></p>
         <p><a href="">Cookie Policy</a></p>
         <p>IT03622220360</p>
+    </div>
+    </div>
+    <div class="col-50">
+        <div class="copy">
         <p>© 2024 Modena Consulenza | All Rights Reserved</p>
+    </div>
+    </div>
+    </div>
     </div>
     <img class="ModenaConsulenza-footer" src="/public/assets/ModenaConsulenza-footer.png" alt="">
 </footer>
@@ -75,6 +85,9 @@
         display: flex;
 }
 
+.grid-footer{width: 100%; margin: 0 auto;  display: flex; flex-flow: row; flex-wrap: wrap; position: relative;; max-width: 1850px;}
+.policy{display: flex ; align-items: center; height: 100%; padding-left: 3.5rem; gap: 1.5rem; font-weight: 200; font-size: 0.9rem; white-space: nowrap;}
+.copy{display: flex ;align-items: center; justify-content: flex-end; padding-right: 3rem ; height: 100%; font-weight: 200; font-size: 0.9rem; }
 .footer a {color: white; text-decoration: none;}
 
 .footer__grid {
@@ -151,7 +164,8 @@
     right: 0; 
     padding: 20px; 
     position: absolute;
-    height: 3.5rem;
+    height: 3rem;
+    z-index: 10;
 }
 
 .footer__bottom p {
@@ -163,11 +177,12 @@
     text-decoration: none;
 }
 
-.ModenaConsulenza-footer{width: 100%; position: absolute; bottom: 5.92rem; left:0}
+.ModenaConsulenza-footer{width: 100%; position: absolute; bottom: 4.5rem; left:0;  }
 @media (max-width: 768px) {
   .footer__column{width: 80%; text-align: center; padding: auto 0; margin: auto 0;}
   .footer__grid{padding-top: 8rem;}
   .footer__section{margin-bottom: 0;}
+  .policy{padding-left: 0;}
 }
 
 </style>
