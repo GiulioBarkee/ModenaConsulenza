@@ -428,16 +428,37 @@ import Layout from "../layouts/Layout.astro";
             });
         });
     });
-    
 
-    const form= document.querySelector(".contact-form")
+    const form = document.querySelector<HTMLFormElement>(".contact-form");
 
     if (form) {
         form.onsubmit = (e) => {
-            const  formData =  new formData(e.target as HTMLFormElement);
-            console.log(formData);
-            return false
-        }
-    }
+            console.log("form submit");
+            form.querySelector<HTMLInputElement>("[type=submit]").disabled =
+                true;
 
+            const formData = new FormData(e.target as HTMLFormElement);
+
+            formData.append("senderName", "Modena Consulenza");
+            formData.append("senderEmail", "info@modenaconsulenza.it");
+            formData.append("to", "giuliobarchi1@gmail.com");
+
+            fetch("https://giuliobarkee.pages.dev/api/form", {
+                method: "POST",
+                body: formData,
+            })
+                .then(() => {
+                    form.reset();
+                    form.classList.add("success");
+                    form.querySelector<HTMLInputElement>(
+                        "[type=submit]",
+                    ).disabled = false;
+                })
+                .catch(() => {
+                    form.reset();
+                    form.classList.add("error");
+                });
+            return false;
+        };
+    }
 </script>
