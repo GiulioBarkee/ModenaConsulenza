@@ -149,7 +149,7 @@ import { team } from "@/content/settings/settings.json";
 
     <div class="hero5b relative">
         <div class="grid--hero7 relative">
-            <div class="col-40 relative">
+            <div class="col-50 relative">
                 <h2>
                     Scopri le nostre
                     <span style="color:#002169; font-style: italic;"
@@ -165,10 +165,13 @@ import { team } from "@/content/settings/settings.json";
                     strategia ottimizzata.
                 </p>
             </div>
-            <div class="col-60 relative">
+            <div class="col-45 relative">
                 <div class="scale">
                     <a href=""><img src="/assets/studiotrain.png" alt="" /></a>
+                    <a href=""><img class="frecciaright" src="/assets/frecciaright.png" alt=""></a>
+              
                 </div>
+
             </div>
         </div>
 
@@ -186,7 +189,7 @@ import { team } from "@/content/settings/settings.json";
     </div>
 </Layout>
 
-<style>
+<style >
     .hero1 {
         height: auto;
         width: 100%;
@@ -369,11 +372,13 @@ import { team } from "@/content/settings/settings.json";
     }
     .hero5b {
         height: auto;
+        margin-bottom: -6rem;
     }
 
     .hero5b .cover__wallet {
         background-color: #ffd100;
         margin-top: 10%;
+        display: block;
     }
     .hero5b .container {
         top: 70%;
@@ -384,12 +389,15 @@ import { team } from "@/content/settings/settings.json";
     .hero5b .container h4 {
         width: 70%;
         color: white;
+        max-width: 1100px;
+
     }
     .hero5b .container p {
         color: white;
     }
     .hero5b a {
         position: static;
+       
     }
     .container a {
         position: absolute;
@@ -398,10 +406,12 @@ import { team } from "@/content/settings/settings.json";
         font-size: 1.13rem;
     }
 
+
+
     .hero5b .grid--hero7 {
         top: 6.5rem;
     }
-    .hero5b .grid--hero7 .col-40{padding-top: 4.5rem;}
+
     .hero5b .container h4 {
         width: 80% !important;
     }
@@ -616,7 +626,7 @@ import { team } from "@/content/settings/settings.json";
             width: 90%;
         }
         .hero5b .grid--hero7 {
-            padding-top: 15%;
+            padding-top: 19%;
             margin-top: 0;
             top: auto;
         }
@@ -632,7 +642,12 @@ import { team } from "@/content/settings/settings.json";
         .hero5b {
             height: auto;
             text-align: center;
+    
         }
+
+        .hero5b .cover__wallet a{position: static;}
+        .hero5b .cover__wallet{margin-top: 0;}
+        .hero5b .cover__wallet a{margin:6% auto;}
 
         .hero5b .container {
             position: static;
@@ -645,11 +660,7 @@ import { team } from "@/content/settings/settings.json";
             margin-bottom: 0;
             margin: 6% auto;
         }
-        .hero5b a {
-            position: static;
-            margin: 15% auto;
-            margin-top: 0;
-        }
+
 
         .hero5b .container p {
             margin: 0 auto;
@@ -666,4 +677,10 @@ import { team } from "@/content/settings/settings.json";
             margin-left: 0 !important; /* Rimuove il margine aggiunto */
         }
     }
+
+    /* @media screen and (min-width: 768px) and (max-width: 1050px) {
+    .hero4b {
+      padding-bottom: 10rem;
+    }
+  } */
 </style>

@@ -98,7 +98,7 @@ import Layout from "../layouts/Layout.astro";
                                 delle imprese, garantendo risparmio e conformità
                                 normativa.
                             </p>
-                            <img src="" alt="" />
+                           
                         </div>
                     </div>
                 </div>
@@ -194,7 +194,7 @@ import Layout from "../layouts/Layout.astro";
             </div>
         </div>
         <div class="grid--hero7 relative">
-            <div class="col-40 relative">
+            <div class="col-50 relative">
                 <div class="">
                     <h2>
                         Scopri le nostre
@@ -212,9 +212,10 @@ import Layout from "../layouts/Layout.astro";
                     </p>
                 </div>
             </div>
-            <div class="col-60 relative">
+            <div class="col-45 relative">
                 <div class="scale pt-3">
                     <a href=""><img src="/assets/studiotrain.png" alt="" /> </a>
+                    <a href=""><img class="frecciaright" src="/assets/frecciaright.png" alt=""></a>
                 </div>
                 
             </div>
@@ -317,6 +318,7 @@ import Layout from "../layouts/Layout.astro";
         padding: 10px 34px;
     }
 
+    .hero7 .grid--hero7{margin-top: -7rem;}
     @media (max-width: 768px) {
         .contenuto-left p {
             padding-bottom: 0;
@@ -437,20 +439,16 @@ import Layout from "../layouts/Layout.astro";
         top: 12rem;
         z-index: 2;
     }
-    .hero7 .grid--hero7 {
-        height: 100%;
-        margin-top: -7rem;
-        margin-bottom: -4rem;
-    }
+
     @media (max-width: 768px) {
-        .hero7 .grid--hero7 {
+        /* .hero7 .grid--hero7 {
             padding-top: 1rem;
             display: inline;
             top: -10rem;
         }
         .hero7 .grid--hero7 p {
             text-align: center;
-        }
+        } */
         .contenuto-left {
             width: 90%;
             margin: 0 auto;
@@ -564,7 +562,7 @@ import Layout from "../layouts/Layout.astro";
             max-width: 1850px;
             position: relative;
             bottom: 0;
-            margin-top: -21rem;
+            /* margin-top: -21rem; */
             margin-bottom: 6rem;
         }
 
@@ -604,10 +602,29 @@ import Layout from "../layouts/Layout.astro";
             grid-template-columns: repeat(2, 1fr);
         }
 
-        .col-50 {
+        /* .col-50 {
             width: auto;
-        }
+        } */
     }
+
+    .containerp {
+    position: relative; /* Assicura che il trattino si posizioni correttamente */
+}
+
+.containerp::after {
+    content: "";
+    position: absolute;
+    bottom: 3rem;
+    width: 7%;
+    height: 3px;
+    background-color: black;
+}
+.grey .containerp::after{ background-color: #FFD100;}
+.blue  .containerp::after{ background-color: #fff;}
+
+@media (max-width: 768px) {
+    .containerp::after{ left: 50%; transform: translateX(-50%); bottom: 0;}
+}
 </style>
 
 <script>
