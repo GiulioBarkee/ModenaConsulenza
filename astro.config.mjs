@@ -6,5 +6,3 @@ export default defineConfig({
         build: 'file',
     }
 });
-
-wefwefwe
