@@ -247,7 +247,7 @@ import Layout from "../layouts/Layout.astro";
     }
     .form-group input,
     .form-group textarea {
-        width: 88%;
+        width: calc(100% - 46px);
         padding: 23px;
         border: 1px solid #a4b5db;
         border-radius: 8px;
@@ -441,6 +441,8 @@ import Layout from "../layouts/Layout.astro";
 
             formData.append("senderName", "Modena Consulenza");
             formData.append("senderEmail", "info@modenaconsulenza.it");
+
+            // SOSTITUIRE MAIL CON QUELLA DEL FORM
             formData.append("to", "giuliobarchi1@gmail.com");
 
             fetch("https://giuliobarkee.pages.dev/api/form", {
