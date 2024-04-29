@@ -436,6 +436,7 @@ import Layout from "../layouts/Layout.astro";
         form.onsubmit = (e) => {
             const  formData =  new formData(e.target as HTMLFormElement);
             console.log(formData);
+            return false
         }
     }
 
