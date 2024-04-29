@@ -307,6 +307,11 @@ import { team } from "@/content/settings/settings.json";
         height: auto;
         background-color: #002169;
         width: 100%;
+        padding-bottom: 27rem;
+    }
+    @media (max-width: 768px) {
+      .hero4b{padding-bottom: 8rem;}
+      .hero4b2-bottom{margin-top: 2rem!important;}
     }
     .piastrina p {
         width: 80%;
@@ -351,12 +356,14 @@ import { team } from "@/content/settings/settings.json";
     }
 
     .hero4b2-bottom {
-        width: 85%;
-        z-index: 10;
-        position: relative;
-        top: 5rem;
-        left: 52%;
-        transform: translateX(-50%);
+        width: 89%;
+    z-index: 10;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5rem;
+    max-width: 1380px;
+    
     }
     .hero4b2-bottom img {
     }
@@ -392,8 +399,9 @@ import { team } from "@/content/settings/settings.json";
     }
 
     .hero5b .grid--hero7 {
-        top: 5rem;
+        top: 6.5rem;
     }
+    .hero5b .grid--hero7 .col-40{padding-top: 4.5rem;}
     .hero5b .container h4 {
         width: 80% !important;
     }

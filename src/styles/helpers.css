@@ -161,7 +161,7 @@
 
 /* hero 7 */
 .hero7{ height: auto; background-color: white; max-width: 1850px; margin: 0 auto;}
-.grid--hero7 h2{font-size: clamp(1.8rem, 1rem + 5vw,4rem);  font-weight: 500; padding: 4%; line-height:130%}
+.grid--hero7 h2{font-size: clamp(1.8rem, 1rem + 5vw,4rem);  font-weight: 500; padding: 4%; line-height:130%; margin-bottom: 2rem;}
 .grid--hero7 p{padding-left: 4%; font-size: 1.1rem;}
 .container{width: 100%;
     top: -11%;
@@ -186,12 +186,12 @@
       right: 7%;
       bottom: 6rem;}
 
-.grid--hero7 .col-60 img{width: 40%; height: auto;
+.grid--hero7 .col-60 img{width: 43%; height: auto;
     display: flex;
     align-items: center;
     position: absolute;
-    left: 60%;
-    top: 50%;
+    left: 64%;
+    top: 52%;
     transform: translate(-50%, -50%);   
     border: 1.5px solid #FFD100;
     border-top: none;
