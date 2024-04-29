@@ -1,0 +1,31 @@
+backend:
+  name: github
+  branch: main
+  repo: giuliobarkee/ModenaConsulenza
+  base_url: https://giuliobarkee.pages.dev
+  auth_endpoint: /api/auth
+
+local_backend: true
+
+media_folder: "/public/assets/"
+public_folder: "/assets/"
+
+show_preview_links: false
+search: false
+
+editor:
+    preview: false
+    
+collections:
+  - name: settings
+    label: Settings
+    files:
+      - label: Settings
+        name: settings
+        file: src/content/settings/settings.json
+        fields:
+          - {name: team, widget: list, fields: [
+            {name: title, widget: string},
+            {name: subtitle, widget: string},
+            {name: img, widget: image}
+          ]}

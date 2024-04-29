@@ -1,0 +1,19 @@
+{
+  "team": [
+    {
+      "title": "Luca Prati",
+      "subtitle": "Prova",
+      "img": "/assets/hero4b-right.png"
+    },
+    {
+      "title": "Luca Pratiii",
+      "subtitle": "Commercialista",
+      "img": "/assets/hero4b-left.png"
+    },
+    {
+      "title": "Luca Prati",
+      "subtitle": "Commercialista",
+      "img": "/assets/hero4b-left.png"
+    }
+  ]
+}

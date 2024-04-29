@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import { team } from "@/content/settings/settings.json";
 ---
 
 <Layout title="Modena Consulenza">
@@ -110,6 +111,24 @@ import Layout from "../layouts/Layout.astro";
         </div>
 
         <div class="grid__hero4b2">
+            {
+                team.map((el) => (
+                    <div class="col-25">
+                        <div class="piastrina">
+                            <img src={el.img} alt="" />
+                            <h4>{el.title}</h4>
+                            <p>{el.subtitle}</p>
+                        </div>
+                    </div>
+                ))
+            }
+            <!-- <div class="col-25">
+                <div class="piastrina">
+                    <img src="/assets/hero4b-right.png" alt="" />
+                    <h4>Luca Prati</h4>
+                    <p>Commercialista</p>
+                </div>
+            </div>
             <div class="col-25">
                 <div class="piastrina">
                     <img src="/assets/hero4b-left.png" alt="" />
@@ -123,21 +142,7 @@ import Layout from "../layouts/Layout.astro";
                     <h4>Luca Prati</h4>
                     <p>Commercialista</p>
                 </div>
-            </div>
-            <div class="col-25">
-                <div class="piastrina">
-                    <img src="/assets/hero4b-left.png" alt="" />
-                    <h4>Luca Prati</h4>
-                    <p>Commercialista</p>
-                </div>
-            </div>
-            <div class="col-25">
-                <div class="piastrina">
-                    <img src="/assets/hero4b-right.png" alt="" />
-                    <h4>Luca Prati</h4>
-                    <p>Commercialista</p>
-                </div>
-            </div>
+            </div> -->
         </div>
         <img class="hero4b2-bottom" src="/assets/hero4b2-bottom.png" alt="" />
     </div>
@@ -258,14 +263,14 @@ import Layout from "../layouts/Layout.astro";
         position: absolute;
         bottom: -20%;
         z-index: 10;
-        left: 5.5rem;
+        left: 6%;
     }
     .hero2bright {
         width: 50.5%;
         position: absolute;
         bottom: -20%;
         z-index: 10;
-        right: 7rem;
+        right: 6%;
     }
     .hero3b {
         height: auto;
@@ -424,7 +429,7 @@ import Layout from "../layouts/Layout.astro";
             padding-bottom: 13%;
         }
         .hero2bleft {
-            display: none;
+            /* display: none; */
         }
     }
     @media only screen and (max-width: 768px) {

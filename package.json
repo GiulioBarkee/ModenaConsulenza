@@ -3,9 +3,9 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
+    "dev": "decap-server & astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "decap-server & astro preview"
   },
   "dependencies": {
     "astro": "^4.6.0"
