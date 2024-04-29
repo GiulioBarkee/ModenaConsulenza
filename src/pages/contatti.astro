@@ -31,7 +31,7 @@ import Layout from "../layouts/Layout.astro";
                 <h3>Compila il form con la tua richiesta</h3>
             </div>
             <div class="col-60">
-                <form action="https://api.staticforms.xyz/submit" method="post">
+                <form class="contact-form">
                     <div class="form-grid">
                         <div class="form-group">
                             <input type="text" id="nome" name="nome" required />
@@ -428,4 +428,15 @@ import Layout from "../layouts/Layout.astro";
             });
         });
     });
+    
+
+    const form= document.querySelector(".contact-form")
+
+    if (form) {
+        form.onsubmit = (e) => {
+            const  formData =  new formData(e.target as HTMLFormElement);
+            console.log(formData);
+        }
+    }
+
 </script>
