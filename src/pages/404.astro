@@ -1,45 +1,67 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title='404 - Modena Consulenza'>
-<Header></Header>
-<div class="hero-error">
-    <div class="grid-error">
-        <div class="col-30">
-<a href="" class="button btn-error">TORNA ALLA HOME</a>
-</div>
-<div class="col-70">
-<img src="/public/assets/404.png" alt="">
-</div>
-</div>
-<h4>La pagina che cerchi non è stata trovata</h4>
-</div>
-
-
-<Footer></Footer>
+<Layout title="404 - Modena Consulenza">
+    <div class="hero-error">
+        <div class="grid-error">
+            <div class="col-30">
+                <a href="" class="button btn-error">TORNA ALLA HOME</a>
+            </div>
+            <div class="col-70">
+                <img src="/assets/404.png" alt="" />
+            </div>
+        </div>
+        <h4>La pagina che cerchi non è stata trovata</h4>
+    </div>
 </Layout>
 
 <style>
-    .hero-error{height: auto; background-color: #002169; padding-top: 12rem;}
-   .grid-error{display: flex; height: 100%; width: 100%; }
-   .grid-error .col-30{    display: flex;
-    justify-content: center;
-    align-items: flex-end;}
-.grid-error .col-70{display: flex ; justify-content: center;}
-    .grid-error img{width: 60%;}
- .hero-error h4{width: 80%; color: white; font-size: 4rem; font-weight: 500; text-align: center;     padding: 5rem 0;
-    margin-bottom: 0; margin: 0 auto;}
-    .btn-error{color:#FFD100; background-color: #fff;}
-    .btn-error:hover{transform: scale(1.2); transition: all 0.3s cubic-bezier(.215, .61, .355, 1)}
+    .hero-error {
+        height: auto;
+        background-color: #002169;
+        padding-top: 12rem;
+    }
+    .grid-error {
+        display: flex;
+        height: 100%;
+        width: 100%;
+    }
+    .grid-error .col-30 {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .grid-error .col-70 {
+        display: flex;
+        justify-content: center;
+    }
+    .grid-error img {
+        width: 60%;
+    }
+    .hero-error h4 {
+        width: 80%;
+        color: white;
+        font-size: 4rem;
+        font-weight: 500;
+        text-align: center;
+        padding: 5rem 0;
+        margin-bottom: 0;
+        margin: 0 auto;
+    }
+    .btn-error {
+        color: #ffd100;
+        background-color: #fff;
+    }
+    .btn-error:hover {
+        transform: scale(1.2);
+        transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
 
     @media (max-width: 768px) {
-        .hero-error h4{
-    font-size: 2rem;
-    margin: 0 auto;
-    
+        .hero-error h4 {
+            font-size: 2rem;
+            margin: 0 auto;
+        }
     }
-}
 </style>

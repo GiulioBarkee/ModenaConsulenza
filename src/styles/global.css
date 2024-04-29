@@ -1,0 +1,22 @@
+body {
+    margin: 0 auto;
+    max-width: 1850px;
+}
+
+html {
+    font-family: "Poppins", system-ui, sans-serif;
+    background: #ffffff;
+    background-size: 224px;
+}
+
+code {
+    font-family:
+        Menlo,
+        Monaco,
+        Lucida Console,
+        Liberation Mono,
+        DejaVu Sans Mono,
+        Bitstream Vera Sans Mono,
+        Courier New,
+        monospace;
+}

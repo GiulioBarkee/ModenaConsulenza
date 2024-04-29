@@ -1,17 +1,20 @@
-<footer class="footer">
+---
+const { page } = Astro.props;
+---
+
+<footer class="footer" class:list={{ "contatti-footer": page === "contatti" }}>
     <div class="footer__grid">
         <div class="footer__column">
             <div class="footer__section">
                 <h3>I nostri servizi</h3>
-               
-                    <p>Controllo di gestione</p>
-                    <p>Revisione legale</p>
-                    <p>Transactions (M&A)</p>
-              
+
+                <p>Controllo di gestione</p>
+                <p>Revisione legale</p>
+                <p>Transactions (M&A)</p>
             </div>
         </div>
         <div class="footer__column small">
-            <div class="footer__section ">
+            <div class="footer__section">
                 <h3>Link utili</h3>
                 <ul>
                     <li><a href="">Chi siamo</a></li>
@@ -31,7 +34,7 @@
             </div>
         </div>
         <div class="footer__column medium">
-            <div class="footer__section ">
+            <div class="footer__section">
                 <h3>Orari</h3>
                 <p>Lun - Ven:</p>
                 <p>8.30 - 12.00</p>
@@ -52,158 +55,210 @@
                 <p>info@modenaconsulenza.it</p>
             </div>
         </div>
-   
     </div>
 
     <div class="footer__bottom">
         <div class="grid-footer">
             <div class="col-50">
                 <div class="policy">
-        <p><a href="">Privacy Policy</a></p>
-        <p><a href="">Cookie Policy</a></p>
-        <p>IT03622220360</p>
+                    <p><a href="">Privacy Policy</a></p>
+                    <p><a href="">Cookie Policy</a></p>
+                    <p>IT03622220360</p>
+                </div>
+            </div>
+            <div class="col-50">
+                <div class="copy">
+                    <p>© 2024 Modena Consulenza | All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
     </div>
-    </div>
-    <div class="col-50">
-        <div class="copy">
-        <p>© 2024 Modena Consulenza | All Rights Reserved</p>
-    </div>
-    </div>
-    </div>
-    </div>
-    <img class="ModenaConsulenza-footer" src="/public/assets/ModenaConsulenza-footer.png" alt="">
+    <img
+        class="ModenaConsulenza-footer"
+        src="/assets/ModenaConsulenza-footer.png"
+        alt=""
+    />
 </footer>
 
 <style is:global>
     .footer {
-    background-color: #00194F;
-    color: white;
-    padding: 40px 20px;
-    position: relative;
-    min-height: 75vh;
-    height: auto;
+        background-color: #00194f;
+        color: white;
+        padding: 40px 20px;
+        position: relative;
+        min-height: 75vh;
+        height: auto;
         display: flex;
-}
-
-.grid-footer{width: 100%; margin: 0 auto;  display: flex; flex-flow: row; flex-wrap: wrap; position: relative;; max-width: 1850px;}
-.policy{display: flex ; align-items: center; height: 100%; padding-left: 3.5rem; gap: 1.5rem; font-weight: 200; font-size: 0.9rem; white-space: nowrap;}
-.copy{display: flex ;align-items: center; justify-content: flex-end; padding-right: 3rem ; height: 100%; font-weight: 200; font-size: 0.9rem; }
-.footer a {color: white; text-decoration: none;}
-
-.footer__grid {
-    display: flex;
-    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
-    gap: 2rem;
-    padding: 8rem 0;
-    text-align: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding-top: 15.5rem;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    width: 96%;
-    font-size: 1.1rem;
-}
-
-.footer__column {
-    display: flex;
-    flex-direction: column;
-    width: 14.5rem;
-    text-align: left;
-    flex-wrap: wrap;
-    max-height: 100%;
-}
-
-.small{width: 8rem;}
-.medium{width: 10rem;}
-.medium2{width: 11.5rem;}
-
-.footer__section {
-    margin-bottom: 20px;
-    line-height: 130%;
-}
-
-.footer__section h3 {
-    font-size: 1rem;
-    margin-bottom: 2rem;
-    font-weight: 200;
-}
-
-.footer__section p{
-    font-weight: 300;
-}
-
-.footer__section p,
-.footer__section a {
-    margin-bottom: 20px;
-    line-height: 120%;}
-
-.footer__section ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-
-.footer__section ul li a {
-    color: white;
-    text-decoration: none;
-    line-height: 130%;
-    display: inline-block;
-}
-
-.footer__bottom {
-    margin-top: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: #001D5C;
-    bottom: 0; 
-    left: 0; 
-    right: 0; 
-    padding: 20px; 
-    position: absolute;
-    height: 3rem;
-    z-index: 10;
-}
-
-.footer__bottom p {
-    margin: 0;
-}
-
-.footer__bottom a {
-    color: white;
-    text-decoration: none;
-}
-
-.ModenaConsulenza-footer{width: 100%; position: absolute; bottom: 4.5rem; left:0;  }
-@media (max-width: 768px) {
-  .footer__column{width: 80%; text-align: center; padding: auto 0; margin: auto 0;}
-  .footer__grid{padding-top: 8rem;}
-  .footer__section{margin-bottom: 0;}
-  .policy{padding-left: 0;}
-}
-
-.contatti-footer,
-.contatti-footer .footer__grid{padding: 0; margin: 0 auto; height: 90%; }
-.contatti-footer{min-height: 60vh; height: 60vh;}
-@media (max-width: 1384px) {
-    .contatti-footer{min-height: 60vh;
-    height: auto;
-    padding-bottom: 8rem;}
-    .contatti-footer .footer__grid{padding-top: 3rem;}
-}
-</style>
-
-<script>window.addEventListener('DOMContentLoaded', () => {
-    // Verifica se la pagina corrente è la pagina dei contatti
-    const isContattiPage = window.location.pathname.includes('contatti');
-
-    if (isContattiPage) {
-        // Se la pagina è quella dei contatti, aggiungi una classe al footer
-        const footer = document.querySelector('.footer');
-        footer.classList.add('contatti-footer');
     }
-});
-</script>
+
+    .grid-footer {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-flow: row;
+        flex-wrap: wrap;
+        position: relative;
+        max-width: 1850px;
+    }
+    .policy {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding-left: 3.5rem;
+        gap: 1.5rem;
+        font-weight: 200;
+        font-size: 0.9rem;
+        white-space: nowrap;
+    }
+    .copy {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-right: 3rem;
+        height: 100%;
+        font-weight: 200;
+        font-size: 0.9rem;
+    }
+    .footer a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .footer__grid {
+        display: flex;
+        /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+        gap: 2rem;
+        padding: 8rem 0;
+        text-align: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-top: 15.5rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        width: 96%;
+        font-size: 1.1rem;
+    }
+
+    .footer__column {
+        display: flex;
+        flex-direction: column;
+        width: 14.5rem;
+        text-align: left;
+        flex-wrap: wrap;
+        max-height: 100%;
+    }
+
+    .small {
+        width: 8rem;
+    }
+    .medium {
+        width: 10rem;
+    }
+    .medium2 {
+        width: 11.5rem;
+    }
+
+    .footer__section {
+        margin-bottom: 20px;
+        line-height: 130%;
+    }
+
+    .footer__section h3 {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+        font-weight: 200;
+    }
+
+    .footer__section p {
+        font-weight: 300;
+    }
+
+    .footer__section p,
+    .footer__section a {
+        margin-bottom: 20px;
+        line-height: 120%;
+    }
+
+    .footer__section ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer__section ul li a {
+        color: white;
+        text-decoration: none;
+        line-height: 130%;
+        display: inline-block;
+    }
+
+    .footer__bottom {
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        background-color: #001d5c;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 20px;
+        position: absolute;
+        height: 3rem;
+        z-index: 10;
+    }
+
+    .footer__bottom p {
+        margin: 0;
+    }
+
+    .footer__bottom a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .ModenaConsulenza-footer {
+        width: 100%;
+        position: absolute;
+        bottom: 4.5rem;
+        left: 0;
+    }
+    @media (max-width: 768px) {
+        .footer__column {
+            width: 80%;
+            text-align: center;
+            padding: auto 0;
+            margin: auto 0;
+        }
+        .footer__grid {
+            padding-top: 8rem;
+        }
+        .footer__section {
+            margin-bottom: 0;
+        }
+        .policy {
+            padding-left: 0;
+        }
+    }
+
+    .contatti-footer,
+    .contatti-footer .footer__grid {
+        padding: 0;
+        margin: 0 auto;
+        height: 90%;
+    }
+    .contatti-footer {
+        min-height: 60vh;
+        height: 60vh;
+    }
+    @media (max-width: 1384px) {
+        .contatti-footer {
+            min-height: 60vh;
+            height: auto;
+            padding-bottom: 8rem;
+        }
+        .contatti-footer .footer__grid {
+            padding-top: 3rem;
+        }
+    }
+</style>
