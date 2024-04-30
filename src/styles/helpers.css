@@ -78,15 +78,17 @@ align-items: center;}
  ; margin: 0 auto;  display: flex; flex-flow: row; flex-wrap: wrap; position: relative;; max-width: 1850px; padding-top: 18rem;}
   .grid__b{margin: 0 auto;  display: flex; flex-flow: row; flex-wrap: wrap; position: relative; height: auto;
     padding-top: 15rem;; max-width: 1850px;}
-  .gridb__hero2b{    margin-left: 30rem;
+  .gridb__hero2b{
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
     position: relative;
     min-height: 30vh;
     max-width: 800px;
-    gap: 1rem;
-    max-width: 1850px;}
+    gap: 1.5rem;
+    max-width: 1850px;
+    margin-left: 24%;
+  margin-top: 2rem;}
  
 .grid__hero4b{width: 48%;
   display: flex;
@@ -107,7 +109,7 @@ align-items: center;}
 
 .grid__servizi-bottom{max-width: 100%; height: auto; display: flex; flex-wrap: wrap; padding: 10rem 5rem ; padding-bottom: 5rem;}
      
- .grid__hero1c{margin: 0 auto;  display: flex;flex-flow: row;flex-wrap: wrap;position: relative;width: 75%;margin-top: 90px;margin-right: 0px; max-width: 1850px;}
+ .grid__hero1c{margin: 0 auto;  display: flex;flex-flow: row;flex-wrap: wrap;position: relative;width: 75%;margin-top: 3.5rem;margin-right: 0px; max-width: 1850px;}
  .grid--hero7 .col-40{padding-top: 4.5rem;}
 
       @media (max-width: 768px) {
@@ -163,7 +165,9 @@ align-items: center;}
 .absolute{position: absolute; width: 100%;}
 .none{display: none;}
 .zero__opacity{opacity: 0;}
-.border-left{border-left: 1px solid #FFD100;}
+.border-left{border-left: 1px solid #FFD100; }
+.m-left{margin-left: 30%;}
+.m2-left{margin-left: 15%;}
 
 .scale{    position: relative;
   object-fit: cover;
