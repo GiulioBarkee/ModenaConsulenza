@@ -176,7 +176,8 @@ column-gap: 4rem;}
   width: 100%;
   height: 100%;
   border: 1px solid #FFD100;
-  border-top: none;}
+  border-top: none;
+transform: scale(0.8);}
 
 
 
@@ -240,6 +241,8 @@ column-gap: 4rem;}
       height: auto;
       
     }
+
+    .studiotrain {padding-bottom: 2rem;}
 .frecciaright{bottom: 1rem;}
     .hero7 .grid--hero7 p{text-align: center; margin: 0 auto;}
     .hero7 .grid--hero7{margin-top: -12rem!important; margin-bottom: -2rem;}
