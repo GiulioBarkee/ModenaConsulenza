@@ -122,7 +122,7 @@ column-gap: 4rem;}
         .grid__hero4b{left: 0; top: -9rem}
         .grid--hero6{margin-bottom: 0;}
         .grid--hero6b{padding-bottom: 9rem;}
-        .containerp{padding: 0 2rem!important; }
+        .containerp{padding: 0!important; }
         .grid--hero7 .col-40{padding-top: 0}
       }
 /* .col{ flex: 1;} */
