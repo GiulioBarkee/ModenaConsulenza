@@ -215,7 +215,7 @@ import Layout from "../layouts/Layout.astro";
             <div class="col-45 relative">
                 <div class="scale pt-3">
                     <a href=""><img class="studiotrain" src="/assets/studiotrain.png" alt="" /> </a>
-                    <a href=""><img class="frecciaright" src="/assets/frecciaright.png" alt=""></a>
+                 <img class="frecciaright" src="/assets/frecciaright.png" alt="">
                 </div>
                 
             </div>
@@ -266,7 +266,9 @@ import Layout from "../layouts/Layout.astro";
         right: 48%;
     }
 
-    .frecciaright{position: absolute; width: 20px; height: 20px;}
+    .frecciaright{    left: 50%!important;
+    transform: translateX(-50%)!important;
+    z-index: -10!important}
 
     .hero2 {
         background-color: white;
