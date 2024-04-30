@@ -88,7 +88,8 @@ align-items: center;}
     gap: 1.5rem;
     max-width: 1850px;
     margin-left: 24%;
-  margin-top: 2rem;}
+  margin-top: 2rem;
+column-gap: 4rem;}
  
 .grid__hero4b{width: 48%;
   display: flex;
@@ -99,7 +100,7 @@ align-items: center;}
   left: 47%;
   top: -18rem; gap: 3.5rem}
 .grid__hero4b2{max-width: 84%!important; margin: 0 auto; display: flex; flex-wrap: wrap; max-width: 1850px;  position: relative; top: -13rem; justify-content: space-between; margin-right: 5.5rem; margin-bottom: -11.5rem;}
-
+.text-blue{color: #002169;}
 @media (max-width: 768px) {
   .grid__hero4b2{margin: 0 auto;
     margin-top: 7rem;
@@ -107,7 +108,8 @@ align-items: center;}
 }}
 
 
-.grid__servizi-bottom{max-width: 100%; height: auto; display: flex; flex-wrap: wrap; padding: 10rem 5rem ; padding-bottom: 5rem;}
+.grid__servizi-bottom{max-width: 100%; height: auto; display: flex; flex-wrap: wrap; padding-bottom: 5rem;     width: 88%;
+  margin: 0 auto; padding-top: 19rem}
      
  .grid__hero1c{margin: 0 auto;  display: flex;flex-flow: row;flex-wrap: wrap;position: relative;width: 75%;margin-top: 3.5rem;margin-right: 0px; max-width: 1850px;}
  .grid--hero7 .col-40{padding-top: 4.5rem;}
@@ -235,7 +237,7 @@ align-items: center;}
 
       .grid--hero7 a {
         position: static;
-        margin: 6% auto;
+        margin: 8% auto;
       height: auto;
       
     }

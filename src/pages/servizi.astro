@@ -28,7 +28,7 @@ import Layout from "../layouts/Layout.astro";
           <div class="card__img">
             <img src="/assets/01.png" alt="" />
           </div>
-          <h4>Controllo <br /> di gestione</h4>
+          <h4 class="text-blue">Controllo di<br /> gestione</h4>
           <p>
             Assistiamo le imprese nel definire budget e rendiconti per
             accrescere la loro competitività ed efficienza nel mercato odierno.
@@ -68,7 +68,7 @@ import Layout from "../layouts/Layout.astro";
     </div>
   </div>
 
-  <h3 class="title-accordion">Controllo <br /> di gestione</h3>
+  <h3 class="title-accordion" data-state="+">Controllo <br /> di gestione</h3>
   <div class="content-accordion">
     <p class="uno-acc">
       La nostra partnership con Studio Train, verticalizzato in CDG, ci ha
@@ -97,7 +97,7 @@ import Layout from "../layouts/Layout.astro";
           </p>
         </div>
       </div>
-      <div class="col-40">
+      <div class="col-40 ultima-col">
         <div>
           <p>
             Potrai analizzare la produttività dei tuoi clienti e conoscere i
@@ -105,10 +105,14 @@ import Layout from "../layouts/Layout.astro";
           </p>
         </div>
       </div>
+    
+      <img class="acc-1-img" src="/assets/acc-1.png" alt="" />
+
     </div>
-    <img class="acc-1-img" src="/assets/acc-1.png" alt="" />
+  
   </div>
 
+  <div class="space"></div>
   <div class="cover__wallet relative">
     <img src="/assets/hero5-img.png" alt="" />
     <h4>Il servizio Easy Wallet</h4>
@@ -148,7 +152,7 @@ import Layout from "../layouts/Layout.astro";
           </p>
         </div>
       </div>
-      <div class="col-40">
+      <div class="col-40 ultima-col">
         <div>
           <p>
             Contribuiamo alla stabilità e al successo della tua azienda,
@@ -177,7 +181,7 @@ import Layout from "../layouts/Layout.astro";
       <div class="col-40">
         <div class="border-left m2-left">
           <h4>50+</h4>
-          <p>Lorem ipsum dolor sit</p>
+          <p class="p-cella">Lorem ipsum dolor sit</p>
         </div>
       </div>
       <div class="col-40">
@@ -188,7 +192,7 @@ import Layout from "../layouts/Layout.astro";
           </p>
         </div>
       </div>
-      <div class="col-40">
+      <div class="col-40 ultima-col">
         <div>
           <p>
             Il nostro approccio prevede un’agilità decisionale maggiore e il
@@ -203,17 +207,17 @@ import Layout from "../layouts/Layout.astro";
 
   <div class="grey-servizi">
     <div class="grid__servizi-bottom">
-      <div class="col-50">
+      <div class="col-55">
         <h3>Scopri i servizi aggiunti di Modena Consulenza</h3>
       </div>
-      <div class="col-50">
+      <div class="col-45">
         <p class="p-secondo">
           Il nostro studio di commercialisti copre anche le richieste di privati
           e liberi professionisti erogando servizi ordinari.
         </p>
       </div>
       <div class="col-50">
-        <h4 class="title-accordion">Servizi ordinari</h4>
+        <h4 class="title-accordion">Servizi<br>ordinari</h4>
         <div class="content-accordion">
           <ul>
             <li>Assistenza contabile e amministrativa</li>
@@ -227,7 +231,7 @@ import Layout from "../layouts/Layout.astro";
         </div>
       </div>
       <div class="col-50">
-        <h4 class="title-accordion yellow-acc">Liberi professionisti</h4>
+        <h4 class="title-accordion ">Liberi<br>professionisti</h4>
         <div class="content-accordion">
           <li>Elaborazione dati contabili</li>
           <li>Elaborazione dichiarazione dei redditi</li>
@@ -235,6 +239,7 @@ import Layout from "../layouts/Layout.astro";
         </div>
       </div>
     </div>
+    <div class="ultima-cover-wallet">
     <div class="cover__wallet relative">
       <img src="/assets/hero5-img.png" alt="" />
       <h4>Non conosci i costi di gestione della tua azienda?</h4>
@@ -245,12 +250,21 @@ import Layout from "../layouts/Layout.astro";
       <a href="" class="button__hero5">CONTATTACI</a>
     </div>
   </div>
+  </div>
 
   <style>
+    .grid__servizi-bottom .col-45{display: flex;
+    align-items: center;}
+    .grid__servizi-bottom .title-accordion {margin: 3rem 0};
 
+
+    .ultima-col{flex-grow: 1;
+    padding-right: 12%;}
+.space{margin-bottom: 3rem  ;}
     .p-cella{font-size: 1.5rem!important; font-weight: 500; padding-top: 0!important;}
     .yellow-acc {
       color: #ffd100;
+      border-bottom: none!important
     }
     .card h4 {
       margin: 0 auto;
@@ -263,7 +277,7 @@ import Layout from "../layouts/Layout.astro";
     .hero1c h2 {
       margin-left: 5.5rem;
       margin-top: 210px;
-      font-size: 5.8rem;
+      font-size: 5.5rem;
       width: 44%;
       font-weight: 500;
       line-height: 90px;
@@ -322,7 +336,7 @@ import Layout from "../layouts/Layout.astro";
 
     .gridb__hero2b h4 {
       text-align: left;
-      font-size: clamp(2rem, 1rem + 5vw, 9rem);
+      font-size: clamp(3rem, 1rem + 8vw, 7rem);
       margin: 0;
       padding: 0 2rem;
       font-weight: 500;
@@ -335,7 +349,7 @@ import Layout from "../layouts/Layout.astro";
     /* ! Accordion */
     .title-accordion {
       cursor: pointer;
-      padding-bottom: 3rem;
+      padding-bottom: 1rem;
       margin-bottom: 0;
       position: relative;
       width: 80%;
@@ -365,6 +379,7 @@ import Layout from "../layouts/Layout.astro";
     .due::before {
       background-image: url(/assets/02y.png);
       width: 213px;
+      background-color: ;
     }
 
     .tre::before {
@@ -374,7 +389,7 @@ import Layout from "../layouts/Layout.astro";
     .title-accordion:after {
       content: " +  ";
       position: absolute;
-      top: 30px;
+
       right: 10px;
       height: 30px;
       width: 30px;
@@ -405,7 +420,8 @@ import Layout from "../layouts/Layout.astro";
     font-weight: 400;
     line-height: 110%;
     margin-bottom: 2rem;
-  line-height: 140%;}
+  line-height: 140%;
+padding-left: 80px!important;}
 
     .content-accordion--show {
       max-height: 950px;
@@ -415,42 +431,48 @@ import Layout from "../layouts/Layout.astro";
     }
 
     .acc-1-img {
-      width: 56%;
-      height: auto;
-      border-radius: 40px;
-      margin: 5% auto;
-      display: flex;
+      width: 94%;
+    height: auto;
+    border-radius: 10px;
+    margin: 1% auto;
+    display: flex;
+    margin-left: 40px;
+    max-width: 1000px;
     }
     .bottom-img {
-      width: 80%;
+      width: 88%;
       height: auto;
-      border-radius: 40px;
+      border-radius: 10px;
       margin: 5% auto;
       display: flex;
+      bottom: -4rem;
+    position: relative;
     }
 
     .grey-servizi {
       min-height: 70vh;
       height: auto;
       background-color: #edeef0;
-      margin-top: -12rem;
+      margin-top: -17rem;
+      margin-bottom: -16rem;
     }
     .grey-servizi .title-accordion {
-      font-size: 1.3rem;
+      font-size: 2.5rem;
       font-weight: 500;
       padding-top: 1.8rem;
+      border-bottom: 1px solid #002169;
     }
     .grey-servizi h3 {
-      font-size: clamp(1.5rem, 1rem + 5vw, 2.2rem);
+      font-size: clamp(1.5rem, 1rem + 5vw, 3.2rem);
       font-weight: 500;
       line-height: 110%;
+      width: 85%;
     }
 
     .p-secondo {
-      padding-top: 1.5rem;
-      font-size: 0.8rem;
-      width: 80%;
-      padding-left: 5rem;
+      font-size: 1.1rem;
+    width: 95%;
+    padding-left: 4rem;
     }
 
     .grey-servizi .content-accordion {
@@ -569,33 +591,54 @@ import Layout from "../layouts/Layout.astro";
         margin: 0 auto;
       }
     }
+    .title-accordion.minus::after {
+  content: " - ";
+}
+
+.ultima-cover-wallet{    z-index: 10;
+    position: relative;
+    margin-top: 8.5rem;}
+    .ultima-cover-wallet h4{    width: 70% !important;}
+    .ultima-cover-wallet h4,
+    .ultima-cover-wallet p{color: #002169;}
+
   </style>
 
-  <script>
-    /* -------------------------------------------------------------------------------- */
-    /* ! Accordion */
-    /* -------------------------------------------------------------------------------- */
+<script>
+// Seleziona tutti gli elementi con la classe "title-accordion"
+let accordions = document.querySelectorAll(".title-accordion");
 
-    let accordions = document.querySelectorAll(".title-accordion");
+// Itera su ciascun elemento "title-accordion"
+accordions.forEach((accordion, i) => {
+  // Aggiungi un gestore di eventi per il clic su ciascun elemento "title-accordion"
+  accordion.addEventListener("click", function () {
+    // Seleziona l'elemento successivo (il contenuto dell'accordion)
+    let nextElement = accordion.nextElementSibling;
 
-    accordions.forEach((accordion, i) => {
-      accordion.addEventListener("click", function () {
-        // add show to clicked element
-        let nextElement = accordion.nextElementSibling;
-
-        if (nextElement.classList.contains("content-accordion--show")) {
-          nextElement.classList.remove("content-accordion--show");
-          accordion.classList.remove("accordion-opened"); // Rimuovi la classe aggiuntiva quando l'accordion è chiuso
-        } else {
-          // remove show to all elements
-          accordions.forEach((item, i) => {
-            item.nextElementSibling.classList.remove("content-accordion--show");
-            item.classList.remove("accordion-opened"); // Rimuovi la classe aggiuntiva per tutti gli altri accordion
-          });
-          nextElement.classList.add("content-accordion--show");
-          accordion.classList.add("accordion-opened"); // Aggiungi una classe aggiuntiva quando l'accordion è aperto
-        }
+    // Controlla se l'accordion è aperto o chiuso
+    if (nextElement.classList.contains("content-accordion--show")) {
+      // Nascondi il contenuto dell'accordion
+      nextElement.classList.remove("content-accordion--show");
+      // Rimuovi le classi "minus" e "yellow-acc" dall'elemento "title-accordion"
+      accordion.classList.remove("minus");
+      accordion.classList.remove("yellow-acc");
+    } else {
+      // Nascondi tutti gli altri accordion e mostra solo il contenuto dell'accordion corrente
+      accordions.forEach((item, i) => {
+        item.nextElementSibling.classList.remove("content-accordion--show");
+        item.classList.remove("minus");
+        item.classList.remove("yellow-acc");
       });
-    });
-  </script>
+      nextElement.classList.add("content-accordion--show");
+      // Aggiungi le classi "minus" e "yellow-acc" all'elemento "title-accordion"
+      accordion.classList.add("minus");
+      accordion.classList.add("yellow-acc");
+    }
+  });
+});
+
+
+</script>
+
+
 </Layout>
