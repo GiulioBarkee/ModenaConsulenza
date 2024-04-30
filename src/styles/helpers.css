@@ -240,8 +240,10 @@ transform: scale(0.8);}
         margin: 8% auto;
       height: auto;
       
+      
     }
 
+    .fix120{height: 120%!important;}
     .studiotrain {padding-bottom: 2rem;}
 .frecciaright{bottom: 1rem;}
     .hero7 .grid--hero7 p{text-align: center; margin: 0 auto;}
