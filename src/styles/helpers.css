@@ -300,7 +300,8 @@ transform: scale(0.8);}
       .containerp{display: flex; flex-flow: column; height: 50%; justify-content: flex-end; padding: 4rem;}
 
       @media (max-width: 768px) {
-        .containerh4{padding:2rem}
+        .containerh4{ padding: 1rem 0;
+        }
         .cardetta{padding: 1.5rem;}
       }
       @media screen and (min-width: 768px) and (max-width: 1050px) {
