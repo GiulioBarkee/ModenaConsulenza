@@ -108,7 +108,7 @@ column-gap: 4rem;}
 }}
 
 
-.grid__servizi-bottom{max-width: 100%; height: auto; display: flex; flex-wrap: wrap; padding-bottom: 5rem;     width: 88%;
+.grid__servizi-bottom{max-width: 100%; height: auto; display: flex; flex-wrap: wrap;   width: 88%;
   margin: 0 auto; padding-top: 19rem}
      
  .grid__hero1c{margin: 0 auto;  display: flex;flex-flow: row;flex-wrap: wrap;position: relative;width: 75%;margin-top: 3.5rem;margin-right: 0px; max-width: 1850px;}
@@ -231,12 +231,11 @@ transform: scale(0.8);}
     @media (max-width: 768px) {
       .cover__wallet{height: auto; width: 82%!important; display: flex;
         flex-flow: column;}
-      .cover__wallet h4{font-size: clamp(1.5rem,1rem + 4vw ,2.5rem) !important;}
+      .cover__wallet h4{font-size:2rem!important;}
       .hero5b .cover__wallet h4{font-size: clamp(1.5rem,1rem + 4vw ,2rem) !important;}
       .grid--hero7 p{padding-left: 0;}
 
       .grid--hero7 a {
-        position: static;
         margin: 8% auto;
       height: auto;
       
@@ -265,7 +264,7 @@ transform: scale(0.8);}
 
 
     /* card */
-    .card{box-shadow: 0 5px 20px rgba(0,0,0,.1);border-radius: 20px;overflow: hidden;margin: 4% auto ; min-height: 25rem;
+    .card{box-shadow: 0 5px 20px rgba(0,0,0,.1);border-radius: 20px;overflow: hidden;margin: 4% auto ; ;
       height: 100%;width: 90%;  display: block;background-position: center center;background-size:cover}
 
       @media (max-width: 768px) {

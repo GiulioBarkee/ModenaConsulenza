@@ -68,7 +68,7 @@ import Layout from "../layouts/Layout.astro";
     </div>
   </div>
 
-  <h3 class="title-accordion" data-state="+">Controllo <br /> di gestione</h3>
+  <h3 class="title-accordion mt-15" data-state="+">Controllo <br /> di gestione</h3>
   <div class="content-accordion">
     <p class="uno-acc">
       La nostra partnership con Studio Train, verticalizzato in CDG, ci ha
@@ -277,7 +277,7 @@ import Layout from "../layouts/Layout.astro";
     .hero1c h2 {
       margin-left: 5.5rem;
       margin-top: 210px;
-      font-size: 5.5rem;
+      font-size: clamp(3rem, 1rem + 6vw,5.5rem);
       width: 44%;
       font-weight: 500;
       line-height: 90px;
@@ -294,7 +294,7 @@ import Layout from "../layouts/Layout.astro";
     }
     .hero1c .card {
       min-height: 330px;
-      height: 330px;
+      height: auto;
       display: flex;
     flex-flow: column;
     justify-content: space-between;
@@ -447,6 +447,7 @@ padding-left: 80px!important;}
       display: flex;
       bottom: -4rem;
     position: relative;
+    margin-top: 0;
     }
 
     .grey-servizi {
@@ -457,7 +458,7 @@ padding-left: 80px!important;}
       margin-bottom: -16rem;
     }
     .grey-servizi .title-accordion {
-      font-size: 2.5rem;
+      font-size: 2rem;
       font-weight: 500;
       padding-top: 1.8rem;
       border-bottom: 1px solid #002169;
@@ -483,9 +484,19 @@ padding-left: 80px!important;}
       bottom: 5rem;
     }
 
+    .ultima-cover-wallet{    z-index: 10;
+    position: relative;
+    margin-top: 8.5rem;}
+    .ultima-cover-wallet h4{    width: 70% !important;}
+    .ultima-cover-wallet h4,
+    .ultima-cover-wallet p{color: #002169;}
+
+
     @media (max-width: 768px) {
       .grey-servizi h3 {
         text-align: center;
+        margin: 0 auto;
+        padding-bottom: 3rem;
       }
       .p-secondo {
         margin: 0 auto;
@@ -495,9 +506,10 @@ padding-left: 80px!important;}
       }
       .acc-1-img {
         width: 80%;
+        margin-top: -3rem;
       }
       .hero1c h2 {
-        font-size: 2.5rem;
+        font-size: 2rem;
         line-height: 50px;
         margin: 0 auto;
         width: 80%;
@@ -530,14 +542,14 @@ padding-left: 80px!important;}
         position: static;
         width: 100%;
         margin-top: 30px;
-        padding-top: 5rem;
+        /* padding-top: 5rem; */
       }
 
       .col-33 {
         width: 100%!important;
       }
       .hero1c .card {
-        height: 230px;
+        height: auto;
         min-height: 250px;
       }
       .card h4 {
@@ -589,18 +601,37 @@ padding-left: 80px!important;}
         gap: 0;
         width: 90%;
         margin: 0 auto;
+        row-gap: 3rem;
       }
+      .title-accordion{font-size: 1.5rem; margin: 2rem; }
+
+      .title-accordion::before{    top: -80%;
+    transform: scale(0.3)}
+    .space{margin-bottom: 0;}
+    .mt-15{margin-top: 15rem;}
+    .m-left,
+    .m2-left{margin-left: 0rem;}
+
+.uno-acc{padding-left: 0rem!important;}
+.content-accordion p{padding: 0; padding-bottom: 2.5rem; font-size: 1rem;}
+.p-cella{font-size: 0.8rem!important; padding: 0 1rem !important;}
+
+.grid__servizi-bottom{margin-top: 11.5rem; padding-top: 8rem; }
+.bottom-img{bottom: 0}
+
+.grid__servizi-bottom .title-accordion{ margin-top: 0; }
+.grey-servizi .title-accordion{font-size: 1.5rem; margin: 0 auto;}
+.ultima-cover-wallet{  
+    margin-top: 4.5rem;}
+  
+    .grey-servizi h3{font-size: 2rem}
+
+
     }
     .title-accordion.minus::after {
   content: " - ";
 }
 
-.ultima-cover-wallet{    z-index: 10;
-    position: relative;
-    margin-top: 8.5rem;}
-    .ultima-cover-wallet h4{    width: 70% !important;}
-    .ultima-cover-wallet h4,
-    .ultima-cover-wallet p{color: #002169;}
 
   </style>
 
