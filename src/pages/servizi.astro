@@ -371,10 +371,16 @@ import Layout from "../layouts/Layout.astro";
     }
 
     @media (max-width: 768px) {
-      .title-accordion{    width: calc(100% - 11rem);
+      .title-accordion{    
+        /* width: calc(100% - 11rem); */
         margin: 2rem auto !important;}
 
+        .grey-servizi .title-accordion{width: 100%!important;}
+
+        /* .grid__servizi-bottom{width: 89%; margin: 0 auto;} */
+
     }
+
 
 
     .title-accordion::before {
@@ -595,6 +601,7 @@ padding-left: 80px!important;}
         transform: translateX(0);
         position: static;
         margin: 0 auto;
+        margin-bottom: 14rem;
       }
 
       .cover__wallet {
