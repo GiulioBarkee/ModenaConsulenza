@@ -70,8 +70,9 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    max-width: 1700px;
+    max-width: calc(1700px - 9rem)
   }
+  .scroll-down .header__content{max-width: 1700px;}
   .header .button {
     border-radius: 18px;
     white-space: nowrap;
@@ -135,8 +136,11 @@
   }
   .header__menu li a:hover {
     text-decoration: underline;
+    text-underline-offset: 6px !important;
+    text-decoration-thickness: 2px !important;
+}
     
-  }
+
   @media (max-width: 768px) {
     .header__menu {
       position: absolute;
