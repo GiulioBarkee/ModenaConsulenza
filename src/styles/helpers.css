@@ -62,7 +62,7 @@
 
 }
 @media (max-width: 768px) {
- .hero1c .grid--card{margin-left: 0; margin-right: 0; margin: 0 auto!important; width: 89%!important;  width: calc(100% - 11rem);}
+ .hero1c .grid--card{margin-left: 0; margin-right: 0; margin: 0 auto!important; width: 84%!important;  width: calc(100% - 11rem);}
 }
 
 @media (max-width: 412px) {
@@ -214,11 +214,18 @@ padding-bottom: 45px;}
       font-weight: 500;
       margin-top: 6rem;
       line-height: 135%; margin-bottom: 2.5rem;}
+
+
   .cover__wallet p{   width: 48%;
       margin-left: 7rem;
       font-size: 1.13rem;
   margin-bottom: 6rem;}
   
+
+  @media (max-width: 768px) {
+    .cover__wallet h4{font-size: 2rem; width: 100%!important;};
+    .cover__wallet p{font-size: 1rem;}
+  }
   .button__hero5{    position: absolute;
       right: 7%;
       bottom: 6rem;}
@@ -241,7 +248,7 @@ padding-bottom: 45px;}
     /*cover waller*/
     .cover__wallet{width: calc(100% - 11rem)!important; border-radius: 40px;  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); height: auto; margin: 0 auto; overflow: hidden; margin-left: 5.5rem; margin-right: 5.5rem;}
     @media (max-width: 768px) {
-      .cover__wallet{height: auto; width: 82%!important; display: flex;
+      .cover__wallet{height: auto; width: 84%!important; display: flex;
         flex-flow: column; margin: 0 auto!important;
       .cover__wallet h4{font-size:2rem!important;}
       .hero5b .cover__wallet h4{font-size: clamp(1.5rem,1rem + 4vw ,2rem) !important;}
@@ -284,7 +291,8 @@ padding-bottom: 45px;}
 
       @media (max-width: 768px) {
         .card,
-        .cover__wallet{height: auto ; transform: scale(0.9);}
+        .cover__wallet{height: auto ;}
+        .cover__wallet img{width: 0;}
       }
 .card__img img{
     display: block;

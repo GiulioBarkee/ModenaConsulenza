@@ -29,3 +29,59 @@ const { title, page } = Astro.props;
 		<Footer {page} />
 	</body>
 </html>
+
+
+<script>
+
+window.addEventListener('DOMContentLoaded', function() {
+    const imgContainer = document.querySelector('.img-container');
+
+    function adjustBorderRadius() {
+        if (window.innerWidth < 1700) {
+            imgContainer.style.borderBottomRightRadius = '0';
+        } else {
+            imgContainer.style.borderBottomRightRadius = '';
+        }
+    }
+
+    adjustBorderRadius(); // Chiama la funzione all'avvio per impostare inizialmente la proprietà
+
+    window.addEventListener('resize', adjustBorderRadius); // Aggiungi un listener per aggiornare la proprietà quando la finestra viene ridimensionata
+});
+
+window.addEventListener('DOMContentLoaded', function() {
+    const heroImage = document.querySelector('.hero1 img');
+
+    function adjustBorderRadius() {
+        if (window.innerWidth > 1700) {
+            heroImage.style.borderTopLeftRadius = '30px';
+            heroImage.style.borderBottomLeftRadius = '30px';
+        } else {
+            heroImage.style.borderTopLeftRadius = '';
+            heroImage.style.borderBottomLeftRadius = '';
+        }
+    }
+
+    adjustBorderRadius(); // Chiama la funzione all'avvio per impostare inizialmente le proprietà
+
+    window.addEventListener('resize', adjustBorderRadius); // Aggiungi un listener per aggiornare le proprietà quando la finestra viene ridimensionata
+});
+
+window.addEventListener('DOMContentLoaded', function() {
+    const col35Image = document.querySelector('.col-35 img');
+
+    function adjustBorderRadius() {
+        if (window.innerWidth > 1700) {
+            col35Image.style.borderTopRightRadius = '20px';
+        } else {
+            col35Image.style.borderTopRightRadius = '';
+        }
+    }
+
+    adjustBorderRadius(); // Chiama la funzione all'avvio per impostare inizialmente la proprietà
+
+    window.addEventListener('resize', adjustBorderRadius); // Aggiungi un listener per aggiornare la proprietà quando la finestra viene ridimensionata
+});
+
+
+</script>
