@@ -3,7 +3,9 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Modena Consulenza">
+    
     <div class="hero pt-hero">
+        <div class="contain">
         <div class="grid--hero">
             <div class="col-65">
                 <div class="contenuto-left">
@@ -30,8 +32,11 @@ import Layout from "../layouts/Layout.astro";
             <img src="/assets/frecciadown.png" alt="" />
         </a>
     </div>
+    </div>
 
     <div class="hero2" id="hero2">
+
+        <div class="contain">
         <div class="grid">
             <div class="col-50 col-left mt-tresei">
                 <h2 class="hero2-servizi">
@@ -43,8 +48,11 @@ import Layout from "../layouts/Layout.astro";
             <div class="col-50"></div>
         </div>
     </div>
+    </div>
 
     <div class="hero3">
+        <div class="contain">
+
         <div class="grid">
             <div class="col-35"></div>
             <div class="col-60 obiettivo">
@@ -58,8 +66,10 @@ import Layout from "../layouts/Layout.astro";
             </div>
         </div>
     </div>
+    </div>
 
     <div class="hero4">
+        <div class="contain">
         <div class="grid grid--card">
             <div class="col-33">
                 <div class="card grey relative">
@@ -127,8 +137,10 @@ import Layout from "../layouts/Layout.astro";
             </div>
         </div>
     </div>
+    </div>
 
     <div class="hero5">
+        <div class="contain">
         <div class="cover__wallet relative mb-6r">
             <img src="/assets/hero5-img.png" alt="" />
             <h4>Il servizio <br /> Easy Wallet</h4>
@@ -140,9 +152,13 @@ import Layout from "../layouts/Layout.astro";
             <a href="" class="button__hero5">Approfondisci</a>
         </div>
     </div>
-
+    </div>
+  
     <div class="hero6 relative blue">
+        
+        <div class="contain">
         <img src="/assets/hero6-img.png" alt="" />
+  
         <div class="grid--hero6">
             <div class="col-80">
                 <h2>
@@ -179,8 +195,10 @@ import Layout from "../layouts/Layout.astro";
             </div>
         </div>
     </div>
+    </div>
 
     <div class="hero7 relative">
+        <div class="contain">
         <div class="container">
             <div class="cover__wallet relative">
                 <img src="/assets/hero5-img.png" alt="" />
@@ -214,19 +232,24 @@ import Layout from "../layouts/Layout.astro";
             </div>
             <div class="col-45 relative fix120">
                 <div class="scale pt-3">
-                    <a href=""><img class="studiotrain" src="/assets/studiotrain.png" alt="" /> </a>
+                    <a href=""><img class="studiotrain" src="/assets/studiotrain.svg" alt="" /> </a>
                     <a href=""><img class="frecciaright" src="/assets/frecciaright.png" alt=""></a>
                 </div>
                 
             </div>
            
         </div>
-
+<!-- <div class="hero7-img-container"> -->
         <img class="hero7-img" src="/assets/hero7-img.png" alt="" />
+    <!-- </div> -->
+        </div>
     </div>
 </Layout>
 
 <style is:global>
+
+
+
     .hero {
         background-color: #002169;
         position: relative;
@@ -242,6 +265,8 @@ import Layout from "../layouts/Layout.astro";
         width: 100%;
         height: 100%;
         object-fit: cover;
+        border-top-left-radius: 20px; 
+ 
     }
 
     .contenuto-left h2 {
@@ -298,6 +323,7 @@ import Layout from "../layouts/Layout.astro";
         line-height: 150%;
         margin-left: 12%;
         padding-top: 2rem;
+        margin-right: 10%;
     }
     .hero4 {
         background-color: white;
@@ -350,9 +376,21 @@ import Layout from "../layouts/Layout.astro";
         padding-bottom: 15rem;
     }
 
+
     @media (max-width: 768px) {
+
+.hero4 .grid--card{
+    width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    max-width: 1850px;
+    margin-bottom: 1.5rem;
+    margin-left: 10%;
+    margin-right: 10%;}
+
+
         .hero5 {
-            padding-bottom: 8rem;
+            padding-bottom: 10rem;
             padding-top: 0rem;
         }
         .hero2-servizi {
@@ -376,10 +414,6 @@ import Layout from "../layouts/Layout.astro";
         width: 100%;
         height: 100%;
     }
-
-    .hero6 {
-        min-height: 130vh;
-    }
     .hero6 img {
         position: absolute;
         right: 0;
@@ -388,7 +422,10 @@ import Layout from "../layouts/Layout.astro";
         height: auto;
         max-height: 600px;
         object-fit: cover;
+        max-width: 1045px;
     }
+
+
 
     .col-80,
     .col-20,
@@ -432,12 +469,15 @@ import Layout from "../layouts/Layout.astro";
         margin-top: 5rem;
     }
     .hero7-img {
-        width: 87%;
+     max-width: calc(100% - 11rem);
         margin: 0 auto;
         display: flex;
         position: relative;
-        top: 12rem;
+        top: 10rem;
         z-index: 2;
+        margin-right: 5.5rem;
+        margin-left: 5.5rem;
+  
     }
 
     @media (max-width: 768px) {
@@ -544,7 +584,7 @@ import Layout from "../layouts/Layout.astro";
             margin-top: 0;
         }
         .hero7 {
-            min-height: 175vh;
+            min-height: 213vh;
             height: auto;
             margin-bottom: -10rem;
         }

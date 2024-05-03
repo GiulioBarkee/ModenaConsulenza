@@ -4,6 +4,7 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="Modena Consulenza" page="contatti">
     <div class="hero1d relative">
+        <div class="contain">
         <div class="grid--hero1d">
             <div class="herocontatti-contenuto-left col-50">
                 <h2>
@@ -24,8 +25,10 @@ import Layout from "../layouts/Layout.astro";
             <img src="/assets/hero1d.png" alt="" />
         </div>
     </div>
+    </div>
 
     <div class="hero__form">
+        <div class="contain">
         <div class="grid-form">
             <div class="col-40">
                 <h3>Compila il form con la tua richiesta</h3>
@@ -78,8 +81,10 @@ import Layout from "../layouts/Layout.astro";
             </div>
         </div>
     </div>
+    </div>
 
     <div class="hero__contatti">
+        <div class="contain">
         <div class="grid">
             <div class="col-50">
                 <h4>Contatti</h4>
@@ -100,6 +105,7 @@ import Layout from "../layouts/Layout.astro";
             </div>
         </div>
     </div>
+    </div>
 </Layout>
 
 <style>
@@ -107,7 +113,7 @@ import Layout from "../layouts/Layout.astro";
         position: absolute;
         top: 0;
         right: 0;
-        height: 105%;
+        height: 110%;
         width: 41vw;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
@@ -207,7 +213,7 @@ import Layout from "../layouts/Layout.astro";
     .hero__contatti .grid h4 {
         font-size: 3.5rem;
         font-weight: 500;
-        margin-left: 100px;
+        margin-left: 5.5rem;
     }
     .hero__contatti .col-25 {
         margin-top: 200px;
@@ -218,6 +224,7 @@ import Layout from "../layouts/Layout.astro";
         margin-top: 9.5rem;
         max-width: 1850px;
         gap: 4rem;
+        width: calc(100% - 11rem);
     }
     .grid-form .col-40 {
         display: flex;
@@ -230,7 +237,7 @@ import Layout from "../layouts/Layout.astro";
         font-weight: 500;
         width: 110%;
         line-height: 120%;
-        padding-left: 5.5rem;
+        
     }
 
     .big-message {
@@ -316,6 +323,10 @@ import Layout from "../layouts/Layout.astro";
         }
         .img-container {
             position: relative;
+            margin: 0 auto;
+            top: -16rem;
+            height: auto;
+            border-radius: 20px
         }
         .grid--hero1d {
             display: flex;
@@ -362,11 +373,23 @@ import Layout from "../layouts/Layout.astro";
             display: flex;
             flex-direction: column;
             align-items: center;
+            width: 100%;
         }
         .col-40,
         .col-60 {
             width: 100%;
         }
+
+        @media (min-width: 600px) and (max-width: 768px) {
+  .img-container {
+    top: -20rem!important;
+  }
+}
+@media (min-width: 350px) and (max-width: 450px) {
+  .img-container {
+    top: -13rem!important;
+  }
+}
     }
     .form-grid {
         display: flex;

@@ -54,17 +54,25 @@
 .grid { margin: 0 auto;  display: flex; flex-flow: row; flex-wrap: wrap; position: relative;; max-width: 1850px;}
 .grid--hero { margin: 0 auto;  display: flex; flex-flow: row; flex-wrap: wrap; position: relative; ; max-width: 1850px;}
 .grid--center{justify-content: center; flex-wrap: wrap; max-width: 1850px;}
-.grid--card{width: 91.5%; margin: 0 auto; flex-wrap: wrap; max-width: 1850px; margin-bottom: 1.5rem;}
+.grid--card{width: calc(100% - 8rem); margin: 0 auto; flex-wrap: wrap; max-width: 1850px; margin-bottom: 1.5rem; margin-left: 5.5rem; margin-right: 5.5rem;}
 
 .grid--hero6{display: flex; width: 75%; margin-left:15%; margin-bottom: 4rem; flex-wrap: wrap; max-width: 1850px; }
 .grid--hero6b{display: flex; width: 80%; margin-left: 15%; ; max-width: 1850px;     padding-top: 2.5rem; padding-bottom: 16rem;}
-.grid--hero7{width: 90%; margin: 0 auto; height: 518px; margin-top: 11%; display: flex; flex-wrap: wrap; max-width: 1850px;  gap:2rem;     margin-bottom: -6rem;
+.grid--hero7{width: calc(100% - 11rem); margin: 0 auto; height: 518px; margin-top: 12%; display: flex; flex-wrap: wrap; max-width: 1850px;  gap:2rem;     margin-bottom: -6rem; margin-left: 5.5rem; margin-right: 5.5rem;
 
+}
+@media (max-width: 768px) {
+ .hero1c .grid--card{margin-left: 0; margin-right: 0; margin: 0 auto!important; width: 89%!important;  width: calc(100% - 11rem);}
+}
+
+@media (max-width: 412px) {
+  .hero7-img{top: 20rem!important;}
 }
 
 @media ( min-width:768px) and ( max-width: 1200px) {
   .grid--hero7 h2{font-size: 2.5rem!important;}
   .grid--hero7{top: 2rem!important;}
+
 }
 
 .grid--hero7 a{height: 100%;
@@ -89,7 +97,8 @@ align-items: center;}
     max-width: 1850px;
     margin-left: 24%;
   margin-top: 2rem;
-column-gap: 4rem;}
+column-gap: 4rem;
+margin-bottom: -8.5rem;}
  
 .grid__hero4b{width: 48%;
   display: flex;
@@ -99,16 +108,17 @@ column-gap: 4rem;}
   max-width: 1850px;
   left: 47%;
   top: -18rem; gap: 3.5rem}
-.grid__hero4b2{max-width: 84%!important; margin: 0 auto; display: flex; flex-wrap: wrap; max-width: 1850px;  position: relative; top: -13rem; justify-content: space-between; margin-right: 5.5rem; margin-bottom: -11.5rem;}
+.grid__hero4b2{max-width: calc(100% - 11rem) !important; margin: 0 auto; display: flex; flex-wrap: wrap; max-width: 1850px;  position: relative; top: -13rem; justify-content: space-between; margin-right: 5.5rem; margin-bottom: -11.5rem; margin-left: 5.5rem;}
 .text-blue{color: #002169;}
 @media (max-width: 768px) {
   .grid__hero4b2{margin: 0 auto;
     margin-top: 7rem;
     margin-bottom: -14rem;
+    max-width: 89%!important;
 }}
 
 
-.grid__servizi-bottom{max-width: 100%; height: auto; display: flex; flex-wrap: wrap;   width: 88%;
+.grid__servizi-bottom{max-width: 100%; height: auto; display: flex; flex-wrap: wrap;   width: calc(100% - 11rem);;
   margin: 0 auto; padding-top: 19rem}
      
  .grid__hero1c{margin: 0 auto;  display: flex;flex-flow: row;flex-wrap: wrap;position: relative;width: 75%;margin-top: 3.5rem;margin-right: 0px; max-width: 1850px;}
@@ -177,14 +187,16 @@ column-gap: 4rem;}
   height: 100%;
   border: 1px solid #FFD100;
   border-top: none;
-transform: scale(0.8);}
+transform: scale(0.8);
+padding-top: 0!important;
+padding-bottom: 45px;}
 
 
 
 /* hero 7 */
 .hero7{ height: auto; background-color: white; max-width: 1850px; margin: 0 auto;}
-.grid--hero7 h2{font-size: clamp(1.8rem, 1rem + 5vw,4rem);  font-weight: 500; padding: 4%; line-height:130%; margin-bottom: 2rem;}
-.grid--hero7 p{padding-left: 4%; font-size: 1.1rem;     width: 80%;}
+.grid--hero7 h2{font-size: clamp(1.8rem, 1rem + 5vw,4rem);  font-weight: 500; padding: 4%; line-height:130%; margin-bottom: 2rem; padding-left: 0;}
+.grid--hero7 p{padding-left: 4%; font-size: 1.1rem;     width: 80%; padding-left: 0;}
 .container{width: 100%;
     top: -11%;
     position: absolute;}
@@ -196,7 +208,7 @@ transform: scale(0.8);}
 
     .hero7 .cover__wallet{background-color: white;}
     .hero7 .cover__wallet h4{width: 40%;}
-    .cover__wallet h4{    width: 53% !important;
+    .cover__wallet h4{    width: 52% !important;
       font-size: clamp(1.8rem,1rem + 5vw,4rem);
       margin-left: 7rem;
       font-weight: 500;
@@ -227,25 +239,28 @@ transform: scale(0.8);}
 
 
     /*cover waller*/
-    .cover__wallet{width: 88.5%!important; border-radius: 40px;  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); height: auto; margin: 0 auto; overflow: hidden;}
+    .cover__wallet{width: calc(100% - 11rem)!important; border-radius: 40px;  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); height: auto; margin: 0 auto; overflow: hidden; margin-left: 5.5rem; margin-right: 5.5rem;}
     @media (max-width: 768px) {
       .cover__wallet{height: auto; width: 82%!important; display: flex;
-        flex-flow: column;}
+        flex-flow: column; margin: 0 auto!important;
       .cover__wallet h4{font-size:2rem!important;}
       .hero5b .cover__wallet h4{font-size: clamp(1.5rem,1rem + 4vw ,2rem) !important;}
-      .grid--hero7 p{padding-left: 0;}
+
+      .grid--hero7 p{padding-left: 0; width: 100%; }
 
       .grid--hero7 a {
         margin: 8% auto;
       height: auto;
       
-      
+      }
     }
 
     .fix120{height: 120%!important;}
     .studiotrain {padding-bottom: 2rem;}
-.frecciaright{bottom: 1rem;}
-    .hero7 .grid--hero7 p{text-align: center; margin: 0 auto;}
+.frecciaright{        right: 3rem;
+  bottom: 50%;
+}
+    .hero7 .grid--hero7 p{text-align: center; margin: 0 auto; width: 100%;}
     .hero7 .grid--hero7{margin-top: -12rem!important; margin-bottom: -2rem;}
   
 
@@ -264,7 +279,7 @@ transform: scale(0.8);}
 
 
     /* card */
-    .card{box-shadow: 0 5px 20px rgba(0,0,0,.1);border-radius: 20px;overflow: hidden;margin: 4% auto ; ;
+    .card{box-shadow: 0 5px 20px rgba(0,0,0,.1);border-radius: 20px;overflow: hidden; ;
       height: 100%;width: 90%;  display: block;background-position: center center;background-size:cover}
 
       @media (max-width: 768px) {

@@ -4,6 +4,7 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="Modena Consulenza">
   <div class="hero1c">
+    <div class="contain">
     <h2>I nostri servizi di consulenza</h2>
     <div class="grid__hero1c">
       <div class="col-40">
@@ -67,7 +68,9 @@ import Layout from "../layouts/Layout.astro";
       <img class="hero1c--img" src="/assets/hero1c.png" alt="" />
     </div>
   </div>
+  </div>
 
+  <div class="contain">
   <h3 class="title-accordion mt-15" data-state="+">Controllo <br /> di gestione</h3>
   <div class="content-accordion">
     <p class="uno-acc">
@@ -204,8 +207,10 @@ import Layout from "../layouts/Layout.astro";
   </div>
 
   <img class="bottom-img" src="/assets/bottom-servizi.png" alt="" />
+</div>
 
   <div class="grey-servizi">
+    <div class="contain">
     <div class="grid__servizi-bottom">
       <div class="col-55">
         <h3>Scopri i servizi aggiunti di Modena Consulenza</h3>
@@ -231,7 +236,7 @@ import Layout from "../layouts/Layout.astro";
         </div>
       </div>
       <div class="col-50">
-        <h4 class="title-accordion ">Liberi<br>professionisti</h4>
+        <h4 class="title-accordion fix-left">Liberi<br>professionisti</h4>
         <div class="content-accordion">
           <li>Elaborazione dati contabili</li>
           <li>Elaborazione dichiarazione dei redditi</li>
@@ -250,12 +255,15 @@ import Layout from "../layouts/Layout.astro";
       <a href="" class="button__hero5">CONTATTACI</a>
     </div>
   </div>
+</div>
   </div>
 
-  <style is:global>
+  <style>
     .grid__servizi-bottom .col-45{display: flex;
     align-items: center;}
     .grid__servizi-bottom .title-accordion {margin: 3rem 0};
+
+ 
 
 
     .ultima-col{flex-grow: 1;
@@ -263,7 +271,7 @@ import Layout from "../layouts/Layout.astro";
 .space{margin-bottom: 3rem  ;}
     .p-cella{font-size: 1.5rem!important; font-weight: 500; padding-top: 0!important;}
     .yellow-acc {
-      color: #ffd100;
+      color: #ffd100!important;
       border-bottom: none!important
     }
     .card h4 {
@@ -290,7 +298,8 @@ import Layout from "../layouts/Layout.astro";
       font-size: 1.1rem;
     }
     .hero1c .grid--card {
-      width: 80%;
+      width: calc(100% - 11rem);
+      justify-content: center;
     }
     .hero1c .card {
       min-height: 330px;
@@ -327,7 +336,7 @@ import Layout from "../layouts/Layout.astro";
 
     .hero1c--img {
       position: relative;
-      width: 110%;
+      width: 100%;
       top: -14.5rem;
       left: 50%;
       transform: translateX(-50%);
@@ -352,14 +361,20 @@ import Layout from "../layouts/Layout.astro";
       padding-bottom: 1rem;
       margin-bottom: 0;
       position: relative;
-      width: 80%;
+      width: 85%;
       margin: 5.5rem auto;
       font-size: 3.3rem;
     font-weight: 500;
     line-height: 110%;
     margin-bottom: 2rem!important;
+    margin-right: 5%;
     }
 
+    @media (max-width: 768px) {
+      .title-accordion{    width: calc(100% - 11rem);
+        margin: 2rem auto !important;}
+
+    }
 
 
     .title-accordion::before {
@@ -374,7 +389,8 @@ import Layout from "../layouts/Layout.astro";
       height: 141px;
       z-index: -1;
       margin-left: -5rem;
-      top: -13%;
+      top: -25%;
+      
     }
     .due::before {
       background-image: url(/assets/02y.png);
@@ -389,11 +405,13 @@ import Layout from "../layouts/Layout.astro";
     .title-accordion:after {
       content: " +  ";
       position: absolute;
-
+color: #002169;
       right: 10px;
       height: 30px;
       width: 30px;
     }
+
+    .content-accordion--show .title-accordion:after{color: #ffd100!important;}
     .content-accordion {
       max-height: 0;
       overflow: hidden;
@@ -440,7 +458,7 @@ padding-left: 80px!important;}
     max-width: 1000px;
     }
     .bottom-img {
-      width: 88%;
+      width: calc(100% - 11rem);
       height: auto;
       border-radius: 10px;
       margin: 5% auto;
@@ -630,7 +648,15 @@ padding-left: 80px!important;}
     }
     .title-accordion.minus::after {
   content: " - ";
+  color: #ffd100;
 }
+.fix-left{margin-left: 5.5rem!important;}
+
+@media (max-width: 768px) {
+  .fix-left{margin-left: auto!important;}
+}
+
+
 
 
   </style>

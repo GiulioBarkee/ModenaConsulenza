@@ -5,6 +5,7 @@ import { team } from "@/content/settings/settings.json";
 
 <Layout title="Modena Consulenza">
     <div class="hero1 relative">
+        <div class="contain">
         <div>
             <h2>
                 La nostra storia <br /><span
@@ -19,8 +20,10 @@ import { team } from "@/content/settings/settings.json";
         </div>
         <img class="img-res" src="/assets/chisiamo1.png" alt="" />
     </div>
+    </div>
 
     <div class="hero2b relative">
+        <div class="contain">
         <div class="grid__hero2b">
             <div class="col-45">
                 <div>
@@ -60,11 +63,15 @@ import { team } from "@/content/settings/settings.json";
             </div>
         </div>
 
+        <div class="img-left-right">
         <img class="hero2bleft" src="/assets/hero2b1.png" alt="" />
         <img class="hero2bright" src="/assets/hero2b2.png" alt="" />
     </div>
+    </div>
+    </div>
 
     <div class="hero3b relative">
+        <div class="contain">
         <h3>
             Da oltre 10 anni aiutiamo i nostri clienti a realizzare i loro
             progetti.
@@ -85,8 +92,10 @@ import { team } from "@/content/settings/settings.json";
             </p>
         </div>
     </div>
+    </div>
 
     <div class="hero4b relative">
+        <div class="contain">
         <div class="grid__hero4b">
             <div class="col-50">
                 <div class="piastrina piastrina-left">
@@ -146,8 +155,10 @@ import { team } from "@/content/settings/settings.json";
         </div>
         <img class="hero4b2-bottom" src="/assets/hero4b2-bottom.png" alt="" />
     </div>
+    </div>
 
     <div class="hero5b relative">
+        <div class="contain">
         <div class="grid--hero7 relative">
             <div class="col-50 relative">
                 <h2>
@@ -167,7 +178,7 @@ import { team } from "@/content/settings/settings.json";
             </div>
             <div class="col-45 relative ">
                 <div class="scale">
-                    <a href=""><img class="studiotrain" src="/assets/studiotrain.png" alt="" /></a>
+                    <a href=""><img class="studiotrain" src="/assets/studiotrain.svg" alt="" /></a>
                     <a href=""><img class="frecciaright" src="/assets/frecciaright.png" alt=""></a>
               
                 </div>
@@ -187,9 +198,21 @@ import { team } from "@/content/settings/settings.json";
             </div>
         </div>
     </div>
+    </div>
 </Layout>
 
 <style >
+
+    .img-left-right{    width: calc(100% - 11rem);
+    position: relative;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 5.5rem;
+    margin-left: 5.5rem;
+bottom: -15rem;}
+
     .hero1 {
         height: auto;
         width: 100%;
@@ -198,13 +221,15 @@ import { team } from "@/content/settings/settings.json";
         margin-bottom: -18rem;
     }
     .hero1 img {
-        width: 91%;
-        height: auto;
-        border-radius: 30px;
-        position: relative;
-        left: -30px;
-        bottom: 2.5rem;
-        z-index: 100;
+        width: calc(100% - 11rem);
+    height: auto;
+    border-radius: 30px;
+    position: relative;
+    left: 0;
+    bottom: 2.5rem;
+    z-index: 100;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
     }
     .hero1 h2 {
         font-size: clamp(1.8rem, 1rem + 4.8vw, 5.5rem) !important;
@@ -231,18 +256,20 @@ import { team } from "@/content/settings/settings.json";
     .hero2b {
         height: 100%;
         background-color: #002169;
-        padding-bottom: 20%;
+        /* padding-bottom: 20%; */
     }
     .hero2b h3 {
         width: 70%;
         color: white;
         font-size: clamp(1.2rem, 1rem + 2vw, 2.3rem);
         font-weight: 500;
-        padding-left: 5.5rem;
+     
     }
     .grid__hero2b {
         display: flex;
         padding-top: 20rem;
+        margin-left: 5.5rem;
+        margin-right: 5.5rem;
     }
     .grid__hero2b h4,
     .gridb__hero2b h4 {
@@ -262,15 +289,15 @@ import { team } from "@/content/settings/settings.json";
         font-weight: 500;
     }
     .hero2bleft {
-        width: 34%;
-        position: absolute;
+        width: 40%;
+    
         bottom: -20%;
         z-index: 10;
         left: 6%;
     }
     .hero2bright {
-        width: 50.5%;
-        position: absolute;
+        width: 57.5%;
+       
         bottom: -20%;
         z-index: 10;
         right: 6%;
@@ -314,7 +341,7 @@ import { team } from "@/content/settings/settings.json";
     }
     @media (max-width: 768px) {
       .hero4b{padding-bottom: 8rem;}
-      .hero4b2-bottom{margin-top: 2rem!important;}
+      .hero4b2-bottom{margin-top: 2rem!important; width: 89%!important;}
     }
     .piastrina p {
         width: 80%;
@@ -359,15 +386,14 @@ import { team } from "@/content/settings/settings.json";
     }
 
     .hero4b2-bottom {
-        width: 89%;
+        width: calc(100% - 11rem);
     z-index: 10;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     margin-top: 5rem;
-    max-width: 1380px;
-    
     }
+
     .hero4b2-bottom img {
     }
     .hero5b {
@@ -442,20 +468,21 @@ import { team } from "@/content/settings/settings.json";
         }
         .hero1 img {
             bottom: -2rem;
+            left: 0%!important;
+            transform: translateX(0%)!important;
         }
     }
-    @media (max-width: 1300px) {
-        .hero2b {
-            padding-bottom: 13%;
-        }
-        .hero2bleft {
-            /* display: none; */
-        }
-    }
+    @media (min-width: 768px) and (max-width: 1000px) {
+ .img-left-right {
+    bottom: -9rem;
+  }
+}
     @media only screen and (max-width: 768px) {
         .hero2b {
             padding-bottom: 20%;
         }
+
+        .img-left-right{bottom: -3rem;}
 
         .hero1 {
             height: auto;
@@ -470,7 +497,7 @@ import { team } from "@/content/settings/settings.json";
 
         .hero2b {
             height: 100%;
-            padding-bottom: -3rem;
+            padding-bottom: 0!important;
         }
         .hero2b h3 {
             width: 80%;

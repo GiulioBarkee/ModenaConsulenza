@@ -3,6 +3,7 @@ const { page } = Astro.props;
 ---
 
 <footer class="footer" class:list={{ "contatti-footer": page === "contatti" }}>
+    <div class="contain">
     <div class="footer__grid">
         <div class="footer__column">
             <div class="footer__section">
@@ -56,8 +57,10 @@ const { page } = Astro.props;
             </div>
         </div>
     </div>
+    </div>
 
     <div class="footer__bottom">
+        <div class="contain">
         <div class="grid-footer">
             <div class="col-50">
                 <div class="policy">
@@ -73,39 +76,44 @@ const { page } = Astro.props;
             </div>
         </div>
     </div>
+    </div>
     <img
         class="ModenaConsulenza-footer"
         src="/assets/ModenaConsulenza-footer.png"
-        alt=""
-    />
+        alt=""/>
 </footer>
 
 <style>
     .footer {
         background-color: #00194f;
-        color: white;
-        padding: 40px 20px;
-        position: relative;
-        min-height: 75vh;
-        height: auto;
-        display: flex;
+    color: white;
+    position: relative;
+    min-height: 75vh;
+    height: auto;
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
     }
 
     .grid-footer {
-        width: 100%;
-        margin: 0 auto;
-        display: flex;
-        flex-flow: row;
-        flex-wrap: wrap;
-        position: relative;
-        max-width: 1850px;
-        justify-content: space-between;
-    }
+        width: calc(100% - 11rem);
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    position: relative;
+    max-width: 1850px;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .grid-footer{width:90%;;}
+}
     .policy {
         display: flex;
         align-items: center;
         height: 100%;
-        padding-left: 3.5rem;
+       
         gap: 1.5rem;
         font-weight: 200;
         font-size: 0.9rem;
@@ -115,7 +123,7 @@ const { page } = Astro.props;
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        padding-right: 3rem;
+    
         height: 100%;
         font-weight: 200;
         font-size: 0.9rem;
@@ -127,19 +135,26 @@ const { page } = Astro.props;
 
     .footer__grid {
         display: flex;
-        /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
-        gap: 2rem;
-        padding: 8rem 0;
-        text-align: center;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        padding-top: 15.5rem;
-        padding-left: 3rem;
-        padding-right: 3rem;
-        width: 96%;
-        font-size: 1.1rem;
+    /* gap: 2rem; */
+    padding: 8rem 0;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15.5rem;
+    /* padding-left: 3rem; */
+    /* padding-right: 3rem; */
+    width: calc(100% - 11rem)!important;
+    font-size: 1.1rem;
+    width: calc(100% - 11rem);
+margin-left: 5.5rem;
+margin-right: 5.5rem;
     }
+    @media (max-width: 768px) {
+      .footer__grid{width: 100%!important; margin-left: 0; margin-right: 0;}
+    }
+
+
 
     .footer__column {
         display: flex;
@@ -203,10 +218,11 @@ const { page } = Astro.props;
         bottom: 0;
         left: 0;
         right: 0;
-        padding: 20px;
+        padding: 20px 0;
         position: absolute;
         height: 3rem;
         z-index: 10;
+        align-items: center;
     }
 
     .footer__bottom p {
@@ -231,9 +247,9 @@ const { page } = Astro.props;
             padding: auto 0;
             margin: auto 0;
         }
-        .footer__grid{ padding: 8rem 0;}
+        .footer__grid{ padding: 8rem 0; }
         .footer__grid {
-            padding-top: 8rem;
+            padding-top: 8rem; justify-content: center;
         }
         .footer__section {
             margin-bottom: 0;
