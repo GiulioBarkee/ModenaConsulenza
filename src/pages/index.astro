@@ -248,6 +248,7 @@ import Layout from "../layouts/Layout.astro";
 
 <style is:global>
 
+.col-45.fix120{width: 100%;}
 
 
     .hero {
@@ -387,7 +388,11 @@ import Layout from "../layouts/Layout.astro";
     max-width: 1850px;
     margin-bottom: 1.5rem;
     margin-left: 10%;
-    margin-right: 10%;}
+    margin-right: 10%;
+    gap: 2.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    }}
 
 
         .hero5 {
@@ -397,7 +402,7 @@ import Layout from "../layouts/Layout.astro";
         .hero2-servizi {
             padding-top: 8rem;
         }
-    }
+    
     .hero5 .cover__wallet {
         margin-bottom: 6rem;
     }
@@ -521,6 +526,8 @@ import Layout from "../layouts/Layout.astro";
         .cover__wallet {
             text-align: center;
             padding-bottom: 2rem;
+            margin-bottom: 1rem !important;
+        min-height: auto;
         }
         .cover__wallet h4 {
             width: 80% !important;
@@ -585,9 +592,14 @@ import Layout from "../layouts/Layout.astro";
             margin-top: 0;
         }
         .hero7 {
-            min-height: 213vh;
+            min-height: 183vh;
             height: auto;
             margin-bottom: -10rem;
+        }
+
+        .hero7 .scale{margin-top: 2rem;}
+
+
         }
         .hero5b .grid--hero7 {
             margin-top: 11% !important;
@@ -628,6 +640,13 @@ import Layout from "../layouts/Layout.astro";
             gap: 20px;
         }
 
+        @media (max-width: 768px) {
+            .grid--hero7{ width:  calc(100% - 8rem);
+            margin-left: 0;
+            margin-right: 0;
+            margin: 0 auto;}
+        }
+
         .col-50 {
             width: 100%;
         }
@@ -637,7 +656,7 @@ import Layout from "../layouts/Layout.astro";
             width: 90%;
             margin: 0 auto;
         }
-    }
+    
 
     @media (min-width: 768px) {
         .grid--hero7 {

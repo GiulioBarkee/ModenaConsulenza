@@ -191,6 +191,14 @@ transform: scale(0.8);
 padding-top: 0!important;
 padding-bottom: 45px;}
 
+@media (max-width: 768px) {
+  .scale {transform: scale(1.1);}
+  .hero5b .scale{
+    transform: scale(0.8)!important;}
+
+
+}
+
 
 
 /* hero 7 */
@@ -204,6 +212,9 @@ padding-bottom: 45px;}
     top: -11rem;}
 
     .frecciaright{position: absolute; width: 40px!important; height: auto; bottom: 2rem;}
+    @media (max-width: 768px) {
+      .frecciaright{width: 2rem!important;}
+    }
 
 
     .hero7 .cover__wallet{background-color: white;}
@@ -264,7 +275,7 @@ padding-bottom: 45px;}
 
     .fix120{height: 120%!important;}
     .studiotrain {padding-bottom: 2rem;}
-.frecciaright{        right: 3rem;
+.frecciaright{        right: 1rem;
   bottom: 50%;
 }
     .hero7 .grid--hero7 p{text-align: center; margin: 0 auto; width: 100%;}
