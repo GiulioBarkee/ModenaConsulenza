@@ -58,7 +58,7 @@
 
 .grid--hero6{display: flex; width: 75%; margin-left:15%; margin-bottom: 4rem; flex-wrap: wrap; max-width: 1850px; }
 .grid--hero6b{display: flex; width: 80%; margin-left: 15%; ; max-width: 1850px;     padding-top: 2.5rem; padding-bottom: 16rem;}
-.grid--hero7{width: calc(100% - 11rem); margin: 0 auto; height: 518px; margin-top: 12%; display: flex; flex-wrap: wrap; max-width: 1850px;  gap:2rem;     margin-bottom: -6rem; margin-left: 5.5rem; margin-right: 5.5rem;
+.grid--hero7{width: calc(100% - 11rem); margin: 0 auto; height: auto; margin-top: 12%; display: flex; flex-wrap: wrap; max-width: 1850px;  gap:2rem;     margin-bottom: -6rem; margin-left: 5.5rem; margin-right: 5.5rem;
 
 }
 @media (max-width: 768px) {
@@ -66,7 +66,7 @@
 }
 
 @media (max-width: 412px) {
-  .hero7-img{top: 20rem!important;}
+  .hero7-img{top: 11.5rem!important;}
 }
 
 @media ( min-width:768px) and ( max-width: 1200px) {
@@ -195,8 +195,11 @@ padding-bottom: 45px;}
   .scale {transform: scale(1.1);}
   .hero5b .scale{
     transform: scale(0.8)!important;}
-
-
+    .hero5b .cover__wallet{margin-bottom: 2rem !important;}
+}
+@media (min-width: 768px) {
+  .scale{min-height: 465px;
+    max-height: 550px;}
 }
 
 
