@@ -2,7 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title="Modena Consulenza">
+<Layout title="Modena Consulenza" page="servizi">
   <div class="hero1c">
     <div class="contain">
     <h2>I nostri servizi di consulenza</h2>
@@ -108,9 +108,9 @@ import Layout from "../layouts/Layout.astro";
           </p>
         </div>
       </div>
-    
+    <div>
       <img class="acc-1-img" src="/assets/acc-1.png" alt="" />
-
+    </div>
     </div>
   
   </div>
@@ -454,7 +454,7 @@ color: #002169;
 padding-left: 80px!important;}
 
     .content-accordion--show {
-      max-height: 950px;
+      max-height: 1000px;
     }
     .title-accordion.accordion-opened:after {
       content: " - "; /* Modifica l'indicatore quando l'accordion è aperto */
@@ -521,13 +521,16 @@ padding-left: 80px!important;}
     .ultima-cover-wallet h4,
     .ultima-cover-wallet p{color: #002169;}
 
-
+@media (min-width: 768px) {
+    .gridb__hero2b{margin-bottom: 0; margin-right: 5.5rem;}
+}
     @media (max-width: 768px) {
       .grey-servizi h3 {
         text-align: center;
         margin: 0 auto;
         padding-bottom: 3rem;
       }
+      .grey-servizi{margin-bottom: -5rem;}
       .p-secondo {
         margin: 0 auto;
         padding-left: 0;
@@ -537,6 +540,8 @@ padding-left: 80px!important;}
       .acc-1-img {
         width: 80%;
         margin-top: -3rem;
+        margin: 0 auto;
+        margin-bottom: 3rem;
       }
       .hero1c h2 {
         font-size: 2rem;

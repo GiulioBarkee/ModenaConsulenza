@@ -2,7 +2,7 @@
 const { page } = Astro.props;
 ---
 
-<footer class="footer" class:list={{ "contatti-footer": page === "contatti" }}>
+<footer class="footer" class:list={{ "contatti-footer": page === "contatti", "servizi-footer": page === "servizi"  }}>
     <div class="contain">
     <div class="footer__grid">
         <div class="footer__column">
@@ -276,6 +276,8 @@ margin-right: 5.5rem;
         min-height: 60vh;
         height: 60vh;
     }
+
+    .servizi-footer{z-index: -1;}
     @media (max-width: 1384px) {
         .contatti-footer {
             min-height: 60vh;
