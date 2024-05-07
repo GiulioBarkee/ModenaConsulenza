@@ -248,7 +248,7 @@ import Layout from "../layouts/Layout.astro";
 
 <style is:global>
 
-.col-45.fix120{width: 100%;}
+
 
 
     .hero {
@@ -346,7 +346,7 @@ import Layout from "../layouts/Layout.astro";
         padding: 10px 34px;
     }
 
-    .hero7 .grid--hero7{margin-top: -7rem;}
+    .hero7 .grid--hero7{margin-top: -7rem; margin-bottom: -10rem;}
     @media (max-width: 768px) {
         .contenuto-left p {
             padding-bottom: 0;
@@ -635,20 +635,24 @@ import Layout from "../layouts/Layout.astro";
         }
 
         .grid--hero7 {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 20px;
-        }
+            width: calc(100% - 11rem);
+    margin: 0 auto;
+    height: auto;
+    margin-top: 12%;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1850px;
+    gap: 2rem;
+    margin-bottom: -6rem;
+    margin-left: 5.5rem;
+    margin-right: 5.5rem;
+        } 
 
         @media (max-width: 768px) {
             .grid--hero7{ width:  calc(100% - 8rem);
             margin-left: 0;
             margin-right: 0;
             margin: 0 auto;}
-        }
-
-        .col-50 {
-            width: 100%;
         }
 
         .grid--hero7 .col-40,

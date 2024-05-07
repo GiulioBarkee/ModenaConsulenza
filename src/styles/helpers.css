@@ -220,7 +220,7 @@ padding-bottom: 45px;}
     }
 
 
-    .hero7 .cover__wallet{background-color: white;}
+    .hero7 .cover__wallet{background-color: white; margin-bottom: -9rem;}
     .hero7 .cover__wallet h4{width: 40%;}
     .cover__wallet h4{    width: 52% !important;
       font-size: clamp(1.8rem,1rem + 5vw,4rem);
