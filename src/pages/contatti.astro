@@ -326,7 +326,8 @@ import Layout from "../layouts/Layout.astro";
             margin: 0 auto;
             top: -16rem;
             height: auto;
-            border-radius: 20px
+            border-radius: 20px;
+            border-bottom-right-radius: 20px !important;
         }
         .grid--hero1d {
             display: flex;
@@ -383,11 +384,13 @@ import Layout from "../layouts/Layout.astro";
         @media (min-width: 600px) and (max-width: 768px) {
   .img-container {
     top: -20rem!important;
+    border-bottom-right-radius: 20px !important;
   }
 }
 @media (min-width: 350px) and (max-width: 450px) {
   .img-container {
     top: -13rem!important;
+    border-bottom-right-radius: 20px !important;
   }
 }
 

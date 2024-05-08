@@ -71,7 +71,7 @@
 
 @media ( min-width:768px) and ( max-width: 1200px) {
   .grid--hero7 h2{font-size: 2.5rem!important;}
-  .grid--hero7{top: 2rem!important;}
+  /* .grid--hero7{top: 2rem!important;} */
 
 }
 
@@ -276,7 +276,7 @@ padding-bottom: 45px;}
       }
     }
 
-    .fix120{height: 120%!important;}
+    .fix120{height: 120%!important; margin-top: 3rem;}
     .studiotrain {padding-bottom: 2rem;}
 .frecciaright{        right: 1rem;
   bottom: 50%;

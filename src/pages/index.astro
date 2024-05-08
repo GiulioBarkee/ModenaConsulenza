@@ -13,7 +13,7 @@ import Layout from "../layouts/Layout.astro";
                         Aiutiamo le <br />
                         <span style="color:#FFD100; font-style: italic;"
                             >imprese</span
-                        > a navigare in
+                        > a navigare <br>in
                         <span style="font-style: italic;">buone acque</span>
                     </h2>
                     <p>
@@ -246,7 +246,7 @@ import Layout from "../layouts/Layout.astro";
     </div>
 </Layout>
 
-<style is:global>
+<style>
 
 
 
@@ -647,6 +647,10 @@ import Layout from "../layouts/Layout.astro";
     margin-left: 5.5rem;
     margin-right: 5.5rem;
         } 
+
+        @media (max-width: 415px) {
+          .hero7 .scale{margin-bottom: 2rem;}
+        }
 
         @media (max-width: 768px) {
             .grid--hero7{ width:  calc(100% - 8rem);

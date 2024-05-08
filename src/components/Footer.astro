@@ -4,7 +4,7 @@ const { page } = Astro.props;
 
 <footer class="footer" class:list={{ "contatti-footer": page === "contatti", "servizi-footer": page === "servizi"  }}>
     <div class="contain">
-    <div class="footer__grid">
+    <div class="footer__grid" class:list={{"footer__grid-servizi": page === "servizi"}}>
         <div class="footer__column">
             <div class="footer__section">
                 <h3>I nostri servizi</h3>
@@ -156,6 +156,8 @@ const { page } = Astro.props;
 margin-left: 5.5rem;
 margin-right: 5.5rem;
     }
+
+    .footer__grid-servizi{padding-top: 5.5rem;}
     @media (max-width: 768px) {
       .footer__grid{width: 100%!important; margin-left: 0; margin-right: 0;}
     }
@@ -277,7 +279,7 @@ margin-right: 5.5rem;
         height: 60vh;
     }
 
-    .servizi-footer{z-index: -1;}
+    .servizi-footer{min-height: auto!important; padding-top: 0;}
     @media (max-width: 1384px) {
         .contatti-footer {
             min-height: 60vh;
