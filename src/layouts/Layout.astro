@@ -86,7 +86,7 @@ window.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <script>
-// Seleziona tutti gli elementi con la classe ".fade-in"
+/// Seleziona tutti gli elementi con la classe ".fade-in"
 const fadeIns = document.querySelectorAll('.fade-in');
 
 // Crea un osservatore dell'intersezione
@@ -94,10 +94,11 @@ const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     // Verifica se l'elemento è entrato nella visualizzazione
     if (entry.isIntersecting) {
-      // Esegue l'animazione di fade-in sull'elemento utilizzando GSAP
+      // Esegue l'animazione di fade-in sull'array di elementi utilizzando GSAP
       gsap.to(entry.target, {
         opacity: 1,
         duration: 3,
+        stagger: 1,
         ease: "power3.out"
       });
       
@@ -113,6 +114,7 @@ const observer = new IntersectionObserver(entries => {
 fadeIns.forEach(fadeIn => {
   observer.observe(fadeIn);
 });
+
 
 
 gsap.to( ".text-reveal" , { clipPath:"polygon(0 0, 100% 0, 100% 100%, 0 100%)",  y:0, duration:1, stagger: 0.3});
