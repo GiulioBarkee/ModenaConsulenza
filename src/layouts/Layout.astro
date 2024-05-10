@@ -82,6 +82,24 @@ window.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('resize', adjustBorderRadius); // Aggiungi un listener per aggiornare la proprietà quando la finestra viene ridimensionata
 });
 
+window.addEventListener('DOMContentLoaded', function() {
+    const Hero6img = document.querySelector('.hero6 img');
+
+    function adjustBorderRadius() {
+        if (window.innerWidth > 1750) {
+            Hero6img.style.borderBottomRightRadius = '20px';
+            Hero6img.style.borderTopRightRadius = '20px';
+        } else {
+            Hero6img.style.borderBottomRightRadius = '';
+            Hero6img.style.borderTopRightRadius = null;
+        }
+    }
+
+    adjustBorderRadius(); // Chiama la funzione all'avvio per impostare inizialmente la proprietà
+
+    window.addEventListener('resize', adjustBorderRadius); // Aggiungi un listener per aggiornare la proprietà quando la finestra viene ridimensionata
+});
+
 
 </script>
 
