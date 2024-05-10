@@ -129,7 +129,7 @@ margin-bottom: -8.5rem;}
         .grid{text-align: center;}
         .grid--footer{padding-top: 5rem;}
         .gridb__hero2b{margin: 0 auto; min-height: auto;}
-        .grid__hero4b{left: 0; top: -9rem}
+        .grid__hero4b{left: 0; top: -9rem; gap: 0;}
         .grid--hero6{margin-bottom: 0;}
         .grid--hero6b{padding-bottom: 9rem;}
         .containerp{padding: 0!important; }
@@ -356,7 +356,7 @@ padding-bottom: 45px;}
 .blue{ background-color: #002169;}
 
 
-/* h1,
-h2,
-h3,
-h4{font-size: clamp(1.8rem, 1rem + 10vw, 6rem)!important;} */
+/*ANIMATION */
+
+.fade-in{opacity: 0;}
+.text-reveal{clip-path: polygon(0 0, 100% 0, 100% 0, 0 0) ; transform: translateY(2rem);}
