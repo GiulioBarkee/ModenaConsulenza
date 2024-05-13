@@ -692,7 +692,7 @@ padding-left: 80px!important;}
   </style>
 
 <script>
-// Seleziona tutti gli elementi con la classe "title-accordion"
+/// Seleziona tutti gli elementi con la classe "title-accordion"
 let accordions = document.querySelectorAll(".title-accordion");
 
 // Itera su ciascun elemento "title-accordion"
@@ -706,20 +706,17 @@ accordions.forEach((accordion, i) => {
     if (nextElement.classList.contains("content-accordion--show")) {
       // Nascondi il contenuto dell'accordion
       nextElement.classList.remove("content-accordion--show");
-      // Rimuovi le classi "minus" e "yellow-acc" dall'elemento "title-accordion"
+      // Rimuovi la classe "minus" dall'elemento "title-accordion"
       accordion.classList.remove("minus");
-      accordion.classList.remove("yellow-acc");
     } else {
       // Nascondi tutti gli altri accordion e mostra solo il contenuto dell'accordion corrente
       accordions.forEach((item, i) => {
         item.nextElementSibling.classList.remove("content-accordion--show");
         item.classList.remove("minus");
-        item.classList.remove("yellow-acc");
       });
       nextElement.classList.add("content-accordion--show");
-      // Aggiungi le classi "minus" e "yellow-acc" all'elemento "title-accordion"
+      // Aggiungi la classe "minus" all'elemento "title-accordion"
       accordion.classList.add("minus");
-      accordion.classList.add("yellow-acc");
     }
   });
 });
