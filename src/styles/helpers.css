@@ -214,11 +214,12 @@ padding-bottom: 45px;}
     .hero7 .container{position: relative;
     top: -11rem;}
 
-    .frecciaright{position: absolute; width: 40px!important; height: auto; bottom: 2rem;}
+    .frecciaright{position: absolute; width: 40px!important; height: auto!important; bottom: 2rem;}
     @media (max-width: 768px) {
       .frecciaright{width: 2rem!important;}
     }
 
+    
 
     .hero7 .cover__wallet{background-color: white; margin-bottom: -9rem;}
     .hero7 .cover__wallet h4{width: 40%;}
@@ -360,3 +361,5 @@ padding-bottom: 45px;}
 
 .fade-in{opacity: 0;}
 .text-reveal{clip-path: polygon(0 0, 100% 0, 100% 0, 0 0) ; transform: translateY(2rem);}
+.fade-up{opacity: 0; transform: translateY(4rem);}
+
