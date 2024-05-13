@@ -10,11 +10,13 @@ import Layout from "../layouts/Layout.astro";
             <div class="col-65">
                 <div class="contenuto-left">
                     <h2 class="text-reveal">
-                        Aiutiamo le <br />
-                        <span style="color:#FFD100; font-style: italic;"
-                            >imprese</span
-                        > a navigare <br>in
-                        <span style="font-style: italic;">buone acque</span>
+                     
+                        <!-- <span style="color:#FFD100; font-style: italic;"
+                            >imprese</span -->
+                        
+                    
+                        Esperti locali per  consulenze d’<span style="color:#FFD100; font-style: italic;">impresa</span> globali
+                    
                     </h2>
                     <p class="text-reveal">
                         Modena Consulenza è uno studio di commercialisti con
@@ -72,12 +74,12 @@ import Layout from "../layouts/Layout.astro";
         <div class="contain">
         <div class="grid grid--card">
             <div class="col-33">
-                <div class="card grey relative fade-in">
+                <div class="card grey relative">
                     <div class="cardetta">
                         <div class="card__img">
                             <img src="/assets/01.png" alt="" />
                         </div>
-                        <div class="containerh4">
+                        <div class="containerh4 text-reveal">
                             <h4>Controllo <br /> di gestione</h4>
                         </div>
                         <div class="containerp">
@@ -251,6 +253,7 @@ import Layout from "../layouts/Layout.astro";
 
 
 
+
     .hero {
         background-color: #002169;
         position: relative;
@@ -278,6 +281,8 @@ import Layout from "../layouts/Layout.astro";
         color: #fff;
         margin-top: 3.2rem;
         margin-bottom: 3.4rem;
+        padding-bottom: 0.3rem;
+        width: 85%;
     }
     .contenuto-left p {
         color: white;
@@ -325,7 +330,11 @@ import Layout from "../layouts/Layout.astro";
         line-height: 150%;
         margin-left: 12%;
         padding-top: 2rem;
-        margin-right: 10%;
+        /* margin-right: 10%; */
+    }
+
+    @media (min-width: 1715px) {
+      .hero7 .cover__wallet h4{width: 40%!important;}
     }
     .hero4 {
         background-color: white;

@@ -110,8 +110,11 @@ window.addEventListener('DOMContentLoaded', function() {
 </script>
 
 <script>
-/// Seleziona tutti gli elementi con la classe ".fade-in"
+// Seleziona tutti gli elementi con la classe ".fade-in"
 const fadeIns = document.querySelectorAll('.fade-in');
+
+
+const textReveals = document.querySelectorAll('.text-reveal');
 
 // Crea un osservatore dell'intersezione
 const observer = new IntersectionObserver(entries => {
@@ -137,7 +140,11 @@ const observer = new IntersectionObserver(entries => {
 // Aggiungi l'osservatore a ciascun elemento con la classe ".fade-in"
 fadeIns.forEach(fadeIn => {
   observer.observe(fadeIn);
+
 });
+
+
+
 
 
 // ScrollTrigger.batch(".fade-up",{
