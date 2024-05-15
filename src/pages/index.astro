@@ -26,7 +26,7 @@ import Layout from "../layouts/Layout.astro";
                 </div>
             </div>
             <div class="col-35">
-                <img src="/assets/hero-img.png" alt="" />
+                <img src="/assets/hero-img.png" alt="" class="dynamic-border" data-borders="borderTopRightRadius" data-value-big="20px"/>
             </div>
         </div>
 
@@ -159,7 +159,7 @@ import Layout from "../layouts/Layout.astro";
     <div class="hero6 relative blue">
         
         <div class="contain">
-        <img src="/assets/hero6-img.png" alt="" />
+        <img src="/assets/hero6-img.png" alt="" class="dynamic-border" data-borders="borderTopRightRadius,borderBottomRightRadius" data-value-big="20px" />
   
         <div class="grid--hero6">
             <div class="col-80">
@@ -279,8 +279,8 @@ import Layout from "../layouts/Layout.astro";
         font-size: clamp(2rem, 1rem + 5vw, 5rem);
         line-height: 112%;
         color: #fff;
-        margin-top: 3.2rem;
-        margin-bottom: 3.4rem;
+        margin-top: 3.2rem!important;
+        margin-bottom: 3.4rem!important;
         padding-bottom: 0.3rem;
         width: 85%;
     }
@@ -516,6 +516,7 @@ import Layout from "../layouts/Layout.astro";
             font-size: 2rem;
             line-height: 130%;
             text-align: center;
+            margin: 0 auto;
         }
         .contenuto-left p {
             text-align: center;

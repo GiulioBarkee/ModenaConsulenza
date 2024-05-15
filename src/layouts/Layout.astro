@@ -21,8 +21,9 @@ const { title, page } = Astro.props;
 			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"rel="stylesheet"/>
             
             <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js" charset="utf-8"></script>
-            <!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script> -->
             <SEO />
+
+            <script src="../scripts/main.js"></script>
 	</head>
 	<body>
 
@@ -36,123 +37,3 @@ const { title, page } = Astro.props;
 </html>
 
 
-<script>
-
-window.addEventListener('DOMContentLoaded', function() {
-    const imgContainer = document.querySelector('.img-container');
-
-    function adjustBorderRadius() {
-        if (window.innerWidth < 1750) {
-            imgContainer.style.borderBottomRightRadius = '0';
-        } else {
-            imgContainer.style.borderBottomRightRadius = '';
-        }
-    }
-
-    adjustBorderRadius(); // Chiama la funzione all'avvio per impostare inizialmente la proprietà
-
-    window.addEventListener('resize', adjustBorderRadius); // Aggiungi un listener per aggiornare la proprietà quando la finestra viene ridimensionata
-});
-
-window.addEventListener('DOMContentLoaded', function() {
-    const heroImage = document.querySelector('.hero1 img');
-
-    function adjustBorderRadius() {
-        if (window.innerWidth > 1750) {
-            heroImage.style.borderTopLeftRadius = '30px';
-            heroImage.style.borderBottomLeftRadius = '30px';
-        } else {
-            heroImage.style.borderTopLeftRadius = '';
-            heroImage.style.borderBottomLeftRadius = '';
-        }
-    }
-
-    adjustBorderRadius(); // Chiama la funzione all'avvio per impostare inizialmente le proprietà
-
-    window.addEventListener('resize', adjustBorderRadius); // Aggiungi un listener per aggiornare le proprietà quando la finestra viene ridimensionata
-});
-
-window.addEventListener('DOMContentLoaded', function() {
-    const col35Image = document.querySelector('.col-35 img');
-
-    function adjustBorderRadius() {
-        if (window.innerWidth > 1750) {
-            col35Image.style.borderTopRightRadius = '20px';
-        } else {
-            col35Image.style.borderTopRightRadius = '';
-        }
-    }
-
-    adjustBorderRadius(); // Chiama la funzione all'avvio per impostare inizialmente la proprietà
-
-    window.addEventListener('resize', adjustBorderRadius); // Aggiungi un listener per aggiornare la proprietà quando la finestra viene ridimensionata
-});
-
-window.addEventListener('DOMContentLoaded', function() {
-    const Hero6img = document.querySelector('.hero6 img');
-
-    function adjustBorderRadius() {
-        if (window.innerWidth > 1750) {
-            Hero6img.style.borderBottomRightRadius = '20px';
-            Hero6img.style.borderTopRightRadius = '20px';
-        } else {
-            Hero6img.style.borderBottomRightRadius = '';
-            Hero6img.style.borderTopRightRadius = null;
-        }
-    }
-
-    adjustBorderRadius(); // Chiama la funzione all'avvio per impostare inizialmente la proprietà
-
-    window.addEventListener('resize', adjustBorderRadius); // Aggiungi un listener per aggiornare la proprietà quando la finestra viene ridimensionata
-});
-
-
-</script>
-
-<script>
-// Seleziona tutti gli elementi con la classe ".fade-in"
-const fadeIns = document.querySelectorAll('.fade-in');
-
-// Crea un osservatore dell'intersezione
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    // Verifica se l'elemento è entrato nella visualizzazione
-    if (entry.isIntersecting) {
-      // Esegue l'animazione di fade-in sull'array di elementi utilizzando GSAP
-      gsap.to(entry.target, {
-        opacity: 1,
-        duration: 3,
-        stagger: 1,
-        ease: "power3.out"
-      });
-      
-      // Smette di osservare l'elemento dopo che è stato reso visibile
-      observer.unobserve(entry.target);
-    }
-  });
-}, {
-  threshold: 0.3 // Imposta il threshold per l'intersezione
-});
-
-// Aggiungi l'osservatore a ciascun elemento con la classe ".fade-in"
-fadeIns.forEach(fadeIn => {
-  observer.observe(fadeIn);
-
-});
-
-
-
-
-
-// ScrollTrigger.batch(".fade-up",{
-//   start: "top 80%",
-//   onEnter: (elements, triggers) => {
-//     gsap.to(elements, { opacity: 1, stagger: 0.3, y:0, duration: 1.5,  ease: Power2.easeOut });
-//     console.log(elements.length, "elements entered");
-//   }
-// });
-
-gsap.to( ".text-reveal" , { clipPath:"polygon(0 0, 100% 0, 100% 100%, 0 100%)",  y:0, duration:1, stagger: 0.3});
-
-
-</script>
