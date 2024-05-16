@@ -37,36 +37,33 @@ window.addEventListener('resize', adjustBorderRadius);
     // });
 
 
-const fadeIns = document.querySelectorAll('.fade-in');
+const entryAnimations = document.querySelectorAll('.fade-in, .text-reveal');
 
-// Crea un osservatore dell'intersezione
+
+
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     // Verifica se l'elemento è entrato nella visualizzazione
     if (entry.isIntersecting) {
       // Esegue l'animazione di fade-in sull'array di elementi utilizzando GSAP
-      gsap.to(entry.target, {
-        opacity: 1,
-        duration: 3,
-        stagger: 1,
-        ease: "power3.out"
-      });
+    //   gsap.to(entry.target, {
+    //     opacity: 1,
+    //     duration: 3,
+    //     stagger: 1,
+    //     ease: "power3.out"
+    //   });
+    entry.target.classList.add("visible")
       
       // Smette di osservare l'elemento dopo che è stato reso visibile
       observer.unobserve(entry.target);
     }
   });
-}, {
-  threshold: 0.3 // Imposta il threshold per l'intersezione
 });
 
-// Aggiungi l'osservatore a ciascun elemento con la classe ".fade-in"
-fadeIns.forEach(fadeIn => {
-  observer.observe(fadeIn);
-
+// osservatore a ciascun elemento con la classe ".fade-in"
+entryAnimations.forEach(entryAnimation => {
+  observer.observe(entryAnimation);
 });
-
-
 
 
 
@@ -78,6 +75,6 @@ fadeIns.forEach(fadeIn => {
 //   }
 // });
 
-gsap.to( ".text-reveal" , { clipPath:"polygon(0 0, 100% 0, 100% 100%, 0 100%)",  y:0, duration:1, stagger: 0.3});
+// gsap.to( ".text-reveal" , { clipPath:"polygon(0 0, 100% 0, 100% 100%, 0 100%)",  y:0, duration:1, stagger: 0.3});
 
 

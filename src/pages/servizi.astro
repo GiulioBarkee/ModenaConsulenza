@@ -381,7 +381,7 @@ import Layout from "../layouts/Layout.astro";
 
         .grey-servizi .title-accordion{width: 100%!important;}
 
-        .grid__servizi-bottom{width: 84%; margin: 0 auto; margin-bottom: 7rem}
+        .grid__servizi-bottom{width: 84%; margin: 0 auto; margin-bottom: -3rem}
         .bottom-img{width: calc(100% - 4rem)!important}
 
     }
@@ -517,6 +517,11 @@ padding-left: 80px!important;}
     .grey-servizi .cover__wallet {
       bottom: 3rem;
       background-color: #edeef0;
+    }
+    @media (max-width: 768px) {
+      .grey-servizi .cover__wallet {
+      bottom: -3rem;
+      }
     }
 
     .ultima-cover-wallet{    z-index: 10;

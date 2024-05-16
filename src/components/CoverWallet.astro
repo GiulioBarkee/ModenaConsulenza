@@ -1,0 +1,28 @@
+---
+const {title,img, content, link = '', textButton = 'Approfondisci'} = Astro.props;
+---
+
+
+<div class="cover__wallet relative mb-6r">
+    <img src={img} alt="" />
+    <h4 set:html={title}></h4>
+    <p>{content}
+    </p>
+    <a  class="button__hero5" href={link}>{textButton} </a>
+</div>
+
+<style>
+.cover__wallet {     width: 88%;
+        border-radius: 40px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        min-height: 450px;
+        margin: 0 auto;
+        overflow: hidden;
+        height: auto;}
+.relative{position: relative;}
+.mb-6r{margin-bottom: 6.5rem;}
+.button__hero5{  font-size: 1rem; background: #002169; color:#fff;
+  text-decoration: none;padding: 10px 34px; display: inline-block;
+  border-radius: 18px; font-weight: 500; text-transform: uppercase; font-size: 1.1rem;}
+
+</style>

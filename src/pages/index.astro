@@ -1,5 +1,7 @@
 ---
+import CoverWallet from "@/components/CoverWallet.astro";
 import Layout from "../layouts/Layout.astro";
+import {card} from "../content/settings/cards.json";
 ---
 
 <Layout title="Modena Consulenza">
@@ -54,7 +56,6 @@ import Layout from "../layouts/Layout.astro";
 
     <div class="hero3">
         <div class="contain">
-
         <div class="grid">
             <div class="col-35"></div>
             <div class="col-60 obiettivo">
@@ -95,12 +96,12 @@ import Layout from "../layouts/Layout.astro";
             </div>
 
             <div class="col-33">
-                <div class="card yellow relative fade-in">
+                <div class="card yellow relative">
                     <div class="cardetta">
                         <div class="card__img">
                             <img src="/assets/02.png" alt="" />
                         </div>
-                        <div class="containerh4">
+                        <div class="containerh4 text-reveal" style="--delay: .2">
                             <h4>Pianificazione fiscale</h4>
                         </div>
                         <div class="containerp">
@@ -117,12 +118,12 @@ import Layout from "../layouts/Layout.astro";
             </div>
 
             <div class="col-33">
-                <div class="card blue relative fade-in">
+                <div class="card blue relative">
                     <div class="cardetta">
                         <div class="card__img">
                             <img src="/assets/03.png" alt="" />
                         </div>
-                        <div class="containerh4">
+                        <div class="containerh4 text-reveal" style="--delay: .4">
                             <h4>Transactions <br /> (M&A)</h4>
                         </div>
                         <div class="containerp">
@@ -155,7 +156,10 @@ import Layout from "../layouts/Layout.astro";
         </div>
     </div>
     </div>
-  
+
+    <!-- <CoverWallet img="assets/hero5-img.png" title="Il servizio <br/> Easy  Wallet" content=" È il controllo di gestione per liberi professionisti che comprende la stesura del budget economico finanziario e la verifica a consuntivo."></CoverWallet> -->
+    <!-- <CoverWallet {...card}/> -->
+    
     <div class="hero6 relative blue">
         
         <div class="contain">
@@ -173,7 +177,6 @@ import Layout from "../layouts/Layout.astro";
                 <a href="" class="button">SCOPRI DI PIU'</a>
             </div>
         </div>
-
         <div class="grid--hero6b">
             <div class="col-60">
                 <h4>
@@ -246,6 +249,9 @@ import Layout from "../layouts/Layout.astro";
     <!-- </div> -->
         </div>
     </div>
+
+ 
+
 </Layout>
 
 <style>
