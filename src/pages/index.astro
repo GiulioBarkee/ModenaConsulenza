@@ -28,7 +28,8 @@ import {card} from "../content/settings/cards.json";
                 </div>
             </div>
             <div class="col-35">
-                <img src="/assets/hero-img.png" alt="" class="dynamic-border" data-borders="borderTopRightRadius" data-value-big="20px"/>
+                <!-- <img src="/assets/hero-img.png" alt="" class="dynamic-border" data-borders="borderTopRightRadius" data-value-big="20px"/> -->
+                <video src="/assets/videoHero.webm" class="dynamic-border" data-borders="borderTopRightRadius" data-value-big="20px" loop autoplay muted></video>
             </div>
         </div>
 
@@ -60,11 +61,7 @@ import {card} from "../content/settings/cards.json";
             <div class="col-35"></div>
             <div class="col-60 obiettivo">
                 <p>
-                    Il nostro obiettivo è soddisfare la domanda di servizi su
-                    misura, colmando il gap tra offerte generiche e necessità
-                    specifiche da parte dei clienti. Individuiamo e sviluppiamo
-                    le potenzialità uniche di ogni azienda, garantendo
-                    consulenze personalizzate e strategiche.
+                    Individuiamo e sviluppiamo le potenzialità uniche di ogni azienda, garantendo consulenze personalizzate e strategiche.
                 </p>
             </div>
         </div>
@@ -158,7 +155,7 @@ import {card} from "../content/settings/cards.json";
     </div>
 
     <!-- <CoverWallet img="assets/hero5-img.png" title="Il servizio <br/> Easy  Wallet" content=" È il controllo di gestione per liberi professionisti che comprende la stesura del budget economico finanziario e la verifica a consuntivo."></CoverWallet> -->
-    <!-- <CoverWallet {...card}/> -->
+    <CoverWallet {...card}/>
     
     <div class="hero6 relative blue">
         
@@ -190,8 +187,7 @@ import {card} from "../content/settings/cards.json";
                     di ogni realtà imprenditoriale. Da anni combiniamo la
                     flessibilità della personalizzazione alla competenza
                     specifica, acquisita attraverso la gestione di gruppi
-                    aziendali maggiori, per offrire il migliore servizio di
-                    consulenza possibile.
+                    aziendali maggiori, per offrire una consulenza di valore.
                 </p>
                 <p>
                     Scopri come ottimizzare la gestione della tua azienda
@@ -207,11 +203,9 @@ import {card} from "../content/settings/cards.json";
         <div class="container">
             <div class="cover__wallet relative">
                 <img src="/assets/hero5-img.png" alt="" />
-                <h4>Cerchi un servizio adatto a PMI?</h4>
+                <h4>Vuoi monitorare le prestazioni della tua azienda?</h4>
                 <p>
-                    Il servizio Easy Wallet ti semplifica il Controllo di
-                    gestione offrendoti stesura del budget economico finanziario
-                    e verifica a consuntivo.
+                    Il servizio Easy Wallet offrendoti stesura del budget economico finanziario e verifica a consuntivo.
                 </p>
                 <a href="" class="button__hero5">SCOPRI DI PIU'</a>
             </div>
@@ -272,13 +266,18 @@ import {card} from "../content/settings/cards.json";
         padding-right: 2.5rem;
        
     }
-    .col-35 img {
+    .col-35 img,
+    .col-35 video {
         width: 100%;
         height: 100%;
         object-fit: cover;
         border-top-left-radius: 20px; 
  
     }
+
+    .grid--hero .col-35{position: relative;}
+
+    .col-35 video{height: 40rem; position: absolute; bottom: 0}
 
     .contenuto-left h2 {
         font-weight: 450;
@@ -334,13 +333,13 @@ import {card} from "../content/settings/cards.json";
         font-weight: 400;
         font-size: 1.1rem;
         line-height: 150%;
-        margin-left: 12%;
+        margin-left: 40%;;
         padding-top: 2rem;
         /* margin-right: 10%; */
     }
 
-    @media (min-width: 1715px) {
-      .hero7 .cover__wallet h4{width: 40%!important;}
+    @media (min-width: 768px) {
+      .hero7 .cover__wallet h4{width: 80%!important;}
     }
     .hero4 {
         background-color: white;
@@ -362,6 +361,8 @@ import {card} from "../content/settings/cards.json";
     }
 
     .hero7 .grid--hero7{margin-top: -11rem; margin-bottom: -10rem;}
+
+    .hero7 .cover__wallet p{width: 35%;}
     @media (max-width: 768px) {
         .contenuto-left p {
             padding-bottom: 0;
@@ -490,7 +491,7 @@ import {card} from "../content/settings/cards.json";
         font-size: 1.1rem;
     }
     .grid--card {
-        margin-top: 5rem;
+        margin-top: 7.5rem;
     }
     .hero7-img {
      max-width: calc(100% - 11rem);
@@ -580,7 +581,8 @@ import {card} from "../content/settings/cards.json";
             margin: 0 auto;
             width: 80%;
         }
-        .col-35 img {
+        .col-35 img,
+        .col-35 video {
             height: 90%;
             padding-top: 6rem;
         }

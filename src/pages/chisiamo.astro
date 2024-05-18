@@ -14,8 +14,7 @@ import { team } from "@/content/settings/settings.json";
                 >
             </h2>
             <p>
-                Siamo uno studio di commercialisti che <br />
-                opera a livello locale e internazionale.
+                Siamo uno studio di dottori commercialisti  e revisori legali che opera a livello locale e internazionale.
             </p>
         </div>
         <img class="img-res dynamic-border" src="/assets/chisiamo1.png" alt="" data-borders="borderBottomLeftRadius,borderTopLeftRadius" data-value-big="30px"/>
@@ -38,13 +37,13 @@ import { team } from "@/content/settings/settings.json";
             <div class="col-30">
                 <div class="border-left">
                     <h4>100%</h4>
-                    <p>Lorem ipsum dolor sit</p>
+                    <p>Ore di consulenza</p>
                 </div>
             </div>
             <div class="col-25">
                 <div class="border-left">
                     <h4>50+</h4>
-                    <p>Clienti soddisfatti</p>
+                    <p>Persone</p>
                 </div>
             </div>
         </div>
@@ -52,13 +51,13 @@ import { team } from "@/content/settings/settings.json";
             <div class="col-40">
                 <div class="border-left">
                     <h4>80%</h4>
-                    <p>Lorem ipsum dolor sit</p>
+                    <p>Paesi in cui abbiamo operato</p>
                 </div>
             </div>
             <div class="col-40">
                 <div class="border-left">
-                    <h4>900</h4>
-                    <p>Lorem ipsum dolor sit</p>
+                    <h4>2</h4>
+                    <p>Sedi</p>
                 </div>
             </div>
         </div>
@@ -77,7 +76,7 @@ import { team } from "@/content/settings/settings.json";
             progetti.
         </h3>
         <div class="hero3b__paragrafi">
-            <a href="" class="button">Contattaci</a>
+            <!-- <a href="" class="button">Contattaci</a> -->
             <p class="mb-3">
                 Modena Consulenza nasce come team di esperti caratterizzato da
                 competenze professionali trasversali, che gli permette di
@@ -85,11 +84,7 @@ import { team } from "@/content/settings/settings.json";
                 servizi offerti rispetto ad altri studi di consulenza presenti
                 sul mercato.
             </p>
-            <p class="hero3b__padding-bottom">
-                L’obiettivo ultimo di Modena Consulenza è lo sviluppo del
-                cliente attraverso un portafoglio di servizi a lui dedicati per
-                la realizzazione dei propri progetti.
-            </p>
+    
         </div>
     </div>
     </div>
@@ -189,12 +184,13 @@ import { team } from "@/content/settings/settings.json";
         <div class="container">
             <div class="cover__wallet relative">
                 <img src="/assets/hero5-img.png" alt="" />
-                <h4>Cerchi un servizio di gestione chiaro e trasparente?</h4>
+                <h4>Scopri tutti   i <br>
+                  nostri servizi</h4>
                 <p>
                     Modena Consulenza è qui per offrirti il supporto su misura
                     di cui hai bisogno per la tua gestione aziendale.
                 </p>
-                <a href="" class="button__hero5">CONTATTACI</a>
+                <a href="" class="button__hero5">SCOPRI I SERVIZI</a>
             </div>
         </div>
     </div>
@@ -202,6 +198,13 @@ import { team } from "@/content/settings/settings.json";
 </Layout>
 
 <style >
+@media (min-width: 1068px) and ( max-width: 1420px){
+  .hero1 p{width: 27%!important; right: 5rem!important}
+}
+@media (min-width: 768px) and (max-width: 1220px) {
+  .hero1 p{width: 31%!important;}
+}
+
 
     .img-left-right{    width: calc(100% - 11rem);
     position: relative;
@@ -246,9 +249,9 @@ bottom: -15rem;}
     }
     .hero1 p {
         position: absolute;
-        width: 33%;
-        right: 0.6rem;
-        top: 15rem;
+        width: 23%;
+        right: 10rem;
+        top: 14rem;
         font-weight: 400;
         font-size: clamp(0.6rem, 1rem + 12vw, 1.1rem) !important;
     }
@@ -259,7 +262,7 @@ bottom: -15rem;}
         /* padding-bottom: 20%; */
     }
     .hero2b h3 {
-        width: 70%;
+        width: 80%;
         color: white;
         font-size: clamp(1.2rem, 1rem + 2vw, 2.3rem);
         font-weight: 500;
@@ -273,7 +276,7 @@ bottom: -15rem;}
     }
     .grid__hero2b h4,
     .gridb__hero2b h4 {
-        font-size: clamp(1.5rem, 1rem + 5vw, 6.5rem);
+        font-size: clamp(1.5rem, 1rem + 7vw, 7rem);
         color: white;
         font-weight: 500;
         margin-top: 15%;
@@ -304,7 +307,7 @@ bottom: -15rem;}
     }
     .hero3b {
         height: auto;
-        margin-bottom: 22rem;
+        margin-bottom: 25rem;
     }
     .hero3b h3 {
         line-height: 130%;
@@ -423,6 +426,8 @@ bottom: -15rem;}
         width: 70%;
         color: white;
         max-width: 1100px;
+        margin-bottom: 3.5rem;
+        margin-top: 5rem;
 
     }
     .hero5b .container p {
