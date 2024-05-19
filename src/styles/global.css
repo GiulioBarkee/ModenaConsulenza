@@ -21,3 +21,13 @@ code {
         Courier New,
         monospace;
 }
+
+* {
+    /* box-sizing: border-box; */
+    /* outline: 0; */
+    /* border: 0; */
+    /* margin: 0;
+    padding: 0; */
+    color: inherit;
+    text-decoration: inherit;
+    -webkit-user-drag: none;}
