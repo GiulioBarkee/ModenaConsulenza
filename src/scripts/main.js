@@ -45,6 +45,13 @@ const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     // Verifica se l'elemento è entrato nella visualizzazione
     if (entry.isIntersecting) {
+      // Esegue l'animazione di fade-in sull'array di elementi utilizzando GSAP
+    //   gsap.to(entry.target, {
+    //     opacity: 1,
+    //     duration: 3,
+    //     stagger: 1,
+    //     ease: "power3.out"
+    //   });
     entry.target.classList.add("visible")
       
       // Smette di osservare l'elemento dopo che è stato reso visibile
