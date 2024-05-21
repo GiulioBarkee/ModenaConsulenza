@@ -8,6 +8,8 @@ html {
     font-family: "Poppins", system-ui, sans-serif;
     background: #ffffff;
     background-size: 224px;
+    scroll-behavior: smooth;
+    scroll-padding: 10rem;
 }
 
 code {
