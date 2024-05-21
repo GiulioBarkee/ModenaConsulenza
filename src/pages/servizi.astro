@@ -70,7 +70,7 @@ import Layout from "../layouts/Layout.astro";
   </div>
   </div>
 
-  <div class="contain top-15">
+  <div class="contain">
   <h3 class="title-accordion mt-15" id="controllo-di-gestione" data-state="+">Controllo <br /> di gestione</h3>
   <div class="content-accordion">
     <p class="uno-acc">
@@ -92,17 +92,17 @@ import Layout from "../layouts/Layout.astro";
           <p class="p-cella">Lorem ipsum dolor sit</p>
         </div>
       </div>
-      <div class="col-40">
+      <div class="col-40 ">
         <div>
-          <p>
+          <p class="move-left">
             Con il servizio “Controllo di gestione” i costi della tua azienda
             diventano chiari e trasparenti.
           </p>
         </div>
       </div>
-      <div class="col-40 ultima-col">
+      <div class="col-40 ultima-col ">
         <div>
-          <p>
+          <p class="move-left">
             Potrai analizzare la produttività dei tuoi clienti e conoscere i
             margini generati da ogni area di settore.
           </p>
@@ -149,7 +149,7 @@ import Layout from "../layouts/Layout.astro";
       </div>
       <div class="col-40">
         <div>
-          <p>
+          <p class="move-left">
             Elaboriamo la tua pianificazione fiscale nel rispetto delle
             normative, evitando i rischi di evasione o elusione.
           </p>
@@ -157,7 +157,7 @@ import Layout from "../layouts/Layout.astro";
       </div>
       <div class="col-40 ultima-col">
         <div>
-          <p>
+          <p class="move-left">
             Contribuiamo alla stabilità e al successo della tua azienda,
             permettendoti di risparmiare notevoli somme.
           </p>
@@ -189,7 +189,7 @@ import Layout from "../layouts/Layout.astro";
       </div>
       <div class="col-40">
         <div>
-          <p>
+          <p class="move-left">
             Guidiamo l’imprenditore nelle acquisizioni e dismissioni aziendali
             con competenza e visione strategica.
           </p>
@@ -197,7 +197,7 @@ import Layout from "../layouts/Layout.astro";
       </div>
       <div class="col-40 ultima-col">
         <div>
-          <p>
+          <p class="move-left">
             Il nostro approccio prevede un’agilità decisionale maggiore e il
             coinvolgimento diretto dell’imprenditore.
           </p>
@@ -263,7 +263,7 @@ import Layout from "../layouts/Layout.astro";
     .grid .card h4{margin-top: 0;}
 
 
-
+.move-left{padding-left:0!important}
 
 .mt-15{margin-top: 8rem!important;}
     @media (min-width: 768px) {
@@ -289,7 +289,7 @@ import Layout from "../layouts/Layout.astro";
       margin-top: 8%;
     }
     .hero1c {
-      min-height: 180vh;
+      /* min-height: 180vh; */
       margin-bottom: -13rem;
     }
     .hero1c h2 {
@@ -364,7 +364,7 @@ import Layout from "../layouts/Layout.astro";
     }
     .gridb__hero2b p {
       text-align: left;
-      width: 100% !important;
+      width: 109% !important;
     }
 
     /* ! Accordion */
@@ -463,7 +463,8 @@ color: #002169;
     line-height: 110%;
     margin-bottom: 2rem;
   line-height: 140%;
-padding-left: 80px!important;}
+padding-left: 0px!important;
+}
 
     .content-accordion--show {
       max-height: 1000px;
@@ -473,13 +474,14 @@ padding-left: 80px!important;}
     }
 
     .acc-1-img {
-      width: 94%;
+      width: 100%;
     height: auto;
     border-radius: 10px;
     margin: 1% auto;
     display: flex;
-    margin-left: 40px;
-    max-width: 1000px;
+    /* margin-left: 40px; */
+    /* max-width: 1000px; */
+    margin-right: 5.5rem;
     }
     .bottom-img {
       width: calc(100% - 11rem);
@@ -505,6 +507,8 @@ padding-left: 80px!important;}
       padding-top: 1.8rem;
       border-bottom: 1px solid #002169;
     }
+
+  .grey-servizi .cover__wallet p{width: 40%;}
     .grey-servizi h3 {
       font-size: clamp(1.5rem, 1rem + 5vw, 3.2rem);
       font-weight: 500;
@@ -556,7 +560,7 @@ padding-left: 80px!important;}
         padding-bottom: 2rem;
       }
       .acc-1-img {
-        width: 100%;
+        width: 94%;
         margin-top: -3.5rem!important;
         margin: 0 auto;
         margin-bottom: 3rem;
@@ -702,7 +706,6 @@ padding-left: 80px!important;}
 /* @media (min-width: 768px) {
  .hero1c--img{margin-bottom: -46rem;}
 } */
-
 
 
   </style>

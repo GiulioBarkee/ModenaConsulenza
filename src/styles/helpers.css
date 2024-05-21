@@ -95,9 +95,9 @@ align-items: center;}
     max-width: 800px;
     /* gap: 1.5rem; */
     max-width: 1850px;
-    margin-left: 32%;
+    margin-left: 23.8%;
   /* margin-top: 2rem; */
-/* column-gap: 4rem; */
+column-gap:8rem;
 margin-bottom: -8.5rem;}
  
 .grid__hero4b{width: 48%;
