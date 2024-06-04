@@ -5,7 +5,7 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="Modena Consulenza">
   <div class="hero1c">
     <div class="contain">
-    <h2>I nostri servizi di consulenza</h2>
+    <h2 class="text-reveal">I nostri servizi di consulenza</h2>
     <div class="grid__hero1c">
       <div class="col-40">
         <p>
@@ -29,7 +29,7 @@ import Layout from "../layouts/Layout.astro";
           <div class="card__img">
             <img src="/assets/01.png" alt="" />
           </div>
-          <h4 class="text-blue">Controllo di<br /> gestione</h4>
+          <h4 class="text-blue text-reveal">Controllo di<br /> gestione</h4>
           <p>
             Assistiamo le imprese nel definire budget e rendiconti per
             accrescere la loro competitività ed efficienza nel mercato odierno.
@@ -43,7 +43,7 @@ import Layout from "../layouts/Layout.astro";
           <div class="card__img">
             <img src="/assets/02.png" alt="" />
           </div>
-          <h4>Pianificazione fiscale</h4>
+          <h4 class="text-reveal" style="--delay: .2">Pianificazione fiscale</h4>
           <p>
             Moduliamo la pianificazione fiscale delle imprese per aiutarle a
             gestire il carico fiscale in maniera strategica e accurata.
@@ -57,7 +57,7 @@ import Layout from "../layouts/Layout.astro";
           <div class="card__img">
             <img src="/assets/03.png" alt="" />
           </div>
-          <h4>Transactions <br /> (M&A)</h4>
+          <h4 class="text-reveal" style="--delay: .4">Transactions <br /> (M&A)</h4>
           <p>
             Aiutiamo le imprese nelle acquisizioni e vendite con analisi e
             strategie volte a massimizzare i vantaggi e ridurre i rischi.
@@ -71,7 +71,7 @@ import Layout from "../layouts/Layout.astro";
   </div>
 
   <div class="contain">
-  <h3 class="title-accordion mt-15" id="controllo-di-gestione" data-state="+">Controllo <br /> di gestione</h3>
+  <h3 class="title-accordion mt-15 fade-in" id="controllo-di-gestione" data-state="+">Controllo <br /> di gestione</h3>
   <div class="content-accordion">
     <p class="uno-acc">
       La nostra partnership con Studio Train, verticalizzato in CDG, ci ha
@@ -82,13 +82,13 @@ import Layout from "../layouts/Layout.astro";
     <div class="gridb__hero2b">
       <div class="col-40">
         <div class="border-left m-left">
-          <h4>80%</h4>
+          <h4 class="text-reveal">80%</h4>
           <p class="p-cella">Lorem ipsum dolor sit</p>
         </div>
       </div>
       <div class="col-40">
         <div class="border-left m2-left">
-          <h4>900</h4>
+          <h4 class="text-reveal">900</h4>
           <p class="p-cella">Lorem ipsum dolor sit</p>
         </div>
       </div>
@@ -126,7 +126,7 @@ import Layout from "../layouts/Layout.astro";
     <a href="" class="button__hero5">Richiedi informazioni</a>
   </div>
 
-  <h3 class="title-accordion due" id="revisione-legale">Pianificazione <br /> fiscale</h3>
+  <h3 class="title-accordion due fade-in"   id="revisione-legale">Pianificazione <br /> fiscale</h3>
   <div class="content-accordion">
     <p class="uno-acc">
       Il servizio riduce legalmente il carico fiscale della tua azienda,
@@ -137,13 +137,13 @@ import Layout from "../layouts/Layout.astro";
     <div class="gridb__hero2b">
       <div class="col-40">
         <div class="border-left m-left">
-          <h4>100%</h4>
+          <h4 class="text-reveal">100%</h4>
           <p class="p-cella">Lorem ipsum dolor sit</p>
         </div>
       </div>
       <div class="col-40">
         <div class="border-left m2-left">
-          <h4>50+</h4>
+          <h4 class="text-reveal">50+</h4>
           <p class="p-cella">Lorem ipsum dolor sit</p>
         </div>
       </div>
@@ -166,7 +166,7 @@ import Layout from "../layouts/Layout.astro";
     </div>
   </div>
 
-  <h3 class="title-accordion tre" id="transactions">Transactions <br />(M&A)</h3>
+  <h3 class="title-accordion tre fade-in" id="transactions" >Transactions <br />(M&A)</h3>
   <div class="content-accordion">
     <p class="uno-acc">
       Modena Consulenza si distingue come partner strategico in M&A: grazie alle
@@ -177,13 +177,13 @@ import Layout from "../layouts/Layout.astro";
     <div class="gridb__hero2b">
       <div class="col-40">
         <div class="border-left m-left">
-          <h4>100%</h4>
+          <h4 class="text-reveal">100%</h4>
           <p class="p-cella">Lorem ipsum dolor sit</p>
         </div>
       </div>
       <div class="col-40">
         <div class="border-left m2-left">
-          <h4>50+</h4>
+          <h4 class="text-reveal">50+</h4>
           <p class="p-cella">Lorem ipsum dolor sit</p>
         </div>
       </div>
@@ -213,10 +213,10 @@ import Layout from "../layouts/Layout.astro";
     <div class="contain top-15">
     <div class="grid__servizi-bottom">
       <div class="col-55">
-        <h3>Scopri i servizi aggiunti di Modena Consulenza</h3>
+        <h3 class="text-reveal">Scopri i servizi aggiunti di Modena Consulenza</h3>
       </div>
       <div class="col-45">
-        <p class="p-secondo">
+        <p class="p-secondo fade-in">
           Il nostro studio di commercialisti copre anche le richieste di privati
           e liberi professionisti erogando servizi ordinari.
         </p>
@@ -252,7 +252,7 @@ import Layout from "../layouts/Layout.astro";
         Modena Consulenza può aiutarti a ottenere una visione chiara e
         dettagliata delle tue gestione aziendale.
       </p>
-      <a href="" class="button__hero5">CONTATTACI</a>
+      <a href="" class="button__hero5 fade-in">CONTATTACI</a>
     </div>
   </div>
 </div>
@@ -648,7 +648,7 @@ padding-left: 0px!important;
         text-align: center;
       }
       .cover__wallet p {
-        width: 80%;
+        width: 80%!important;
         margin: 5% auto;
         text-align: center;
       }

@@ -7,13 +7,13 @@ import { team } from "@/content/settings/settings.json";
     <div class="hero1 relative">
         <div class="contain">
         <div>
-            <h2>
+            <h2 class="text-reveal">
                 La nostra storia <br /><span
                     style="margin-left: 30%; position:relative; top: -1.5rem "
                     >ha inizio a Modena</span
                 >
             </h2>
-            <p>
+            <p class="fade-in">
                 Siamo uno studio di dottori commercialisti  e revisori legali che opera a livello locale e internazionale.
             </p>
         </div>
@@ -26,7 +26,7 @@ import { team } from "@/content/settings/settings.json";
         <div class="grid__hero2b">
             <div class="col-45">
                 <div>
-                    <h3>
+                    <h3 class="">
                         Modena Consulenza in numeri. Ecco i <span
                             style="color:#FFD100; font-style: italic;"
                             >risultati</span
@@ -35,13 +35,13 @@ import { team } from "@/content/settings/settings.json";
                 </div>
             </div>
             <div class="col-30">
-                <div class="border-left">
+                <div class="border-left text-reveal">
                     <h4>100%</h4>
                     <p>Ore di consulenza</p>
                 </div>
             </div>
             <div class="col-25">
-                <div class="border-left">
+                <div class="border-left text-reveal" style="--delay: .2">
                     <h4>50+</h4>
                     <p>Persone</p>
                 </div>
@@ -49,13 +49,13 @@ import { team } from "@/content/settings/settings.json";
         </div>
         <div class="gridb__hero2b">
             <div class="col-40">
-                <div class="border-left">
+                <div class="border-left text-reveal" style="--delay: .4">
                     <h4>80%</h4>
                     <p>Paesi in cui abbiamo operato</p>
                 </div>
             </div>
             <div class="col-40">
-                <div class="border-left">
+                <div class="border-left text-reveal" style="--delay: .6">
                     <h4>2</h4>
                     <p>Sedi</p>
                 </div>
@@ -71,13 +71,13 @@ import { team } from "@/content/settings/settings.json";
 
     <div class="hero3b relative">
         <div class="contain">
-        <h3>
+        <h3 class="text-reveal">
             Da oltre 10 anni aiutiamo i nostri clienti a realizzare i loro
             progetti.
         </h3>
         <div class="hero3b__paragrafi">
             <!-- <a href="" class="button">Contattaci</a> -->
-            <p class="mb-3">
+            <p class="mb-3 fade-in">
                 Modena Consulenza nasce come team di esperti caratterizzato da
                 competenze professionali trasversali, che gli permette di
                 sostenere e promuove una qualità e affidabilità maggiore nei
@@ -118,7 +118,7 @@ import { team } from "@/content/settings/settings.json";
             {
                 team.map((el) => (
                     <div class="col-25">
-                        <div class="piastrina">
+                        <div class="piastrina fade-in">
                             <img src={el.img} alt="" />
                             <h4>{el.title}</h4>
                             <p>{el.subtitle}</p>
@@ -156,7 +156,7 @@ import { team } from "@/content/settings/settings.json";
         <div class="contain">
         <div class="grid--hero7 relative">
             <div class="col-50 relative">
-                <h2>
+                <h2 class="text-reveal">
                     Scopri le nostre
                     <span style="color:#002169; font-style: italic;"
                         >Partnership</span
@@ -171,7 +171,7 @@ import { team } from "@/content/settings/settings.json";
                     strategia ottimizzata.
                 </p>
             </div>
-            <div class="col-45 relative ">
+            <div class="col-45 relative fade-in">
                 <div class="scale">
                     <a href=""><img class="studiotrain" src="/assets/studiotrain.svg" alt="" /></a>
                     <a href=""><img class="frecciaright" src="/assets/frecciaright.png" alt=""></a>
@@ -190,7 +190,7 @@ import { team } from "@/content/settings/settings.json";
                     Modena Consulenza è qui per offrirti il supporto su misura
                     di cui hai bisogno per la tua gestione aziendale.
                 </p>
-                <a href="" class="button__hero5">SCOPRI I SERVIZI</a>
+                <a href="" class="button__hero5 fade-in">SCOPRI I SERVIZI</a>
             </div>
         </div>
     </div>
@@ -769,4 +769,11 @@ padding-bottom: 1rem;
       padding-bottom: 10rem;
     }
   } */
+
+
+  @media (min-width:350px) and (max-width: 620px) {
+    .hero3b[data-astro-cid-t3yizmzu] {
+        margin-bottom: 45%;
+    }
+}
 </style>

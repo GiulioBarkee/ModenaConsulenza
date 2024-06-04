@@ -238,7 +238,7 @@ padding-bottom: 45px;}
   
 
   @media (max-width: 768px) {
-    .cover__wallet h4{font-size: 2rem; width: 100%!important;};
+    .cover__wallet h4{font-size: 1.5rem; width: 100%!important;};
     .cover__wallet p{font-size: 1rem;}
   }
   .button__hero5{    position: absolute;
