@@ -1,257 +1,311 @@
 ---
 import CoverWallet from "@/components/CoverWallet.astro";
 import Layout from "../layouts/Layout.astro";
-import {card} from "../content/settings/cards.json";
+import { card } from "../content/settings/cards.json";
 ---
 
 <Layout title="Modena Consulenza">
-    
     <div class="hero pt-hero">
         <div class="contain">
-        <div class="grid--hero">
-            <div class="col-65">
-                <div class="contenuto-left">
-                    <h2 class="text-reveal">
-                     
-                        <!-- <span style="color:#FFD100; font-style: italic;"
+            <div class="grid--hero">
+                <div class="col-65">
+                    <div class="contenuto-left">
+                        <h2 class="text-reveal">
+                            <!-- <span style="color:#FFD100; font-style: italic;"
                             >imprese</span  -->
-                        
-                    
-                        Esperti locali per  consulenze d’<span style="color:#FFD100; font-style: italic;">impresa</span> globali
-                    
-                    </h2>
-                    <p class="text-reveal">
-                        Modena Consulenza è uno studio di commercialisti con
-                        esperienza <br /> decennale in analisi finanziaria e controllo
-                        di gestione per l’impresa.
-                    </p>
+                            Strategie su misura, risultati <span
+                                style="color:#FFD100; font-style: italic;"
+                                >concreti</span
+                            >
+                        </h2>
+                        <p class="text-reveal">
+                            Modena Consulenza è uno studio di commercialisti con
+                            esperienza </br> decennale in pianificazione fiscale,
+                            analisi finanziaria e <br/> controllo di gestione.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-35">
+                    <!-- <img src="/assets/hero-img.png" alt="" class="dynamic-border" data-borders="borderTopRightRadius" data-value-big="20px"/> -->
+                    <video
+                        src="/assets/videoHero1.webm"
+                        class="dynamic-border"
+                        data-borders="borderTopRightRadius"
+                        data-value-big="20px"
+                        loop
+                        autoplay
+                        muted></video>
+                    <!-- <img src="/assets/hero-img.png" alt="" /> -->
                 </div>
             </div>
-            <div class="col-35">
-                <!-- <img src="/assets/hero-img.png" alt="" class="dynamic-border" data-borders="borderTopRightRadius" data-value-big="20px"/> -->
-                <video src="/assets/videoHero1.webm" class="dynamic-border" data-borders="borderTopRightRadius" data-value-big="20px" loop autoplay muted></video>
-            </div>
-        </div>
 
-        <a href="#hero2" class="frecciadown">
-            <img src="/assets/frecciadown.png" alt="" />
-        </a>
-    </div>
+            <a href="#hero2" class="frecciadown">
+                <img src="/assets/frecciadown.png" alt="" />
+            </a>
+        </div>
     </div>
 
     <div class="hero2" id="hero2">
-
         <div class="contain">
-        <div class="grid">
-            <div class="col-50 col-left mt-tresei">
-                <h2 class="hero2-servizi fade-in">
-                    Scopri i <span style="color:#FFD100; font-style: italic;">servizi</span> di Modena Consulenza
-                </h2>
+            <div class="grid">
+                <div class="col-50 col-left mt-tresei">
+                    <h2 class="hero2-servizi fade-in">
+                        Scopri i <span
+                            style="color:#FFD100; font-style: italic;"
+                            >servizi</span
+                        > di Modena Consulenza
+                    </h2>
+                </div>
+                <div class="col-50"></div>
             </div>
-            <div class="col-50"></div>
         </div>
-    </div>
     </div>
 
     <div class="hero3">
         <div class="contain">
-        <div class="grid">
-            <div class="col-35"></div>
-            <div class="col-60 obiettivo">
-                <p>
-                    Individuiamo e sviluppiamo le potenzialità uniche di ogni azienda, garantendo consulenze personalizzate e strategiche.
-                </p>
+            <div class="grid">
+                <div class="col-35"></div>
+                <div class="col-60 obiettivo">
+                    <p>
+                        Individuiamo e sviluppiamo le potenzialità uniche di
+                        ogni azienda, garantendo consulenze personalizzate e
+                        strategiche.
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
     </div>
 
     <div class="hero4">
         <div class="contain">
-        <div class="grid grid--card">
-            <div class="col-33">
-                <div class="card grey relative">
-                    <div class="cardetta">
-                        <div class="card__img">
-                            <img src="/assets/01.png" alt="" />
-                        </div>
-                        <div class="containerh4 text-reveal">
-                            <h4>Controllo <br /> di gestione</h4>
-                        </div>
-                        <div class="containerp">
-                            <p>
-                                Guidiamo le imprese nell'adozione di budget e
-                                rendiconti finanziari al fine di migliorare
-                                competitività ed efficienza nel mercato attuale.
-                            </p>
-                            <img src="" alt="" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-33">
-                <div class="card yellow relative">
-                    <div class="cardetta">
-                        <div class="card__img">
-                            <img src="/assets/02.png" alt="" />
-                        </div>
-                        <div class="containerh4 text-reveal" style="--delay: .2">
-                            <h4>Pianificazione fiscale</h4>
-                        </div>
-                        <div class="containerp">
-                            <p>
-                                Ottimizziamo la struttura fiscale e finanziaria
-                                per minimizzare legalmente il carico fiscale
-                                delle imprese, garantendo risparmio e conformità
-                                normativa.
-                            </p>
-                           
+            <div class="grid grid--card">
+                <div class="col-50">
+                    <div class="card grey relative">
+                        <div class="cardetta">
+                            <div class="card__img">
+                                <img src="/assets/01.png" alt="" />
+                            </div>
+                            <div class="containerh4 text-reveal">
+                                <h4>Controllo <br /> di gestione</h4>
+                            </div>
+                            <div class="containerp">
+                                <p>
+                                    Guidiamo le imprese nell'adozione di budget
+                                    e rendiconti finanziari al fine di
+                                    migliorare competitività ed efficienza nel
+                                    mercato attuale.
+                                </p>
+                                <img src="" alt="" />
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-33">
-                <div class="card blue relative">
-                    <div class="cardetta">
-                        <div class="card__img">
-                            <img src="/assets/03.png" alt="" />
+                <div class="col-50">
+                    <div class="card yellow relative">
+                        <div class="cardetta">
+                            <div class="card__img">
+                                <img src="/assets/02.png" alt="" />
+                            </div>
+                            <div
+                                class="containerh4 text-reveal"
+                                style="--delay: .2"
+                            >
+                                <h4>Pianificazione fiscale</h4>
+                            </div>
+                            <div class="containerp">
+                                <p>
+                                    Ottimizziamo la struttura fiscale e
+                                    finanziaria per minimizzare legalmente il
+                                    carico fiscale delle imprese, garantendo
+                                    risparmio e conformità normativa.
+                                </p>
+                            </div>
                         </div>
-                        <div class="containerh4 text-reveal" style="--delay: .4">
-                            <h4>Transactions <br /> (M&A)</h4>
+                    </div>
+                </div>
+
+                <div class="col-50">
+                    <div class="card blue relative">
+                        <div class="cardetta">
+                            <div class="card__img">
+                                <img src="/assets/03.png" alt="" />
+                            </div>
+                            <div
+                                class="containerh4 text-reveal"
+                                style="--delay: .4"
+                            >
+                                <h4>Transactions <br /> (M&A)</h4>
+                            </div>
+                            <div class="containerp">
+                                <p>
+                                    Supportiamo le imprese in acquisizioni e
+                                    cessioni, offrendo analisi e strategie
+                                    pensate per ottimizzare i benefici e
+                                    minimizzare i rischi.
+                                </p>
+                                <img src="" alt="" />
+                            </div>
                         </div>
-                        <div class="containerp">
-                            <p>
-                                Supportiamo le imprese in acquisizioni e
-                                cessioni, offrendo analisi e strategie pensate
-                                per ottimizzare i benefici e minimizzare i
-                                rischi.
-                            </p>
-                            <img src="" alt="" />
+                    </div>
+                </div>
+
+                <div class="col-50">
+                    <div class="card blue relative">
+                        <div class="cardetta">
+                            <div class="card__img">
+                                <img src="/assets/03.png" alt="" />
+                            </div>
+                            <div
+                                class="containerh4 text-reveal"
+                                style="--delay: .4"
+                            >
+                                <h4>Transactions <br /> (M&A)</h4>
+                            </div>
+                            <div class="containerp">
+                                <p>
+                                    Supportiamo le imprese in acquisizioni e
+                                    cessioni, offrendo analisi e strategie
+                                    pensate per ottimizzare i benefici e
+                                    minimizzare i rischi.
+                                </p>
+                                <img src="" alt="" />
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>
 
     <div class="hero5">
         <div class="contain">
-        <div class="cover__wallet relative mb-6r ">
-            <img src="/assets/hero5-img.png" alt="" />
-            <h4>Il servizio <br /> Easy Wallet</h4>
-            <p>
-                È il controllo di gestione per liberi professionisti che
-                comprende la stesura del budget economico finanziario e la
-                verifica a consuntivo.
-            </p>
-            <a href="" class="button__hero5 fade-in">Approfondisci</a>
+            <div class="cover__wallet relative mb-6r">
+                <img src="/assets/hero5-img.png" alt="" />
+                <h4>Il servizio <br /> Easy Wallet</h4>
+                <p>
+                   Il nostro servizio di controllo di gestione per liberi professionisti include la stesura del budget economico-finanziario e la verifica a consuntivo, garantendo una gestione precisa e trasparente delle finanze e il raggiungimento dei tuoi obiettivi professionali.
+                </p>
+                <a href="/servizi" class="button__hero5 fade-in"
+                    >Approfondisci</a
+                >
+            </div>
         </div>
-    </div>
     </div>
 
     <!-- <CoverWallet img="assets/hero5-img.png" title="Il servizio <br/> Easy  Wallet" content=" È il controllo di gestione per liberi professionisti che comprende la stesura del budget economico finanziario e la verifica a consuntivo."></CoverWallet> -->
     <!-- <CoverWallet {...card}/> -->
-    
+
     <div class="hero6 relative blue">
-        
         <div class="contain">
-        <img src="/assets/hero6-img.png" alt="" class="dynamic-border" data-borders="borderTopRightRadius,borderBottomRightRadius" data-value-big="20px" />
-  
-        <div class="grid--hero6">
-            <div class="col-80">
-                <h2>
-                    La consulenza fatta a misura <span
-                        style="color:#FFD100; font-style: italic;">d'uomo</span
-                    >
-                </h2>
+            <img
+                src="/assets/hero6-img.png"
+                alt=""
+                class="dynamic-border"
+                data-borders="borderTopRightRadius,borderBottomRightRadius"
+                data-value-big="20px"
+            />
+
+            <div class="grid--hero6">
+                <div class="col-80">
+                    <h2>
+                        La consulenza fatta a misura <span
+                            style="color:#FFD100; font-style: italic;"
+                            >d'uomo</span
+                        >
+                    </h2>
+                </div>
+                <div class="col-20">
+                    <a href="/servizi" class="button fade-in">SCOPRI DI PIU'</a>
+                </div>
             </div>
-            <div class="col-20">
-                <a href="" class="button fade-in">SCOPRI DI PIU'</a>
+            <div class="grid--hero6b">
+                <div class="col-60">
+                    <h4 class="text-reveal">
+                        Persone prima che imprese. Ecco perchè crediamo nella
+                        personalizzazione di servizio.
+                    </h4>
+                </div>
+                <div class="col-40">
+                    <p>
+                        Mettere le persone al centro significa valorizzare
+                        l'unicità di ogni realtà imprenditoriale. Da anni
+                        combiniamo la flessibilità della personalizzazione alla
+                        competenza specifica, acquisita attraverso la gestione
+                        di gruppi aziendali maggiori, per offrire una consulenza
+                        di valore.
+                    </p>
+                    <p>
+                        Scopri come ottimizzare la gestione della tua azienda
+                        attraverso un portafoglio di servizi a te dedicati.
+                    </p>
+                </div>
             </div>
         </div>
-        <div class="grid--hero6b">
-            <div class="col-60">
-                <h4 class="text-reveal">
-                    Persone prima che imprese. Ecco perchè crediamo nella
-                    personalizzazione di servizio.
-                </h4>
-            </div>
-            <div class="col-40">
-                <p>
-                    Mettere le persone al centro significa valorizzare l'unicità
-                    di ogni realtà imprenditoriale. Da anni combiniamo la
-                    flessibilità della personalizzazione alla competenza
-                    specifica, acquisita attraverso la gestione di gruppi
-                    aziendali maggiori, per offrire una consulenza di valore.
-                </p>
-                <p>
-                    Scopri come ottimizzare la gestione della tua azienda
-                    attraverso un portafoglio di servizi a te dedicati.
-                </p>
-            </div>
-        </div>
-    </div>
     </div>
 
     <div class="hero7 relative">
         <div class="contain">
-        <div class="container">
-            <div class="cover__wallet relative">
-                <img src="/assets/hero5-img.png" alt="" />
-                <h4>Vuoi monitorare le prestazioni della tua azienda?</h4>
-                <p>
-                    Il servizio Easy Wallet offrendoti stesura del budget economico finanziario e verifica a consuntivo.
-                </p>
-                <a href="" class="button__hero5 fade-in">SCOPRI DI PIU'</a>
-            </div>
-        </div>
-        <div class="grid--hero7 relative">
-            <div class="col-50 relative">
-                <div class="">
-                    <h2 class="text-reveal">
-                        Scopri le nostre
-                        <span style="color:#002169; font-style: italic;"
-                            >Partnership</span
-                        >
-                    </h2>
+            <div class="container">
+                <div class="cover__wallet relative">
+                    <img src="/assets/hero5-img.png" alt="" />
+                    <h4>Vuoi monitorare le prestazioni della tua azienda?</h4>
                     <p>
-                        La nostra collaborazione con Studio Train, specializzato
-                        in controllo di gestione, ci permette di offrire servizi
-                        ancora più performanti. La partnership mira a potenziare
-                        l'efficacia della gestione aziendale, attraverso un
-                        monitoraggio delle performance più dettagliato e una
-                        strategia ottimizzata.
+                        Il servizio Easy Wallet offrendoti stesura del budget
+                        economico finanziario e verifica a consuntivo.
                     </p>
+                    <a href="/servizi" class="button__hero5 fade-in"
+                        >SCOPRI DI PIU'</a
+                    >
                 </div>
             </div>
-            <div class="col-45 relative fix120 fade-in">
-                <div class="scale pt-3">
-                    <a href=""><img class="studiotrain" src="/assets/studiotrain.svg" alt="" /> </a>
-                    <a href=""><img class="frecciaright" src="/assets/frecciaright.png" alt=""></a>
+            <!-- <div class="grid--hero7 relative">
+                <div class="col-50 relative">
+                    <div class="">
+                        <h2 class="text-reveal">
+                            Scopri le nostre
+                            <span style="color:#002169; font-style: italic;"
+                                >Partnership</span
+                            >
+                        </h2>
+                        <p>
+                            La nostra collaborazione con Studio Train,
+                            specializzato in controllo di gestione, ci permette
+                            di offrire servizi ancora più performanti. La
+                            partnership mira a potenziare l'efficacia della
+                            gestione aziendale, attraverso un monitoraggio delle
+                            performance più dettagliato e una strategia
+                            ottimizzata.
+                        </p>
+                    </div>
                 </div>
-                
+                <div class="col-45 relative fix120 fade-in">
+                    <div class="scale pt-3">
+                        <a href=""
+                            ><img
+                                class="studiotrain"
+                                src="/assets/studiotrain.svg"
+                                alt=""
+                            />
+                        </a>
+                        <a href=""
+                            ><img
+                                class="frecciaright"
+                                src="/assets/frecciaright.png"
+                                alt=""
+                            /></a
+                        >
+                    </div>
+                </div>
             </div>
-           
+            <div class="hero7-img-container"> -->
+            <img class="hero7-img" src="/assets/hero7-img.png" alt="" />
+            <!-- </div> -->
         </div>
-<!-- <div class="hero7-img-container"> -->
-        <img class="hero7-img" src="/assets/hero7-img.png" alt="" />
-    <!-- </div> -->
-        </div>
-    </div>
-
- 
-
+    </div> 
 </Layout>
 
 <style>
-
-
-
-
-
     .hero {
         background-color: #002169;
         position: relative;
@@ -259,40 +313,57 @@ import {card} from "../content/settings/cards.json";
     .space {
         height: 5vh;
     }
+    .col-65 {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+    }
     .contenuto-left {
         padding-left: 5.5rem;
         padding-right: 2.5rem;
-       
+        height: 30rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
     }
     .col-35 img,
     .col-35 video {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        border-top-left-radius: 20px; 
- 
+        border-top-left-radius: 20px;
     }
 
-    .grid--hero .col-35{position: relative;}
+    .grid--hero .col-35 {
+        position: relative;
+        height: 40rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    }
 
-    .col-35 video{height: 40rem; position: absolute; bottom: 0}
+    .col-35 video {
+        height: 40rem;
+        position: absolute;
+        bottom: 0;
+    }
 
     .contenuto-left h2 {
         font-weight: 450;
-        font-size: clamp(2rem, 1rem + 3.3vw, 5rem);
+        font-size: clamp(2rem, 1rem + 3.8vw, 6rem);
         line-height: 112%;
         color: #fff;
-        margin-top: 3.2rem!important;
-        margin-bottom: 3.4rem!important;
+        margin-top: 0rem !important;
+        margin-bottom: 2rem !important;
         padding-bottom: 0.3rem;
-        width: 85%;
+        width: 100%;
     }
     .contenuto-left p {
         color: white;
         font-weight: 400;
-        font-size: 1.13rem;
+        font-size: clamp(0.8rem, 4vw, 1.13rem);
         line-height: 150%;
-        padding-bottom: 12rem;
+        padding-bottom: 2rem;
     }
 
     .frecciadown {
@@ -301,7 +372,11 @@ import {card} from "../content/settings/cards.json";
         right: 48%;
     }
 
-    .frecciaright{position: absolute; width: 20px; height: 20px;}
+    .frecciaright {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+    }
 
     .hero2 {
         background-color: white;
@@ -331,16 +406,20 @@ import {card} from "../content/settings/cards.json";
         font-weight: 400;
         font-size: 1.1rem;
         line-height: 150%;
-        margin-left: 40%;;
+        margin-left: 40%;
         padding-top: 2rem;
         /* margin-right: 10%; */
     }
 
     @media (min-width: 768px) {
-      .hero7 .cover__wallet h4{width: 80%!important;}
+        .hero7 .cover__wallet h4 {
+            width: 80% !important;
+        }
     }
     @media (min-width: 1608px) {
-      .hero7 .cover__wallet h4{width: 70%!important}
+        .hero7 .cover__wallet h4 {
+            width: 70% !important;
+        }
     }
     .hero4 {
         background-color: white;
@@ -361,9 +440,14 @@ import {card} from "../content/settings/cards.json";
         padding: 10px 34px;
     }
 
-    .hero7 .grid--hero7{margin-top: -9rem; margin-bottom: -10rem;}
+    .hero7 .grid--hero7 {
+        margin-top: -9rem;
+        margin-bottom: -10rem;
+    }
 
-    .hero7 .cover__wallet p{width: 35%;}
+    .hero7 .cover__wallet p {
+        width: 35%;
+    }
     @media (max-width: 768px) {
         .contenuto-left p {
             padding-bottom: 0;
@@ -395,33 +479,34 @@ import {card} from "../content/settings/cards.json";
         padding-bottom: 15rem;
     }
 
-.hero4 .grid--card{margin-bottom: 5.5rem;}
+    .hero4 .grid--card {
+        margin-bottom: 5.5rem;
+    }
     @media (max-width: 768px) {
-
-.hero4 .grid--card{
-    width: 92%;
-    margin: 0 auto;
-    flex-wrap: wrap;
-    max-width: 1850px;
-    margin-bottom: 1.5rem;
-    margin-left: 8%;
-    margin-right: 8%;
-    gap: 2.5rem;
-    margin-top: 2.5rem;
-    margin-bottom: 2.5rem;
-    }}
-
-
-        .hero5 {
-            padding-bottom: 10rem;
-            padding-top: 0rem;
+        .hero4 .grid--card {
+            width: 92%;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            max-width: 1850px;
+            margin-bottom: 1.5rem;
+            margin-left: 8%;
+            margin-right: 8%;
+            gap: 2.5rem;
+            margin-top: 2.5rem;
+            margin-bottom: 2.5rem;
         }
+    }
 
-        @media (max-width: 768px) {
-            .hero2-servizi {
+    .hero5 {
+        /* padding-bottom: 10rem; */
+        padding-top: 0rem;
+    }
+
+    @media (max-width: 768px) {
+        .hero2-servizi {
             padding-top: 8rem;
         }
-        }
+    }
 
     .hero5 .cover__wallet {
         margin-bottom: 6rem;
@@ -450,8 +535,6 @@ import {card} from "../content/settings/cards.json";
         object-fit: cover;
         max-width: 1045px;
     }
-
-
 
     .col-80,
     .col-20,
@@ -495,7 +578,7 @@ import {card} from "../content/settings/cards.json";
         margin-top: 7.5rem;
     }
     .hero7-img {
-     max-width: calc(100% - 11rem);
+        max-width: calc(100% - 11rem);
         margin: 0 auto;
         display: flex;
         position: relative;
@@ -503,7 +586,6 @@ import {card} from "../content/settings/cards.json";
         z-index: 2;
         margin-right: 5.5rem;
         margin-left: 5.5rem;
-  
     }
 
     @media (max-width: 768px) {
@@ -548,7 +630,7 @@ import {card} from "../content/settings/cards.json";
             text-align: center;
             padding-bottom: 2rem;
             margin-bottom: 1rem !important;
-        min-height: auto;
+            min-height: auto;
         }
         .cover__wallet h4 {
             width: 80% !important;
@@ -556,7 +638,7 @@ import {card} from "../content/settings/cards.json";
             text-align: center;
         }
         .cover__wallet p {
-            width: 80%!important;
+            width: 80% !important;
             margin: 5% auto;
             text-align: center;
         }
@@ -584,7 +666,7 @@ import {card} from "../content/settings/cards.json";
         }
         .col-35 img,
         .col-35 video {
-            height: 90%;
+            height: 100%;
             padding-top: 6rem;
         }
         .grid--hero6 h2 {
@@ -619,74 +701,77 @@ import {card} from "../content/settings/cards.json";
             margin-bottom: 0;
         }
 
-        .hero7 .scale{margin-top: 2rem;}
-
-
+        .hero7 .scale {
+            margin-top: 2rem;
         }
-        .hero5b .grid--hero7 {
-            margin-top: 11% !important;
-        }
+    }
+    .hero5b .grid--hero7 {
+        margin-top: 11% !important;
+    }
 
-        .hero7-img {
-            width: 89%;
-            border-radius: 20px;
-            display: flex;
-            align-items: center;
-            z-index: 50;
-            margin: 0 auto;
-            max-width: 1850px;
-            position: relative;
-            bottom: 0;
-            /* margin-top: -21rem; */
-            margin-bottom: 6rem;
-            top: 14rem;
-        }
+    .hero7-img {
+        width: 89%;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        z-index: 50;
+        margin: 0 auto;
+        max-width: 1850px;
+        position: relative;
+        bottom: 0;
+        /* margin-top: -21rem; */
+        margin-bottom: 6rem;
+        top: 14rem;
+    }
 
-        /* .cover__wallet {
+    /* .cover__wallet {
     display: flex;
     align-items: center;
 } */
 
-        /* .cover__wallet img {
+    /* .cover__wallet img {
     max-width: 100%;
     margin-right: 20px;
 } */
 
-        .cover__text {
-            flex: 1;
-        }
+    .cover__text {
+        flex: 1;
+    }
 
+    .grid--hero7 {
+        width: calc(100% - 11rem);
+        margin: 0 auto;
+        height: auto;
+        margin-top: 12%;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1850px;
+        gap: 2rem;
+        margin-bottom: -6rem;
+        margin-left: 5.5rem;
+        margin-right: 5.5rem;
+    }
+
+    @media (max-width: 415px) {
+        .hero7 .scale {
+            margin-bottom: 2rem;
+        }
+    }
+
+    @media (max-width: 768px) {
         .grid--hero7 {
-            width: calc(100% - 11rem);
-    margin: 0 auto;
-    height: auto;
-    margin-top: 12%;
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 1850px;
-    gap: 2rem;
-    margin-bottom: -6rem;
-    margin-left: 5.5rem;
-    margin-right: 5.5rem;
-        } 
-
-        @media (max-width: 415px) {
-          .hero7 .scale{margin-bottom: 2rem;}
-        }
-
-        @media (max-width: 768px) {
-            .grid--hero7{ width:  calc(100% - 8rem);
+            width: calc(100% - 8rem);
             margin-left: 0;
             margin-right: 0;
-            margin: 0 auto;}
-        }
-
-        .grid--hero7 .col-40,
-        .grid--hero7 .col-60 {
-            width: 90%;
             margin: 0 auto;
         }
-    
+    }
+
+    .grid--hero7 .col-40,
+    .grid--hero7 .col-60 {
+        width: 90%;
+        margin: 0 auto;
+    }
 
     @media (min-width: 768px) {
         .grid--hero7 {
@@ -699,23 +784,31 @@ import {card} from "../content/settings/cards.json";
     }
 
     .containerp {
-    position: relative; /* Assicura che il trattino si posizioni correttamente */
-}
+        position: relative; /* Assicura che il trattino si posizioni correttamente */
+    }
 
-.containerp::after {
-    content: "";
-    position: absolute;
-    bottom: 3rem;
-    width: 7%;
-    height: 3px;
-    background-color: black;
-}
-.grey .containerp::after{ background-color: #FFD100;}
-.blue  .containerp::after{ background-color: #fff;}
+    .containerp::after {
+        content: "";
+        position: absolute;
+        bottom: 3rem;
+        width: 7%;
+        height: 3px;
+        background-color: black;
+    }
+    .grey .containerp::after {
+        background-color: #ffd100;
+    }
+    .blue .containerp::after {
+        background-color: #fff;
+    }
 
-@media (max-width: 768px) {
-    .containerp::after{ left: 50%; transform: translateX(-50%); bottom: 0;}
-}
+    @media (max-width: 768px) {
+        .containerp::after {
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+        }
+    }
 </style>
 
 <script>

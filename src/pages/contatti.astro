@@ -17,7 +17,7 @@ import Layout from "../layouts/Layout.astro";
                     Richiedi senza impegno una consulenza gratuita per la tua
                     impresa.
                 </p>
-                <a href="" class="button">CONTATTACI</a>
+                <a href="#contatti" class="button">CONTATTACI</a>
             </div>
             <div class="hero1d-image col-50"></div>
         </div>
@@ -87,21 +87,22 @@ import Layout from "../layouts/Layout.astro";
         <div class="contain">
         <div class="grid">
             <div class="col-50">
-                <h4 class="text-reveal">Contatti</h4>
+                <h4 id="contatti" class="text-reveal">Contatti</h4>
             </div>
             <div class="col-25">
-                <p>+39 (0) 59 220522</p>
-                <p>+39(0) 59 210161</p>
-                <p>+39 (0) 59 4396905</p>
-                <p>+39 (0)59 211132</p>
-                <p>info@modenaconsulenza.it</p>
+                <a href="" class="l-h">+39 (0) 59 220522</a>
+                <a href="" class="l-h">+39(0) 59 210161</a>
+                <a href="" class="l-h">+39 (0) 59 4396905</a>
+                <a href="" class="l-h">+39 (0)59 211132</a>
+                <a href="" class="l-h">info@modenaconsulenza.it</a>
             </div>
             <div class="col-25">
-                <p>Via Bellini, 70/2</p>
-                <p>41121 - Modena (MO)</p>
+                <p class="line-height">Viale G. Verdi, 96</p>
+                <p class="line-height">Via Bellini, 70/2</p>
+                <p class="line-height">41121 - Modena (MO)</p>
                 <p class="zero__opacity">rooc</p>
-                <p>Lun - Ven:</p>
-                <p>8.30 - 12.00/ 14.00 - 18.30</p>
+                <p class="line-height">Lun - Ven:</p>
+                <p class="line-height">8.30 - 12.00/ 14.00 - 18.30</p>
             </div>
         </div>
     </div>
@@ -208,7 +209,7 @@ import Layout from "../layouts/Layout.astro";
     .hero__contatti .grid p {
         font-weight: 400;
         font-size: 1.13rem;
-        line-height: 14px;
+        /* line-height: 14px; */
     }
     .hero__contatti .grid h4 {
         font-size: 3.5rem;
