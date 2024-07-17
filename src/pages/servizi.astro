@@ -24,12 +24,12 @@ import Layout from "../layouts/Layout.astro";
     </div>
 
     <div class="grid grid--card relative">
-      <div class="col-33">
-        <div class="card grey relative">
-          <div class="card__img">
+      <div class="col-20">
+        <div class="card yellow relative bg-number" style="--img: url('/assets/01.png')">
+          <!-- <div class="card__img">
             <img src="/assets/01.png" alt="" />
-          </div>
-          <h4 class="text-blue text-reveal">Controllo di<br /> gestione</h4>
+          </div> -->
+          <h4 class="text-blue text-reveal">Pianificazione<br /> fiscale</h4>
           <p>
             Assistiamo le imprese nel definire budget e rendiconti per
             accrescere la loro competitività ed efficienza nel mercato odierno.
@@ -38,25 +38,37 @@ import Layout from "../layouts/Layout.astro";
         </div>
       </div>
 
-      <div class="col-33">
-        <div class="card yellow relative">
-          <div class="card__img">
-            <img src="/assets/02.png" alt="" />
-          </div>
-          <h4 class="text-reveal" style="--delay: .2">Pianificazione fiscale</h4>
+      <div class="col-20">
+        <div class="card blue relative bg-number" style="--img: url('/assets/02.png')">
+          <!-- <div class="card__img">
+            <img class="invert" src="/assets/02.png" alt="" />
+          </div> -->
+          <h4 class="text-reveal" style="--delay: .2">Ordinario</h4>
           <p>
-            Moduliamo la pianificazione fiscale delle imprese per aiutarle a
-            gestire il carico fiscale in maniera strategica e accurata.
+Affianchiamo il cliente nelle attività ordinarie di gestione, direzione e sviluppo, al fine di perseguire una corretta amministrazione.
           </p>
           <img src="" alt="" />
         </div>
       </div>
 
-      <div class="col-33">
-        <div class="card blue relative">
-          <div class="card__img">
-            <img src="/assets/03.png" alt="" />
-          </div>
+            <div class="col-20">
+        <div class="card yellow relative bg-number" style="--img: url('/assets/03.png')">
+          <!-- <div class="card__img">
+            <img class="invert" src="/assets/03.png" alt="" />
+          </div> -->
+          <h4 class="text-reveal" style="--delay: .2">Controllo <br>di gestione</h4>
+          <p>
+    Aiutiamo le imprese nelle acquisizioni e vendite con analisi e strategie volte a massimizzare i vantaggi e ridurre i rischi.
+          </p>
+          <img src="" alt="" />
+        </div>
+      </div>
+
+      <div class="col-20">
+        <div class="card blue relative bg-number" style="--img: url('/assets/04.png')"">
+          <!-- <div class="card__img">
+            <img  src="/assets/04.png" alt="" />
+          </div> -->
           <h4 class="text-reveal" style="--delay: .4">Transactions <br /> (M&A)</h4>
           <p>
             Aiutiamo le imprese nelle acquisizioni e vendite con analisi e
@@ -120,7 +132,7 @@ Il nostro controllo di gestione per liberi professionisti include la preparazion
     <a href="/contatti" class="button__hero5">Richiedi informazioni</a>
   </div>
 
-  <h3 class="title-accordion due fade-in"   id="">Attività ordinaria</h3>
+  <h3 class="title-accordion due fade-in"   id="ordinaria">Attività ordinaria</h3>
   <div class="content-accordion">
     <p class="uno-acc">
       Il servizio riduce legalmente il carico fiscale della tua azienda,
@@ -160,7 +172,7 @@ Il nostro controllo di gestione per liberi professionisti include la preparazion
     </div>
   </div>
 
-  <h3 class="title-accordion tre fade-in" id="transactions" >Controllo <br />di gestione</h3>
+  <h3 class="title-accordion tre fade-in" id="controllo-di-gestione" >Controllo <br />di gestione</h3>
   <div class="content-accordion">
     <p class="uno-acc">
      La nostra partnership con Studio Train, verticalizzato in CDG, ci ha permesso di rafforzare il Controllo di gestione arricchendo la nostra competenza, maturata su grandi gruppi, con strategie finanziarie mirate e una visione a 360° del mercato.
@@ -355,7 +367,7 @@ Affianchiamo il cliente nelle attività ordinarie di gestione, direzione e svilu
   
     }
 
-    .hero1c .card h4{font-size:clamp(1.5rem, 1rem + 5vw, 2.15rem)}
+    .hero1c .card h4{font-size:clamp(1.3rem,1.5vw,2rem);}
     .hero1c .card h4,
     .hero1c .card p {
       text-align: center;
@@ -366,7 +378,8 @@ Affianchiamo il cliente nelle attività ordinarie di gestione, direzione e svilu
       width: 100%;
     }
     .hero1c .card__img img {
-      height: 90%;
+        height: 65%;
+    width: 100%;
     }
     .grid--card {
       margin-top: 55px !important;
@@ -383,7 +396,7 @@ Affianchiamo il cliente nelle attività ordinarie di gestione, direzione e svilu
     .hero1c--img {
       position: relative;
       width: 100%;
-      top: -14.5rem;
+      top: -10rem;
       left: 50%;
       transform: translateX(-50%);
       z-index: -1;
@@ -391,7 +404,7 @@ Affianchiamo il cliente nelle attività ordinarie di gestione, direzione e svilu
 
     .gridb__hero2b h4 {
       text-align: left;
-      font-size: clamp(3rem, 1rem + 8vw, 7rem);
+      font-size: clamp(1.5rem,6vw,7.5rem);
       margin: 0;
       padding: 0 2rem;
       font-weight: 500;
@@ -484,11 +497,13 @@ color: #002169;
     }
     .content-accordion p {
       padding: 40px;
-      padding-left:0;
+      /* padding-left:0; */
     margin: 0 auto;
 
     font-size: 1.1rem;
     }
+
+    .grid__servizi-bottom .content-accordion p{padding-left:0}
 
     .uno-acc{     
       padding-bottom: 3rem;

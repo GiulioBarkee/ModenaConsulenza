@@ -28,3 +28,41 @@
 
 .l-h{line-height: 2.49rem; display: block; align-self: flex-start;}
 .line-height{line-height: 0.6rem;}
+
+.hero1c .card{
+    width: 80%;
+    height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 1130px) {
+  .hero1c .col-20{width: 40%;}
+}
+
+.bg-number {
+    background-image: var(--img) ;
+    background-repeat: no-repeat;
+    background-size: 112% 112%;
+    background-position: bottom -20px center;
+}
+@media (max-width: 768px) {
+  .bg-number{background-image: none;}
+}
+
+.col-20{display: flex;
+    justify-content: center;
+}
+
+.grid--card{gap: 4rem;}
+.grid--card .col-50{flex-basis: calc(50% - 2rem);}
+.grid--card .card{ width: 100%;}
+
+.grid--card .card a {
+    right: 1.5rem;
+    bottom: 1.5rem;
+}
+
+.hero4 .blue a{background-color: #FFD100}
+@media (max-width: 900px) {
+.hero4 .col-50{width: 100%; flex-basis: 100%;}
+
+}

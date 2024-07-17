@@ -28,7 +28,7 @@ import { card } from "../content/settings/cards.json";
                 <div class="col-35">
                     <!-- <img src="/assets/hero-img.png" alt="" class="dynamic-border" data-borders="borderTopRightRadius" data-value-big="20px"/> -->
                     <video
-                        src="/assets/videoHero1.webm"
+                        src="/assets/videoHero.mp4"
                         class="dynamic-border"
                         data-borders="borderTopRightRadius"
                         data-value-big="20px"
@@ -80,23 +80,69 @@ import { card } from "../content/settings/cards.json";
         <div class="contain">
             <div class="grid grid--card">
                 <div class="col-50">
-                    <div class="card grey relative">
+                    <div class="card yellow relative">
                         <div class="cardetta">
                             <div class="card__img">
-                                <img src="/assets/01.png" alt="" />
+                                <img src="/assets/01r.png" alt="" />
                             </div>
                             <div class="containerh4 text-reveal">
+                                <h4>Pianificazione <br /> fiscale</h4>
+                            </div>
+                            <div class="containerp">
+                                <p>
+                               Ottimizziamo la struttura fiscale e finanziaria per minimizzare legalmente il carico fiscale delle imprese, garantendo risparmio e conformità normativa.
+                                </p>
+                                <img src="" alt="" />
+                            </div>
+                                <a href="/servizi#revisione-legale" class="button__hero5">
+                                Scopri di più</a>    
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-50">
+                    <div class="card blue relative">
+                        <div class="cardetta">
+                            <div class="card__img">
+                                <img src="/assets/02r.png" alt="" />
+                            </div>
+                            <div
+                                class="containerh4 text-reveal"
+                                style="--delay: .2"
+                            >
+                                <h4>Attività ordinaria</h4>
+                            </div>
+                            <div class="containerp">
+                                <p>
+                                    Affianchiamo il cliente nelle attività ordinarie di gestione, direzione e sviluppo, al fine di perseguire una corretta amministrazione, una contabilità fedele agli eventi aziendali e una crescita sana.
+                                </p>
+                            </div>
+                        </div>
+                          <a href="/servizi#ordinaria" class="button__hero5">
+                                Scopri di più</a>    
+                    </div>
+                </div>
+
+                <div class="col-50">
+                    <div class="card blue relative">
+                        <div class="cardetta">
+                            <div class="card__img">
+                                <img src="/assets/03r.png" alt="" />
+                            </div>
+                            <div
+                                class="containerh4 text-reveal"
+                                style="--delay: .4"
+                            >
                                 <h4>Controllo <br /> di gestione</h4>
                             </div>
                             <div class="containerp">
                                 <p>
-                                    Guidiamo le imprese nell'adozione di budget
-                                    e rendiconti finanziari al fine di
-                                    migliorare competitività ed efficienza nel
-                                    mercato attuale.
+                      Guidiamo le imprese nell'adozione di budget e rendiconti finanziari al fine di migliorare competitività ed efficienza nel mercato attuale.
                                 </p>
                                 <img src="" alt="" />
                             </div>
+                              <a href="/servizi#controllo-di-gestione" class="button__hero5">
+                                Scopri di più</a>    
                         </div>
                     </div>
                 </div>
@@ -105,31 +151,7 @@ import { card } from "../content/settings/cards.json";
                     <div class="card yellow relative">
                         <div class="cardetta">
                             <div class="card__img">
-                                <img src="/assets/02.png" alt="" />
-                            </div>
-                            <div
-                                class="containerh4 text-reveal"
-                                style="--delay: .2"
-                            >
-                                <h4>Pianificazione fiscale</h4>
-                            </div>
-                            <div class="containerp">
-                                <p>
-                                    Ottimizziamo la struttura fiscale e
-                                    finanziaria per minimizzare legalmente il
-                                    carico fiscale delle imprese, garantendo
-                                    risparmio e conformità normativa.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-50">
-                    <div class="card blue relative">
-                        <div class="cardetta">
-                            <div class="card__img">
-                                <img src="/assets/03.png" alt="" />
+                                <img src="/assets/04r.png" alt="" />
                             </div>
                             <div
                                 class="containerh4 text-reveal"
@@ -139,38 +161,13 @@ import { card } from "../content/settings/cards.json";
                             </div>
                             <div class="containerp">
                                 <p>
-                                    Supportiamo le imprese in acquisizioni e
-                                    cessioni, offrendo analisi e strategie
-                                    pensate per ottimizzare i benefici e
-                                    minimizzare i rischi.
-                                </p>
-                                <img src="" alt="" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                                Supportiamo le imprese in acquisizioni e cessioni, offrendo analisi e strategie pensate per ottimizzare i benefici e minimizzare i rischi.
 
-                <div class="col-50">
-                    <div class="card blue relative">
-                        <div class="cardetta">
-                            <div class="card__img">
-                                <img src="/assets/03.png" alt="" />
-                            </div>
-                            <div
-                                class="containerh4 text-reveal"
-                                style="--delay: .4"
-                            >
-                                <h4>Transactions <br /> (M&A)</h4>
-                            </div>
-                            <div class="containerp">
-                                <p>
-                                    Supportiamo le imprese in acquisizioni e
-                                    cessioni, offrendo analisi e strategie
-                                    pensate per ottimizzare i benefici e
-                                    minimizzare i rischi.
                                 </p>
                                 <img src="" alt="" />
                             </div>
+                              <a href="/servizi#transactions" class="button__hero5">
+                                Scopri di più</a>    
                         </div>
                     </div>
                 </div>
@@ -385,9 +382,9 @@ import { card } from "../content/settings/cards.json";
     .hero2 .col-left {
         position: relative;
     }
-    .grid .col-50 {
+    /* .grid .col-50 {
         height: 100%;
-    }
+    } */
     .hero2-servizi {
         padding-left: 5.5rem;
         font-size: clamp(1.8rem, 1rem + 5vw, 3.9rem);
@@ -484,7 +481,7 @@ import { card } from "../content/settings/cards.json";
     }
     @media (max-width: 768px) {
         .hero4 .grid--card {
-            width: 92%;
+            width: 84%;
             margin: 0 auto;
             flex-wrap: wrap;
             max-width: 1850px;
@@ -785,6 +782,7 @@ import { card } from "../content/settings/cards.json";
 
     .containerp {
         position: relative; /* Assicura che il trattino si posizioni correttamente */
+        
     }
 
     .containerp::after {
