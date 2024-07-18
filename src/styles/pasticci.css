@@ -66,3 +66,11 @@
 .hero4 .col-50{width: 100%; flex-basis: 100%;}
 
 }
+
+@media (max-width: 768px) {
+  .cardetta   .button__hero5{ position: relative;
+  }
+  .grid--card .card a{bottom: 0; right: 0; align-self: center; margin-top: 2rem;}
+}
+
+.col-20 .card h4{font-size: 1.6rem!important;}
