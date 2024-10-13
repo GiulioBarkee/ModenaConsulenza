@@ -4,129 +4,138 @@ import { team } from "@/content/settings/settings.json";
 ---
 
 <Layout title="Modena Consulenza">
-    <div class="hero1 relative">
-        <div class="contain">
-        <div>
-            <h2 class="text-reveal">
-                La nostra storia <br /><span
-                    style="margin-left: 30%; position:relative; top: -1.5rem "
-                    >ha inizio a Modena</span
-                >
-            </h2>
-            <p class="fade-in">
-           Siamo uno studio di ragionieri commercialisti  e revisori legali che opera a livello locale e internazionale.
-            </p>
-        </div>
-        <img class="img-res dynamic-border" src="/assets/chisiamo1.png" alt="" data-borders="borderBottomLeftRadius,borderTopLeftRadius" data-value-big="30px"/>
+  <div class="hero1 relative">
+    <div class="contain">
+      <div>
+        <h2 class="text-reveal" style="margin-bottom: 0">Modena Consulenza</h2>
+        <h2
+          class="text-reveal"
+          style="--delay: .2;     padding-top: 0;
+    line-height: 1.1; margin-bottom: 0;"
+        >
+          professionisti del settore,<br />radicati nel territori
+        </h2>
+        <p class="fade-in">
+          Siamo uno studio di ragionieri commercialisti e revisori legali con
+          una forte <br />presenza a livello locale. La nostra storia inizia a
+          Modena, da cui ci siamo espansi <br />grazie a una comprovata
+          esperienza nella consulenza strategica e fiscale.
+        </p>
+      </div>
+      <img
+        class="img-res dynamic-border"
+        src="/assets/chisiamo1.png"
+        alt=""
+        data-borders="borderBottomLeftRadius,borderTopLeftRadius"
+        data-value-big="30px"
+      />
     </div>
-    </div>
+  </div>
 
-    <div class="hero2b relative">
-        <div class="contain">
-        <div class="grid__hero2b">
-            <div class="col-45">
-                <div>
-                    <h3 class="">
-                        Modena Consulenza in numeri. Ecco i <span
-                            style="color:#FFD100; font-style: italic;"
-                            >risultati</span
-                        > che abbiamo ottenuto:
-                    </h3>
-                </div>
-            </div>
-            <div class="col-30">
-                <div class="border-left text-reveal">
-                    <h4>100%</h4>
-                    <p>Ore di consulenza</p>
-                </div>
-            </div>
+  <div class="hero2b relative">
+    <div class="contain">
+      <div class="grid__hero2b">
+        <div class="col-45">
+          <div>
+            <h3 class="">Modena Consulenza in numeri</h3>
+          </div>
+        </div>
+        <div class="col-30">
+          <div class="border-left text-reveal">
+            <h4>250</h4>
+            <p>Clienti</p>
+          </div>
+        </div>
+        <div class="col-25">
+          <div class="border-left text-reveal" style="--delay: .2">
+            <h4>12</h4>
+            <p>Persone</p>
+          </div>
+        </div>
+      </div>
+      <div class="gridb__hero2b">
+        <div class="col-40">
+          <div class="border-left text-reveal" style="--delay: .4">
+            <h4>6</h4>
+            <p>Paesi in cui abbiamo operato</p>
+          </div>
+        </div>
+        <div class="col-40">
+          <div class="border-left text-reveal" style="--delay: .6">
+            <h4>2</h4>
+            <p>Sedi</p>
+          </div>
+        </div>
+        <p
+          class="par"
+          style="     margin-top: 6rem;
+    font-weight: 300;
+    margin-right: 5.5rem;
+    width: 100%;
+    text-align: right;"
+        >
+          Da oltre 20  anni, supportiamo i nostri clienti nel raggiungimento dei
+          loro obiettivi,<br />fornendo soluzioni di consulenza che si
+          distinguono per qualità e affidabilità.
+        </p>
+      </div>
+
+      <div class="img-left-right">
+        <img class="hero2bleft" src="/assets/chisiamo2.png" alt="" />
+        <img class="hero2bright" src="/assets/chisiamo3.png" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <div class="hero3b relative">
+    <div class="contain">
+      <h3 class="text-reveal">
+        Da oltre 10 anni aiutiamo i nostri clienti a realizzare i loro progetti.
+      </h3>
+      <div class="hero3b__paragrafi">
+        <!-- <a href="" class="button">Contattaci</a> -->
+        <p class="mb-3 fade-in">
+          Modena Consulenza nasce come team di esperti caratterizzato da
+          competenze professionali trasversali, che gli permette di sostenere e
+          promuove una qualità e affidabilità maggiore nei servizi offerti
+          rispetto ad altri studi di consulenza presenti sul mercato.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero4b relative">
+    <div class="contain">
+      <div class="grid__hero4b">
+        <div class="col-50">
+          <div class="piastrina piastrina-left">
+            <img src="/assets/chisiamo4.png" alt="" />
+            <h4>Luca Prati</h4>
+            <p>RAGIONIERE COMMERCIALISTA</p>
+          </div>
+        </div>
+        <div class="col-50">
+          <div class="piastrina piastrina-right">
+            <img src="/assets/chisiamo5.png" alt="" />
+            <h4>Marco Natalini</h4>
+            <p>RAGIONIERE COMMERCIALISTA, REVISORE CONTABILE</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid__hero4b2">
+        {
+          team.map((el) => (
             <div class="col-25">
-                <div class="border-left text-reveal" style="--delay: .2">
-                    <h4>50+</h4>
-                    <p>Persone</p>
-                </div>
+              <div class="piastrina fade-in">
+                <img src={el.img} alt="" />
+                <h4>{el.title}</h4>
+                <p>{el.subtitle}</p>
+              </div>
             </div>
-        </div>
-        <div class="gridb__hero2b">
-            <div class="col-40">
-                <div class="border-left text-reveal" style="--delay: .4">
-                    <h4>80%</h4>
-                    <p>Paesi in cui abbiamo operato</p>
-                </div>
-            </div>
-            <div class="col-40">
-                <div class="border-left text-reveal" style="--delay: .6">
-                    <h4>2</h4>
-                    <p>Sedi</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="img-left-right">
-        <img class="hero2bleft" src="/assets/hero2b1.png" alt="" />
-        <img class="hero2bright" src="/assets/hero2b2.png" alt="" />
-    </div>
-    </div>
-    </div>
-
-    <div class="hero3b relative">
-        <div class="contain">
-        <h3 class="text-reveal">
-            Da oltre 10 anni aiutiamo i nostri clienti a realizzare i loro
-            progetti.
-        </h3>
-        <div class="hero3b__paragrafi">
-            <!-- <a href="" class="button">Contattaci</a> -->
-            <p class="mb-3 fade-in">
-                Modena Consulenza nasce come team di esperti caratterizzato da
-                competenze professionali trasversali, che gli permette di
-                sostenere e promuove una qualità e affidabilità maggiore nei
-                servizi offerti rispetto ad altri studi di consulenza presenti
-                sul mercato.
-            </p>
-    
-        </div>
-    </div>
-    </div>
-
-    <div class="hero4b relative">
-        <div class="contain">
-        <div class="grid__hero4b">
-            <div class="col-50">
-                <div class="piastrina piastrina-left">
-                    <img src="/assets/hero4b-left.png" alt="" />
-                    <h4>Luca Prati</h4>
-                    <p>
-                        Commercialista - consulente tecnico d’ufficio presso il
-                        tribunale di modena
-                    </p>
-                </div>
-            </div>
-            <div class="col-50">
-                <div class="piastrina piastrina-right">
-                    <img src="/assets/hero4b-right.png" alt="" />
-                    <h4>Marco Natalini</h4>
-                    <p>
-                        Commercialista - consulente tecnico d’ufficio presso il
-                        tribunale di modena - revisore contabile
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <div class="grid__hero4b2">
-            {
-                team.map((el) => (
-                    <div class="col-25">
-                        <div class="piastrina fade-in">
-                            <img src={el.img} alt="" />
-                            <h4>{el.title}</h4>
-                            <p>{el.subtitle}</p>
-                        </div>
-                    </div>
-                ))
-            }
-            <!-- <div class="col-25">
+          ))
+        }
+        <!-- <div class="col-25">
                 <div class="piastrina">
                     <img src="/assets/hero4b-right.png" alt="" />
                     <h4>Luca Prati</h4>
@@ -147,15 +156,14 @@ import { team } from "@/content/settings/settings.json";
                     <p>Commercialista</p>
                 </div>
             </div> -->
-        </div>
-        <img class="hero4b2-bottom" src="/assets/hero4b2-bottom.png" alt="" />
+      </div>
+      <img class="hero4b2-bottom" src="/assets/chisiamo10.png" alt="" />
     </div>
-    </div>
+  </div>
 
-    <div class="hero5b relative">
-   
-        <div class="contain">
-        <!-- <div class="grid--hero7 relative">
+  <div class="hero5b relative">
+    <div class="contain">
+      <!-- <div class="grid--hero7 relative">
             <div class="col-50 relative">
                 <h2 class="text-reveal">
                     Scopri le nostre
@@ -180,34 +188,41 @@ import { team } from "@/content/settings/settings.json";
                 </div>
 
             </div> -->
-        <!-- </div> -->
+      <!-- </div> -->
 
-        <div class="container">
-            <div class="cover__wallet relative">
-                <img src="/assets/hero5-img.png" alt="" />
-                <h4>Scopri tutti   i <br>
-                  nostri servizi</h4>
-                <p>
-                    Modena Consulenza è qui per offrirti il supporto su misura
-                    di cui hai bisogno per la tua gestione aziendale.
-                </p>
-                <a href="/servizi" class="button__hero5 fade-in">SCOPRI I SERVIZI</a>
-            </div>
+      <div class="container">
+        <div class="cover__wallet relative">
+          <img src="/assets/hero5-img.png" alt="" />
+          <h4>
+            Scopri tutti i <br />
+            nostri servizi
+          </h4>
+          <p>
+            Modena Consulenza è qui per offrirti il supporto su misura di cui
+            hai bisogno per la tua gestione aziendale.
+          </p>
+          <a href="/servizi" class="button__hero5 fade-in">SCOPRI I SERVIZI</a>
         </div>
+      </div>
     </div>
-    </div>
+  </div>
 </Layout>
 
-<style >
-@media (min-width: 1068px) and ( max-width: 1420px){
-  .hero1 p{width: 27%!important; right: 5rem!important}
-}
-@media (min-width: 768px) and (max-width: 1220px) {
-  .hero1 p{width: 31%!important;}
-}
+<style>
+  /* @media (min-width: 1068px) and (max-width: 1420px) {
+    .hero1 p {
+      width: 27% !important;
+      right: 5rem !important;
+    }
+  } */
+  /* @media (min-width: 768px) and (max-width: 1220px) {
+    .hero1 p {
+      width: 31% !important;
+    }
+  } */
 
-
-    .img-left-right{    width: calc(100% - 11rem);
+  .img-left-right {
+    width: calc(100% - 11rem);
     position: relative;
     height: auto;
     margin: 0 auto;
@@ -215,17 +230,18 @@ import { team } from "@/content/settings/settings.json";
     justify-content: space-between;
     margin-right: 5.5rem;
     margin-left: 5.5rem;
-bottom: -15rem;}
+    bottom: -15rem;
+  }
 
-    .hero1 {
-        height: auto;
-        width: 100%;
-        max-width: 1850px;
-        margin: 0 auto;
-        margin-bottom: -18rem;
-    }
-    .hero1 img {
-        width: calc(100% - 11rem);
+  .hero1 {
+    height: auto;
+    width: 100%;
+    max-width: 1850px;
+    margin: 0 auto;
+    margin-bottom: -18rem;
+  }
+  .hero1 img {
+    width: calc(100% - 11rem);
     height: auto;
     border-radius: 30px;
     position: relative;
@@ -234,547 +250,552 @@ bottom: -15rem;}
     z-index: 100;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    }
-    .hero1 h2 {
-        font-size: clamp(1.8rem, 1rem + 4.8vw, 5.5rem) !important;
-        font-weight: 500;
-        margin-left: 5.5rem;
-        margin-top: 0;
-        padding-top: 13rem;
-    }
-    .hero1 h3 {
-        margin-left: 22rem;
-        font-size: clamp(1.8rem, 1rem + 5vw, 5.5rem) !important;
-        font-weight: 500;
-        margin-top: -100px;
-    }
-    .hero1 p {
-        position: absolute;
-        width: 23%;
-        right: 10rem;
-        top: 14rem;
-        font-weight: 400;
-        font-size: clamp(0.6rem, 1rem + 12vw, 1.1rem) !important;
-    }
+  }
+  .hero1 h2 {
+    font-size: clamp(1.8rem, 1rem + 4vw, 4.5rem) !important;
+    font-weight: 500;
+    margin-left: 5.5rem;
+    margin-top: 0;
+    padding-top: 13rem;
+  }
+  .hero1 h3 {
+    margin-left: 22rem;
+    font-size: clamp(1.8rem, 1rem + 5vw, 5.5rem) !important;
+    font-weight: 500;
+    margin-top: -100px;
+  }
+  .hero1 p {
+    width: 100%;
+    padding: 5.5rem;
+    font-weight: 400;
+    font-size: clamp(0.6rem, 1rem + 12vw, 1.1rem) !important;
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+  }
 
-    .hero2b {
-        height: 100%;
-        background-color: #002169;
-        /* padding-bottom: 20%; */
-    }
-    .hero2b h3 {
-        width: 80%;
-        color: white;
-        font-size: clamp(1.2rem, 1rem + 2vw, 2.3rem);
-        font-weight: 500;
-     
-    }
-    .grid__hero2b {
-        display: flex;
-        padding-top: 20rem;
-        margin-left: 5.5rem;
-        margin-right: 5.5rem;
-    }
-    .grid__hero2b h4,
-    .gridb__hero2b h4 {
-        font-size: clamp(1.5rem, 1rem + 7vw, 7rem);
-        color: white;
-        font-weight: 500;
-        margin-top: 15%;
-        padding-left: 5%;
-        margin-bottom: 0;
-    }
-    .grid__hero2b p,
-    .gridb__hero2b p {
-        color: white;
-        margin-top: 0;
-        padding-left: 7%;
-        font-size: 1.3rem;
-        font-weight: 500;
-    }
-    .hero2bleft {
-        width: 40%;
-    
-        bottom: -20%;
-        z-index: 10;
-        left: 6%;
-    }
-    .hero2bright {
-        width: 57.5%;
-       
-        bottom: -20%;
-        z-index: 10;
-        right: 6%;
-    }
-    .hero3b {
-        height: auto;
-        margin-bottom: 25rem;
-    }
-    .hero3b h3 {
-        line-height: 130%;
-        font-weight: 500;
-        width: 50%;
-        margin-left: 5.5rem;
-        padding-top: 20%;
-        font-size: 2.8rem;
-    }
-    .hero3b__paragrafi {
-        width: 44%;
-        font-size: 1.1rem;
-        margin-top: 10%;
-        margin-left: 51%;
-        position: relative;
-    }
-    .hero3b a {
-        text-transform: uppercase;
-        font-size: 1.13rem;
-        font-weight: 500;
-        position: absolute;
-        top: 65%;
-        left: -68%;
-    }
-    .hero3b__paragrafi .button {
-        padding: 10px 34px;
-    }
+  .hero2b {
+    height: 100%;
+    background-color: #002169;
+    /* padding-bottom: 20%; */
+  }
+  .hero2b h3 {
+    width: 80%;
+    color: white;
+    font-size: clamp(1.2rem, 1rem + 2vw, 2.3rem);
+    font-weight: 500;
+  }
+  .grid__hero2b {
+    display: flex;
+    padding-top: 20rem;
+    margin-left: 5.5rem;
+    margin-right: 5.5rem;
+  }
+  .grid__hero2b h4,
+  .gridb__hero2b h4 {
+    font-size: clamp(1.5rem, 1rem + 7vw, 7rem);
+    color: white;
+    font-weight: 500;
+    margin-top: 15%;
+    padding-left: 5%;
+    margin-bottom: 0;
+  }
+  .grid__hero2b p,
+  .gridb__hero2b p {
+    color: white;
+    margin-top: 0;
+    padding-left: 7%;
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+  .hero2bleft {
+    width: 40%;
 
+    bottom: -20%;
+    z-index: 10;
+    left: 6%;
+  }
+  .hero2bright {
+    width: 57.5%;
+
+    bottom: -20%;
+    z-index: 10;
+    right: 6%;
+  }
+  .hero3b {
+    height: auto;
+    margin-bottom: 25rem;
+  }
+  .hero3b h3 {
+    line-height: 130%;
+    font-weight: 500;
+    width: 50%;
+    margin-left: 5.5rem;
+    padding-top: 20%;
+    font-size: 2.8rem;
+  }
+  .hero3b__paragrafi {
+    width: 44%;
+    font-size: 1.1rem;
+    margin-top: 10%;
+    margin-left: 51%;
+    position: relative;
+  }
+  .hero3b a {
+    text-transform: uppercase;
+    font-size: 1.13rem;
+    font-weight: 500;
+    position: absolute;
+    top: 65%;
+    left: -68%;
+  }
+  .hero3b__paragrafi .button {
+    padding: 10px 34px;
+  }
+
+  .hero4b {
+    height: auto;
+    background-color: #002169;
+    width: 100%;
+    padding-bottom: 27rem;
+  }
+  @media (max-width: 768px) {
     .hero4b {
-        height: auto;
-        background-color: #002169;
-        width: 100%;
-        padding-bottom: 27rem;
+      padding-bottom: 8rem;
     }
-    @media (max-width: 768px) {
-      .hero4b{padding-bottom: 8rem;}
-      .hero4b2-bottom{margin-top: 2rem!important; width: 84%!important;}
-    }
-    .piastrina p {
-        width: 80%;
-        font-size: 1rem;
-        color: white;
-        font-weight: 300;
-        text-transform: uppercase;
-        width: 100%;
-        margin-top: 0;
-        text-align: left;
-        line-height: 150%;
-    }
-    .piastrina h4 {
-        font-size: 1.3rem;
-        color: white;
-        margin-bottom: 0;
-        text-align: left;
-        font-weight: 500;
-    }
-
-    .piastrina {
-        text-align: center;
-    }
-    .piastrina img {
-        max-width: 100%;
-    }
-
-    .piastrina-left,
-    .piastrina-right {
-        text-align: left;
-    }
-    .piastrina h4 {
-        font-weight: 500;
-        margin-bottom: 0;
-        font-size: 1.3rem;
-    }
-    .piastrina-left p,
-    .piastrina-right p {
-        margin-top: 0;
-        font-size: 1.2rem;
-        line-height: 150%;
-    }
-
     .hero4b2-bottom {
-        width: calc(100% - 11rem);
+      margin-top: 2rem !important;
+      width: 84% !important;
+    }
+  }
+  .piastrina p {
+    width: 80%;
+    font-size: 1rem;
+    color: white;
+    font-weight: 300;
+    text-transform: uppercase;
+    width: 100%;
+    margin-top: 0;
+    text-align: left;
+    line-height: 150%;
+  }
+  .piastrina h4 {
+    font-size: 1.3rem;
+    color: white;
+    margin-bottom: 0;
+    text-align: left;
+    font-weight: 500;
+  }
+
+  .piastrina {
+    text-align: center;
+  }
+  .piastrina img {
+    max-width: 100%;
+  }
+
+  .piastrina-left,
+  .piastrina-right {
+    text-align: left;
+  }
+  .piastrina h4 {
+    font-weight: 500;
+    margin-bottom: 0;
+    font-size: 1.3rem;
+  }
+  .piastrina-left p,
+  .piastrina-right p {
+    margin-top: 0;
+    font-size: 1.2rem;
+    line-height: 150%;
+  }
+
+  .hero4b2-bottom {
+    width: calc(100% - 11rem);
     z-index: 10;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     margin-top: 5rem;
-    }
+  }
 
-  
-    .hero4b2-bottom img {
-    }
-    .hero5b {
-        height: auto;
-        margin-bottom: -6rem;
-    }
+  .hero4b2-bottom img {
+  }
+  .hero5b {
+    height: auto;
+    margin-bottom: -6rem;
+  }
 
-    .hero5b .cover__wallet {
-        background-color: #ffd100;
-        margin-top: 11.5%;
-        display: block;
-    }
+  .hero5b .cover__wallet {
+    background-color: #ffd100;
+    margin-top: 11.5%;
+    display: block;
+  }
 
-    /* @media (min-width: 768px) and (max-width: 1500px){
+  /* @media (min-width: 768px) and (max-width: 1500px){
       .hero5b .cover__wallet{margin-top: 8%;}
     } */
 
-
+  .hero5b .container {
+    top: 70%;
+    z-index: 10;
+    position: relative !important;
+    top: 5rem;
+  }
+  @media (min-width: 1000px) {
     .hero5b .container {
-        top: 70%;
-        z-index: 10;
-        position: relative !important;
-        top: 5rem;
+      top: 8rem;
     }
-    .hero5b .container h4 {
-        width: 70%;
-        color: white;
-        max-width: 1100px;
-        margin-bottom: 3.5rem;
-        margin-top: 5rem;
-
-    }
-    .hero5b .container p {
-        color: white;
-    }
-    /* .hero5b a {
+  }
+  .hero5b .container h4 {
+    width: 70%;
+    color: white;
+    max-width: 1100px;
+    margin-bottom: 3.5rem;
+    margin-top: 5rem;
+  }
+  .hero5b .container p {
+    color: white;
+  }
+  /* .hero5b a {
         position: static;
        
     } */
-    .container a {
-        position: absolute;
-        right: 7%;
-        font-weight: 600;
-        font-size: 1.13rem;
-    }
+  .container a {
+    position: absolute;
+    right: 7%;
+    font-weight: 600;
+    font-size: 1.13rem;
+  }
 
+  .hero5b .grid--hero7 {
+    top: 8rem;
+  }
 
-
+  @media (min-width: 1500px) and (max-width: 1600px) {
     .hero5b .grid--hero7 {
-        top: 8rem;
+      top: 5rem;
     }
+  }
 
-    @media (min-width: 1500px) and (max-width: 1600px) {
-        .hero5b .grid--hero7 {
-        top: 5rem;
+  @media (min-width: 1400px) and (max-width: 1500px) {
+    .hero5b .grid--hero7 {
+      top: 2rem;
     }
-}
+  }
 
-@media (min-width: 1400px) and (max-width: 1500px) {
-        .hero5b .grid--hero7 {
-        top: 2rem;
-    }
-}
-
-@media (min-width: 800px) and (max-width: 1400px) {
-        .hero5b .grid--hero7 {
-        top: 0rem;
-        /* margin-top: 8%; */
+  @media (min-width: 800px) and (max-width: 1400px) {
+    .hero5b .grid--hero7 {
+      top: 0rem;
+      /* margin-top: 8%; */
     }
 
     @media (min-width: 1200px) and (max-width: 1250px) {
-        .hero5b .grid--hero7 {
-   margin-top: 10%;
+      .hero5b .grid--hero7 {
+        margin-top: 10%;
+      }
     }
-}
     @media (min-width: 1100px) and (max-width: 1200px) {
-.hero4b{
-padding-bottom: 25rem;
-}
+      .hero4b {
+        padding-bottom: 25rem;
+      }
     }
     @media (min-width: 900px) and (max-width: 1100px) {
-.hero4b{
-padding-bottom: 20rem;
-}
+      .hero4b {
+        padding-bottom: 20rem;
+      }
     }
     @media (min-width: 768px) and (max-width: 900px) {
-.hero4b{
-padding-bottom: 1rem;
-}
+      .hero4b {
+        padding-bottom: 1rem;
+      }
     }
-
-} 
-
-
-
-
-    .hero5b .container h4 {
-        width: 80% !important;
-    }
-    .grid__hero4b2 .col-25 {
-        width: 23%;
-    }
-
-    @media (max-width: 1068px) {
-        .hero1 h2 {
-            font-size: 2.3rem;
-            margin: 0 auto;
-            margin-top: 4rem;
-            padding-top: 5.5rem;
-            text-align: center;
-            line-height: 160%;
-        }
-        .hero1 p {
-            font-size: 0.9rem;
-            text-align: center;
-            width: 80%;
-            top: 45%;
-            font-weight: 400;
-            position: static;
-            margin: 0 auto;
-        }
-        .hero1 span {
-            margin-left: 0 !important; /* Rimuove il margine aggiunto */
-        }
-        .hero1 img {
-            bottom: -2rem;
-            left: 0%!important;
-            transform: translateX(0%)!important;
-        }
-    }
-    @media (min-width: 768px) and (max-width: 1000px) {
- .img-left-right {
-    bottom: -9rem;
   }
-}
-    @media only screen and (max-width: 768px) {
-        .hero2b {
-            padding-bottom: 20%;
-        }
 
-        .img-left-right{bottom: -3rem; width: 84%; margin: 0  auto}
+  .hero5b .container h4 {
+    width: 80% !important;
+  }
+  .grid__hero4b2 .col-25 {
+    width: 23%;
+  }
 
-        .hero1 {
-            height: auto;
-            margin-bottom: -5rem;
-        }
-        .hero1 img {
-            width: 80%;
-            top: 85%;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        .hero2b {
-            height: 100%;
-            padding-bottom: 0!important;
-        }
-        .hero2b h3 {
-            width: 80%;
-            font-size: 1.4rem;
-            text-align: center;
-            margin: 0 auto;
-            padding-left: 0;
-        }
-        .gridb__hero2b {
-            margin: 0;
-            padding-bottom: 2rem;
-        }
-        .grid__hero4b {
-            width: 100%;
-            right: 0;
-        }
-        .grid__hero4b2 {
-            max-width: 100%;
-        }
-        .grid--hero7 {
-            max-width: 0;
-            margin: 0;
-        }
-        .grid__hero2b {
-            padding-top: 8rem;
-            width: 84%;
-            height: auto;
-            margin: 0 auto;
-            flex-wrap: wrap;
-        }
-        .grid__hero2b h4,
-        .gridb__hero2b h4 {
-            font-size: 2rem;
-        }
-        .grid__hero2b p,
-        .gridb__hero2b p {
-            font-size: 0.6rem;
-        }
-        .gridb__hero2b {
-            width: 100%;
-            gap: 0;
-        }
-
-        .grid__hero2b .col-30,
-        .grid__hero2b .col-25,
-        .gridb__hero2b .col-40 {
-            width: 50%;
-        }
-        .gridb__hero2b {
-            padding-top: 0;
-            width: 84%;
-            margin: 0 auto;
-        }
-        .grid__hero2b,
-        .gridb__hero2b {
-            text-align: center;
-        }
-
-        .grid__hero2b .col-30,
-        .grid__hero2b .col-25 {
-            padding-top: 40px;
-        }
-
-        .grid__hero2b p,
-        .grid__hero2b p {
-            font-size: 0.6rem;
-        }
-
-        .hero2bleft,
-        .hero2bright {
-            bottom: -8%;
-        }
-        .hero3b {
-            height: 100%;
-            margin-bottom: 28%;
-        }
-        .hero3b h3 {
-            line-height: 30px;
-            width: 80%;
-            margin: 0 auto;
-            font-size: 1.8rem;
-            text-align: center;
-        }
-        .hero3b__padding-bottom {
-            padding-bottom: 3rem;
-        }
-
-        .hero4b {
-            height: 100%;
-        }
-        .hero3b__paragrafi {
-            width: 80%;
-            font-size: 1rem;
-            margin-top: 12% !important;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        .hero3b a {
-            font-size: 1rem;
-            left: 50%;
-            text-align: center;
-            position: static;
-            margin-bottom: 3rem;
-        }
-
-        .grid__hero4b {
-            width: 100%;
-            flex-wrap: wrap;
-        }
-
-        .piastrina {
-            width: 80%;
-            margin: 0 auto;
-        }
-
-        .piastrina h4 {
-            font-size: 1rem;
-        }
-        .piastrina p {
-            font-size: 0.8rem;
-        }
-
-        .grid__hero4b .col-50 {
-            width: 40% !important;
-            margin: 0 auto;
-        }
-        .grid__hero4b2 {
-            max-width: 100%;
-        }
-
-        .grid__hero4b2 .col-25 {
-            width: 50% !important;
-            height: auto;
-            padding-bottom: 2rem;
-        }
-
-        .grid__hero4b2 img {
-            width: 100%;
-        }
-
-        .grid--hero7 {
-            margin-top: 25%;
-            max-width: 100%;
-            width: 100%;
-        }
-        .grid--hero7 h2 {
-            font-size: 2rem;
-            text-align: center;
-            line-height: 140%;
-        }
-        .grid--hero7 p {
-            text-align: center;
-            margin: 0 auto;
-            width: 84%;
-            margin-bottom: 2.5rem;
-        }
-        .hero5b .grid--hero7 {
-            padding-top: 19%;
-            margin-top: 0;
-            top: auto;
-        }
-        .grid--hero7 .col-60 img {
-            position: static;
-            left: 0;
-            transform: translate(0);
-            margin: 0 auto;
-            margin-top: 10%;
-            padding: 5% !important;
-        }
-
-        .hero5b {
-            height: auto;
-            text-align: center;
-    
-        }
-
-        .hero5b .cover__wallet a{position: static;}
-        .hero5b .cover__wallet{margin-top: 0;}
-        .hero5b .cover__wallet a{margin:6% auto;}
-
-        .hero5b .container {
-            position: static;
-        }
-        .hero5b .container h4 {
-            width: 80%;
-            text-align: center;
-            font-size: 1.6rem;
-            margin-left: 0;
-            margin-bottom: 0;
-            margin: 6% auto;
-        }
-
-
-        .hero5b .container p {
-            margin: 0 auto;
-            width: 90%;
-            text-align: center;
-            font-size: 1rem;
-            margin-top: 5%;
-        }
-        .cover__wallet {
-            height: auto;
-        }
-
-        .hero1 span {
-            margin-left: 0 !important; /* Rimuove il margine aggiunto */
-        }
+  @media (max-width: 1068px) {
+    .hero1 h2 {
+      font-size: 2.3rem;
+      margin: 0 auto;
+      margin-top: 4rem;
+      padding-top: 5.5rem;
+      text-align: center;
+      line-height: 160%;
+    }
+    .hero1 p {
+      font-size: 0.9rem;
+      font-weight: 400;
+      position: static;
+      margin: 0 auto;
+    }
+    .hero1 span {
+      margin-left: 0 !important; /* Rimuove il margine aggiunto */
+    }
+    .hero1 img {
+      bottom: -2rem;
+      left: 0% !important;
+      transform: translateX(0%) !important;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1000px) {
+    .img-left-right {
+      bottom: -9rem;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .hero2b {
+      padding-bottom: 20%;
     }
 
-    /* @media screen and (min-width: 768px) and (max-width: 1050px) {
+    .img-left-right {
+      bottom: -3rem;
+      width: 84%;
+      margin: 0 auto;
+    }
+
+    .hero1 {
+      height: auto;
+      margin-bottom: -5rem;
+    }
+    .hero1 img {
+      width: 80%;
+      top: 85%;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .hero2b {
+      height: 100%;
+      padding-bottom: 0 !important;
+    }
+    .hero2b h3 {
+      width: 80%;
+      font-size: 1.4rem;
+      text-align: center;
+      margin: 0 auto;
+      padding-left: 0;
+    }
+    .gridb__hero2b {
+      margin: 0;
+      padding-bottom: 2rem;
+    }
+    .grid__hero4b {
+      width: 100%;
+      right: 0;
+    }
+    .grid__hero4b2 {
+      max-width: 100%;
+    }
+    .grid--hero7 {
+      max-width: 0;
+      margin: 0;
+    }
+    .grid__hero2b {
+      padding-top: 8rem;
+      width: 84%;
+      height: auto;
+      margin: 0 auto;
+      flex-wrap: wrap;
+    }
+    .grid__hero2b h4,
+    .gridb__hero2b h4 {
+      font-size: 2rem;
+    }
+    .grid__hero2b p,
+    .gridb__hero2b p {
+      font-size: 0.6rem;
+    }
+    .gridb__hero2b {
+      width: 100%;
+      gap: 0;
+    }
+
+    .grid__hero2b .col-30,
+    .grid__hero2b .col-25,
+    .gridb__hero2b .col-40 {
+      width: 50%;
+    }
+    .gridb__hero2b {
+      padding-top: 0;
+      width: 84%;
+      margin: 0 auto;
+    }
+    .grid__hero2b,
+    .gridb__hero2b {
+      text-align: center;
+    }
+
+    .grid__hero2b .col-30,
+    .grid__hero2b .col-25 {
+      padding-top: 40px;
+    }
+
+    .grid__hero2b p,
+    .grid__hero2b p {
+      font-size: 0.6rem;
+    }
+
+    .hero2bleft,
+    .hero2bright {
+      bottom: -8%;
+    }
+    .hero3b {
+      height: 100%;
+      margin-bottom: 28%;
+    }
+    .hero3b h3 {
+      line-height: 30px;
+      width: 80%;
+      margin: 0 auto;
+      font-size: 1.8rem;
+      text-align: center;
+    }
+    .hero3b__padding-bottom {
+      padding-bottom: 3rem;
+    }
+
+    .hero4b {
+      height: 100%;
+    }
+    .hero3b__paragrafi {
+      width: 80%;
+      font-size: 1rem;
+      margin-top: 12% !important;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .hero3b a {
+      font-size: 1rem;
+      left: 50%;
+      text-align: center;
+      position: static;
+      margin-bottom: 3rem;
+    }
+
+    .grid__hero4b {
+      width: 100%;
+      flex-wrap: wrap;
+    }
+
+    .piastrina {
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .piastrina h4 {
+      font-size: 1rem;
+    }
+    .piastrina p {
+      font-size: 0.8rem;
+    }
+
+    .grid__hero4b .col-50 {
+      width: 40% !important;
+      margin: 0 auto;
+    }
+    .grid__hero4b2 {
+      max-width: 100%;
+    }
+
+    .grid__hero4b2 .col-25 {
+      width: 50% !important;
+      height: auto;
+      padding-bottom: 2rem;
+    }
+
+    .grid__hero4b2 img {
+      width: 100%;
+    }
+
+    .grid--hero7 {
+      margin-top: 25%;
+      max-width: 100%;
+      width: 100%;
+    }
+    .grid--hero7 h2 {
+      font-size: 2rem;
+      text-align: center;
+      line-height: 140%;
+    }
+    .grid--hero7 p {
+      text-align: center;
+      margin: 0 auto;
+      width: 84%;
+      margin-bottom: 2.5rem;
+    }
+    .hero5b .grid--hero7 {
+      padding-top: 19%;
+      margin-top: 0;
+      top: auto;
+    }
+    .grid--hero7 .col-60 img {
+      position: static;
+      left: 0;
+      transform: translate(0);
+      margin: 0 auto;
+      margin-top: 10%;
+      padding: 5% !important;
+    }
+
+    .hero5b {
+      height: auto;
+      text-align: center;
+    }
+
+    .hero5b .cover__wallet a {
+      position: static;
+    }
+    .hero5b .cover__wallet {
+      margin-top: 0;
+    }
+    .hero5b .cover__wallet a {
+      margin: 6% auto;
+    }
+
+    .hero5b .container {
+      position: static;
+    }
+    .hero5b .container h4 {
+      width: 80%;
+      text-align: center;
+      font-size: 1.6rem;
+      margin-left: 0;
+      margin-bottom: 0;
+      margin: 6% auto;
+    }
+
+    .hero5b .container p {
+      margin: 0 auto;
+      width: 90%;
+      text-align: center;
+      font-size: 1rem;
+      margin-top: 5%;
+    }
+    .cover__wallet {
+      height: auto;
+    }
+
+    .hero1 span {
+      margin-left: 0 !important; /* Rimuove il margine aggiunto */
+    }
+  }
+
+  /* @media screen and (min-width: 768px) and (max-width: 1050px) {
     .hero4b {
       padding-bottom: 10rem;
     }
   } */
 
-
-  @media (min-width:350px) and (max-width: 620px) {
+  @media (min-width: 350px) and (max-width: 620px) {
     .hero3b[data-astro-cid-t3yizmzu] {
-        margin-bottom: 45%;
+      margin-bottom: 45%;
     }
-}
+  }
 </style>

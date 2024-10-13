@@ -1,24 +1,24 @@
 {
   "team": [
     {
-      "title": "Luca Pratiii",
-      "subtitle": "Commercialista",
-      "img": "/assets/hero4b-left.png"
+      "title": "Nome e Cognome",
+      "subtitle": "Ruolo",
+      "img": "/assets/chisiamo6.png"
     },
     {
-      "title": "Luca Prati",
-      "subtitle": "Prova",
-      "img": "/assets/hero4b-right.png"
+      "title": "Nome e Cognome",
+      "subtitle": "Ruolo",
+      "img": "/assets/chisiamo7.png"
     },
     {
-      "title": "Luca Prati",
-      "subtitle": "Commercialista",
-      "img": "/assets/hero4b-left.png"
+      "title": "Nome e cognome",
+      "subtitle": "Ruolo",
+      "img": "/assets/chisiamo8.png"
     },
     {
-      "title": "Luca Prati",
-      "subtitle": "Commercialista",
-      "img": "/assets/hero4b-right.png"
+      "title": "Nome e Cognome",
+      "subtitle": "Ruolo",
+      "img": "/assets/chisiamo9.png"
     }
   ]
 }

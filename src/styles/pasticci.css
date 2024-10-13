@@ -1,4 +1,4 @@
-@media (min-width: 365px) and (max-width: 600px) {
+@media (min-width: 380px) and (max-width: 600px) {
 .hero5b .cover__wallet { margin-top: 15%!important;}
 }
 
@@ -80,3 +80,19 @@
 
 
 .hero4 .card h4{width: 100%;}
+
+
+@media (max-width: 768px) {
+.hero1 .contain h2:nth-child(2) {
+    margin-top: 0!important;
+}
+.hero1 .contain p{padding-left: 0!important; padding-right: 0 !important; padding-bottom: 0 !important; padding-top: 2rem!important; width: 84%!important;}
+.gridb__hero2b {
+    padding-bottom: 0 !important;
+}
+.gridb__hero2b .par{margin-top: 3rem!important; text-align: center!important; margin-right: 0!important;}
+}
+
+
+
+
