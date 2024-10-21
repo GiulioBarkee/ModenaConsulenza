@@ -1,328 +1,359 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+const contenuto1 = `Lo studio offre un'ampia gamma di servizi nelle discipline fiscali e tributarie, fornendo
+consulenza personalizzata a imprese e professionisti, con particolare attenzione alla
+scelta della strategia fiscale più adatta a ciascun progetto.
+
+• Pianificazione fiscale
+• Assistenza in materia di imposte dirette e indirette
+• Supporto nella gestione della fiscalità
+• Consulenza sulla fiscalità internazionale
+• Rappresentanza nelle fasi di contenzioso  e pre-contenzioso
+• Supporto nelle relazioni con l'Agenzia delle Entrate e l'Agenzia della Riscossione
+• Assistenza presso enti come l'Agenzia delle Entrate, l'Agenzia  della Riscossione,
+l' lNPS, la Camera di Commercio e altre istituzioni`;
+
+const contenuto2 = `Lo Studio offre consulenza fiscale e societaria, occupandosi di tutti gli aspetti legati alla creazione e gestione di aziende, sia in Italia che all'estero. Tra i servizi offerti.
+
+• Costituzione di società in Italia e all’estero
+• Operazioni sul capitale
+• Consulenza e assistenza ai fini della redazione del bilancio d’esercizio e del bilancio consolidato
+• Consulenza e assistenza su trasferimento azioni, quote e complessi aziendali
+• Consulenza e assistenza nella redazione di accordi tra soci e patti parasociali
+• Supporto fiscale e assistenza nella richiesta di finanziamenti
+• Tenuta della contabilità ordinaria e semplificata
+• Consulenza e assistenza in materia di fatturazione elettronica e conservazione sostitutiva`;
+
+const contenuto3 = `Consulenza di Direzione e sistemi di monitoraggio delle performance aziendali:
+
+• Pianificazione e Programmazione aziendale: supporto all’azienda nell’individuazione
+degli obiettivi da perseguire nel medio e breve termine contestualizzati in piani d’azione
+per area di responsabilità, definendo il Business Plan aziendale ed il Budget operativo;
+ 
+• Monitoraggio performance aziendali:
+analisi gestionali a supporto direzionale volte ad individuare punti di miglioramento
+aziendali attraverso l’utilizzo dei margini di prodotto e di cliente;
+analisi di scenario evolutivo basate sullo sviluppo di forecast economici e
+patrimoniali volti ad intercettare tempestivamente le aree di intervento con maggior
+priorità per rispettare gli obiettivi prefissati;
+ 
+• Costi di prodotto e Pricing: la corretta configurazione dei costi di prodotto consente
+all’azienda di valutare la propria marginalità di prodotto, nonché di disporre di una
+costificazione di magazzino coerente sia con i principi contabili, che in riconciliazione
+con il reporting gestionale aziendale, declinandolo per business area.
+Un costo di prodotto affidabile inoltre aiuta l’azienda nella definizione delle proprie
+politiche di pricing e nella redazione dei listini di vendita
+ 
+• KPI e sistemi incentivanti per il personale: dalla pianificazione aziendale nasce la
+possibilità di definire indicatori quantitativi utili per comunicare con le diverse aree
+aziendali, volti al miglioramento continuo.
+Sulla base dei cruscotti individuati, specifici per ciascuna realtà aziendale, sarà
+possibile collegare premi economici a raggiungimento dei diversi target fissati,
+a supporto del clima aziendale e della retention.
+`;
+
+const contenuto4 = `Consulenza nelle Operazioni Straordinarie (M&A) e Corporate Finance
+Forniamo una vasta gamma di servizi nel campo delle operazioni straordinarie e delle
+fusioni e acquisizioni. Tra i principali servizi offerti ci sono:
+ la valutazione d’impresa e analisi finanziaria,
+Assistenza e realizzazione di due diligence,
+Supporto tecnico e strategico nelle fasi di
+strutturazione dell'operazione, di negoziazione e di redazione della contrattualistica, nonché l'assistenza nella fase post-
+transazione
+`;
+
+const contenutoWallet = `<span class="bold">Easy Wallet: il controllo di gestione su misura per le piccole imprese</span>
+
+Sei una piccola impresa che desidera mantenere il controllo delle proprie finanze e
+migliorare la propria efficienza operativa?
+Gestire le finanze di una piccola impresa può essere complesso. Senza un controllo
+preciso del budget economico e finanziario, le decisioni aziendali rischiano di basarsi su
+informazioni incomplete o inaccurate, con conseguenti rischi per la crescita e la
+stabilità dell’azienda.
+Easy Wallet è la nostra soluzione di controllo di gestione progettata appositamente per le piccole imprese, che offre un approccio semplice e completo per mantenere il controllo dei costi, ottimizzare le risorse e garantire una crescita sostenibile.
+Come Easy Wallet risolve i tuoi problemi
+  1. Budget economico: pianifica e monitora i tuoi obiettivi finanziari
+    • Cosa fa: elaboriamo un budget economico dettagliato che definisce gli obiettivi di ricavi e costi della tua azienda, aiutandoti a prevedere e pianificare i risultati operativi su base, trimestrale, semestrale o annuale.
+    • Perché ti serve: con un budget economico chiaro, puoi monitorare in tempo reale l’andamento della tua attività, identificando rapidamente eventuali scostamenti rispetto alle previsioni e adottando misure correttive tempestive.
+  2. Budget finanziario: gestisci la tua liquidità in modo efficiente
+    • Cosa fa: costruiamo un budget finanziario che ti permette di prevedere i flussi di cassa in entrata e in uscita, garantendo una gestione ottimale della liquidità. 
+    • Perché ti serve: un budget finanziario ben strutturato ti aiuta a prevenire crisi di liquidità, ottimizzando l'uso delle risorse finanziarie e permettendoti di pianificare investimenti strategici con maggiore sicurezza.
+  3. Verifica dei consuntivi: mantieni il controllo con analisi a consuntivo
+    • Cosa fa: offriamo un servizio di verifica dei consuntivi che confronta i dati effettivi con quelli pianificati nei budget economico e finanziario. 
+    • Perché ti serve: la verifica dei consuntivi ti permette di avere una visione chiara e trasparente della performance della tua azienda, identificando aree di miglioramento e ottimizzazione per sostenere la crescita futura. I benefici di Easy Wallet
+    • Decisioni basate su dati concreti: con un controllo preciso dei budget e dei consuntivi, puoi prendere decisioni informate che supportano gli obiettivi strategici della tua azienda.
+    • Risparmio di tempo e risorse: automatizziamo il monitoraggio e l'analisi dei dati finanziari, riducendo il carico di lavoro amministrativo e permettendoti di concentrarti sul core business.
+Supporto continuo: ti affianchiamo con consulenze periodiche per adattare il tuo controllo di gestione alle mutevoli condizioni di mercato e alle tue specifiche esigenze aziendali.`;
 ---
 
 <Layout title="Modena Consulenza">
   <div class="hero1c">
     <div class="contain">
-    <h2 class="text-reveal">I nostri servizi di consulenza</h2>
-    <div class="grid__hero1c">
-      <div class="col-40">
-        <p>
-          Modena Consulenza risponde all’esigenza di servizi altamente
-          personalizzati, superando il divario esistente tra richieste
-          specifiche da parte dei clienti e proposte generiche.
-        </p>
+      <h2 class="text-reveal">I nostri servizi di consulenza</h2>
+      <div class="grid__hero1c">
+        <div class="col-40">
+          <p>
+            Modena Consulenza offre servizi consulenziali altamente
+            personalizzati, progettati per superare il divario tra le esigenze
+            specifiche dei clienti e le proposte generiche presenti sul mercato.
+          </p>
+        </div>
+        <div class="col-40">
+          <p>
+            La nostra consulenza mira a fornire soluzioni su misura che
+            promuovano la crescita aziendale in modo strategico e controllato.
+          </p>
+        </div>
       </div>
-      <div class="col-40">
-        <p>
-          I nostri servizi prevedono consulenze mirate per ciascuna azienda con
-          l’obiettivo di offrire soluzioni su misura che ne promuovono lo
-          sviluppo e la crescita in maniera strategica e controllata.
-        </p>
-      </div>
-    </div>
 
-    <div class="grid grid--card relative">
-      <div class="col-20">
-        <div class="card yellow relative bg-number" style="--img: url('/assets/01.png')">
-          <!-- <div class="card__img">
+      <div class="grid grid--card relative">
+        <div class="col-20">
+          <div
+            class="card yellow relative bg-number"
+            style="--img: url('/assets/01.png')"
+          >
+            <!-- <div class="card__img">
             <img src="/assets/01.png" alt="" />
           </div> -->
-          <h4 class="text-blue text-reveal">Pianificazione<br /> fiscale</h4>
-          <p>
-            Assistiamo le imprese nel definire budget e rendiconti per
-            accrescere la loro competitività ed efficienza nel mercato odierno.
-          </p>
-          <img src="" alt="" />
+            <h4 class="text-blue text-reveal">Pianificazione<br /> fiscale</h4>
+            <p>
+              Elaboriamo strategie fiscali per aumentare la competitività e
+              l'efficienza delle imprese.
+            </p>
+            <img src="" alt="" />
+          </div>
         </div>
-      </div>
 
-      <div class="col-20">
-        <div class="card blue relative bg-number" style="--img: url('/assets/02.png')">
-          <!-- <div class="card__img">
+        <div class="col-20">
+          <div
+            class="card blue relative bg-number"
+            style="--img: url('/assets/02.png')"
+          >
+            <!-- <div class="card__img">
             <img class="invert" src="/assets/02.png" alt="" />
           </div> -->
-          <h4 class="text-reveal" style="--delay: .2">Ordinario</h4>
-          <p>
-Affianchiamo il cliente nelle attività ordinarie di gestione, direzione e sviluppo, al fine di perseguire una corretta amministrazione.
-          </p>
-          <img src="" alt="" />
+            <h4 class="text-reveal" style="--delay: .2">
+              Assistenza<br /> amministrativa<br /> e contabile
+            </h4>
+            <p>
+              Forniamo supporto completo nella gestione amministrativa e
+              contabile delle imprese.
+            </p>
+            <img src="" alt="" />
+          </div>
         </div>
-      </div>
 
-            <div class="col-20">
-        <div class="card yellow relative bg-number" style="--img: url('/assets/03.png')">
-          <!-- <div class="card__img">
+        <div class="col-20">
+          <div
+            class="card yellow relative bg-number"
+            style="--img: url('/assets/03.png')"
+          >
+            <!-- <div class="card__img">
             <img class="invert" src="/assets/03.png" alt="" />
           </div> -->
-          <h4 class="text-reveal" style="--delay: .2">Controllo <br>di gestione</h4>
-          <p>
-Guidiamo le imprese nell'adozione di budget e rendiconti finanziari al fine di migliorare competitività ed efficienza nel mercato.          </p>
-          <img src="" alt="" />
+            <h4 class="text-reveal" style="--delay: .2">
+              Controllo <br />di gestione
+            </h4>
+            <p>
+              Implementiamo strumenti di controllo per migliorare la gestione
+              finanziaria e operativa.
+            </p>
+            <img src="" alt="" />
+          </div>
         </div>
-      </div>
 
-      <div class="col-20">
-        <div class="card blue relative bg-number" style="--img: url('/assets/04.png')"">
-          <!-- <div class="card__img">
+        <div class="col-20">
+          <div
+            class="card blue relative bg-number"
+            style="--img: url('/assets/04.png')"
+          >
+            <!-- <div class="card__img">
             <img  src="/assets/04.png" alt="" />
           </div> -->
-          <h4 class="text-reveal" style="--delay: .4">Transactions <br /> (M&A)</h4>
-          <p>
-            Aiutiamo le imprese nelle acquisizioni e vendite con analisi e
-            strategie volte a massimizzare i vantaggi e ridurre i rischi.
-          </p>
-          <img src="" alt="" />
+            <h4 class="text-reveal" style="--delay: .4">
+              Transactions <br /> (M&A)
+            </h4>
+            <p>
+              Consulenza per operazioni di acquisizione, cessione e
+              ristrutturazione aziendale.
+            </p>
+            <img src="" alt="" />
+          </div>
         </div>
+        <img class="hero1c--img" src="/assets/servizi1.png" alt="" />
       </div>
-      <img class="hero1c--img" src="/assets/hero1c.png" alt="" />
     </div>
-  </div>
   </div>
 
   <div class="contain">
-  <h3 class="title-accordion mt-15 fade-in" data-state="+" id="revisione-legale">Pianificazione <br /> fiscale</h3>
-  <div class="content-accordion">
-    <p class="uno-acc">
-      Il servizio riduce legalmente il carico fiscale della tua azienda, riorganizzando la sua struttura finanziaria e tributaria. La pianificazione fiscale è adatta a ogni impresa e assicura una visione contabile più chiara e consapevole delle imposte dovute.
-    </p>
-    <div class="gridb__hero2b">
-      <div class="col-40">
-        <div class="border-left m-left">
-          <h4 class="text-reveal">100%</h4>
-          <p class="p-cella">Lorem ipsum dolor sit</p>
-        </div>
-      </div>
-      <div class="col-40">
-        <div class="border-left m2-left">
-          <h4 class="text-reveal">50+</h4>
-          <p class="p-cella">Lorem ipsum dolor sit</p>
-        </div>
-      </div>
-      <div class="col-40 ">
+    <h3
+      class="title-accordion mt-15 fade-in"
+      data-state="+"
+      id="revisione-legale"
+    >
+      Consulenza <br />fiscale tributaria
+    </h3>
+    <div class="content-accordion">
+      <div class="gridb__hero2b" style="gap: 2.5rem">
+        {contenuto1}
         <div>
-          <p class="move-left">
-      Elaboriamo la tua pianificazione fiscale nel rispetto delle normative, evitando i rischi di evasione o elusione. 
-          </p>
-        </div>
-      </div>
-      <div class="col-40 ultima-col ">
-        <div>
-          <p class="move-left">
-Contribuiamo alla stabilità e al successo della tua azienda, permettendoti di risparmiare notevoli somme. 
-          </p>
-        </div>
-      </div>
-    <div>
-      <img class="acc-1-img" src="/assets/acc-1.png" alt="" />
-    </div>
-    </div>
-  
-  </div>
-
-  <div class="space"></div>
-  <div class="cover__wallet relative">
-    <img src="/assets/hero5-img.png" alt="" />
-    <h4>Il servizio Easy Wallet</h4>
-    <p>
-Il nostro controllo di gestione per liberi professionisti include la preparazione del budget economico-finanziario e la verifica a consuntivo, offrendo un'analisi dettagliata delle tue finanze per prendere decisioni informate e mirate per il tuo successo professionale.
-    </p>
-    <a href="/contatti" class="button__hero5">Richiedi informazioni</a>
-  </div>
-
-  <h3 class="title-accordion due fade-in"   id="ordinaria">Attività ordinaria</h3>
-  <div class="content-accordion">
-    <p class="uno-acc">
-Affianchiamo il cliente nelle attività ordinarie di gestione, direzione e sviluppo, al fine di perseguire una corretta amministrazione, una contabilità fedele agli eventi aziendali e una crescita sana.
-    </p>
-    <div class="gridb__hero2b">
-      <div class="col-40">
-        <div class="border-left m-left">
-          <h4 class="text-reveal">100%</h4>
-          <p class="p-cella">Lorem ipsum dolor sit</p>
-        </div>
-      </div>
-      <div class="col-40">
-        <div class="border-left m2-left">
-          <h4 class="text-reveal">50+</h4>
-          <p class="p-cella">Lorem ipsum dolor sit</p>
-        </div>
-      </div>
-      <div class="col-40">
-        <div>
-          <p class="move-left">
-  Le attività di gestione ordinaria vengono seguite dai nostri esperti con precisione.
-          </p>
-        </div>
-      </div>
-      <div class="col-40 ultima-col">
-        <div>
-          <p class="move-left">
-Concentrati sulle operazioni di crescita della tua azienda senza dover pensare alla parte burocratica.
-          </p>
+          <img class="acc-1-img" src="/assets/acc-1.png" alt="" />
         </div>
       </div>
     </div>
-  </div>
 
-  <h3 class="title-accordion tre fade-in" id="controllo-di-gestione" >Controllo <br />di gestione</h3>
-  <div class="content-accordion">
-    <p class="uno-acc">
-     La nostra partnership con Studio Train, verticalizzato in CDG, ci ha permesso di rafforzare il Controllo di gestione arricchendo la nostra competenza, maturata su grandi gruppi, con strategie finanziarie mirate e una visione a 360° del mercato.
-
-    </p>
-    <div class="gridb__hero2b">
-      <div class="col-40">
-        <div class="border-left m-left">
-          <h4 class="text-reveal">100%</h4>
-          <p class="p-cella">Lorem ipsum dolor sit</p>
-        </div>
-      </div>
-      <div class="col-40">
-        <div class="border-left m2-left">
-          <h4 class="text-reveal">50+</h4>
-          <p class="p-cella">Lorem ipsum dolor sit</p>
-        </div>
-      </div>
-      <div class="col-40">
-        <div>
-          <p class="move-left">
-         Con il servizio “Controllo di gestione” i costi della tua azienda diventano chiari e trasparenti.
-          </p>
-        </div>
-      </div>
-      <div class="col-40 ultima-col">
-        <div>
-          <p class="move-left">
-         Potrai analizzare la produttività dei tuoi clienti e conoscere i margini generati da ogni area di settore.
-          </p>
+    <div class="space"></div>
+    <div class="cover__wallet relative">
+      <img src="/assets/hero5-img.png" alt="">
+      <div style="padding-block: 2rem; ">
+        <h3
+          class="title-accordion no-before fade-in"
+          data-state="+"
+          id="easy-wallet"
+          style="line-height: 135%;"
+        >
+          Il servizio<br />Easy Wallet
+          <!-- <span class="plus-icon">+</span> -->
+          <!-- Questa icona cambierà a "-" quando l'accordion è aperto -->
+        </h3>
+        <div class="content-accordion">
+          <div class="gridb__hero2b">
+            <p class="contenuto-wallet" set:html={contenutoWallet} />
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <h3 class="title-accordion quattro fade-in" id="transactions" >Transactions <br />(M&A)</h3>
-  <div class="content-accordion">
-    <p class="uno-acc">
-      Modena Consulenza si distingue come partner strategico in M&A: grazie alle
-      esperienze internazionali e alla partnership strategica con Mediolanum è
-      in grado di coniugare visione globale e attenzione al dettaglio per
-      orientarsi maggiormente alle persone.
-    </p>
-    <div class="gridb__hero2b">
-      <div class="col-40">
-        <div class="border-left m-left">
-          <h4 class="text-reveal">100%</h4>
-          <p class="p-cella">Lorem ipsum dolor sit</p>
-        </div>
-      </div>
-      <div class="col-40">
-        <div class="border-left m2-left">
-          <h4 class="text-reveal">50+</h4>
-          <p class="p-cella">Lorem ipsum dolor sit</p>
-        </div>
-      </div>
-      <div class="col-40">
-        <div>
-          <p class="move-left">
-            Guidiamo l’imprenditore nelle acquisizioni e dismissioni aziendali
-            con competenza e visione strategica.
-          </p>
-        </div>
-      </div>
-      <div class="col-40 ultima-col">
-        <div>
-          <p class="move-left">
-            Il nostro approccio prevede un’agilità decisionale maggiore e il
-            coinvolgimento diretto dell’imprenditore.
-          </p>
-        </div>
+    <h3 class="title-accordion due fade-in" id="ordinaria">
+      Assistenza <br />amministrativa e contabile
+    </h3>
+    <div class="content-accordion">
+      <div class="gridb__hero2b">
+        {contenuto2}
       </div>
     </div>
+    <!-- </div>
+    </div> -->
+
+    <h3 class="title-accordion tre fade-in" id="controllo-di-gestione">
+      Controllo <br />di gestione
+    </h3>
+    <div class="content-accordion">
+      <div class="gridb__hero2b">
+        {contenuto3}
+      </div>
+    </div>
+
+    <h3 class="title-accordion quattro fade-in" id="transactions">
+      Transactions <br />(M&A)
+    </h3>
+    <div class="content-accordion">
+      <div class="gridb__hero2b">
+        {contenuto4}
+      </div>
+    </div>
+
+    <img class="bottom-img" src="/assets/servizi2.png" alt="" />
   </div>
-
-  
-
-  <img class="bottom-img" src="/assets/bottom-servizi.png" alt="" />
-</div>
 
   <div class="grey-servizi">
     <div class="contain top-15">
-    <div class="grid__servizi-bottom">
-      <div class="col-55">
-        <h3 class="text-reveal">Sei un privato o un libero professionista?</h3>
-      </div>
-      <div class="col-45">
-        <p class="p-secondo fade-in">
-Il nostro studio copre anche le richieste di privati e liberi professionisti erogando servizi ordinari.
-        </p>
-      </div>
-      <div class="col-50">
-        <h4 class="title-accordion">Cliente<br>privato</h4>
-        <div class="content-accordion">
-          <p>
-Affianchiamo il cliente nelle attività ordinarie di gestione, direzione e sviluppo, al fine di perseguire una corretta amministrazione, una contabilità fedele agli eventi aziendali e una crescita sana.
+      <!-- <div class="grid__servizi-bottom">
+        <div class="col-55">
+          <h3 class="text-reveal">
+            Sei un privato o un libero professionista?
+          </h3>
+        </div>
+        <div class="col-45">
+          <p class="p-secondo fade-in">
+            Il nostro studio copre anche le richieste di privati e liberi
+            professionisti erogando servizi ordinari.
           </p>
-          <ul>
-            <li>Assistenza contabile e amministrativa</li>
-            <li>Consulenza direzionale e strategica</li>
-            <li>Sviluppo organizzativo</li>
-            <!-- <li>Operazioni di finanza straordinaria</li>
+        </div>
+        <div class="col-50">
+          <h4 class="title-accordion">Cliente<br />privato</h4>
+          <div class="content-accordion">
+            <p>
+              Affianchiamo il cliente nelle attività ordinarie di gestione,
+              direzione e sviluppo, al fine di perseguire una corretta
+              amministrazione, una contabilità fedele agli eventi aziendali e
+              una crescita sana.
+            </p>
+            <ul>
+              <li>Assistenza contabile e amministrativa</li>
+              <li>Consulenza direzionale e strategica</li>
+              <li>Sviluppo organizzativo</li>
+               <li>Operazioni di finanza straordinaria</li>
             <li>Restructuring</li>
             <li>Fusioni e acquisizioni</li>
-            <li>Contenziosi tributari</li> -->
-          </ul>
+            <li>Contenziosi tributari</li> 
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="col-50">
-        <h4 class="title-accordion fix-left">Liberi<br>professionisti</h4>
-        <div class="content-accordion fix-left fix-top">
-          <li>Elaborazione dati contabili</li>
-          <li>Elaborazione dichiarazione dei redditi</li>
-          <li>Gestione IMI – contratti di locazione</li>
+        <div class="col-50">
+          <h4 class="title-accordion fix-left">Liberi<br />professionisti</h4>
+          <div class="content-accordion fix-left fix-top">
+            <li>Elaborazione dati contabili</li>
+            <li>Elaborazione dichiarazione dei redditi</li>
+            <li>Gestione IMI – contratti di locazione</li>
+          </div>
+        </div>
+      </div> -->
+      <div class="ultima-cover-wallet">
+        <div class="cover__wallet relative">
+          <img src="/assets/hero5-img.png" alt="" />
+          <h4>Non conosci i costi di gestione della tua azienda?</h4>
+          <p>
+            Modena Consulenza può aiutarti a ottenere una visione chiara e
+            dettagliata delle tue gestione aziendale.
+          </p>
+          <a href="/contatti" class="button__hero5 fade-in">CONTATTACI</a>
         </div>
       </div>
     </div>
-    <div class="ultima-cover-wallet">
-    <div class="cover__wallet relative">
-      <img src="/assets/hero5-img.png" alt="" />
-      <h4>Non conosci i costi di gestione della tua azienda?</h4>
-      <p>
-        Modena Consulenza può aiutarti a ottenere una visione chiara e
-        dettagliata delle tue gestione aziendale.
-      </p>
-      <a href="/contatti" class="button__hero5 fade-in">CONTATTACI</a>
-    </div>
-  </div>
-</div>
   </div>
 
   <style>
-
-    .grid .card h4{margin-top: 0;}
-
-
-.move-left{padding-left:0!important}
-
-.mt-15{margin-top: 8rem!important;}
-    @media (min-width: 768px) {
-      .top-15{top: -3.5rem;}
+    .grid .card h4 {
+      margin-top: 0;
     }
-    .grid__servizi-bottom .col-45{display: flex;
-    align-items: center;}
-    .grid__servizi-bottom .title-accordion {margin: 3rem 0};
 
- 
+    .move-left {
+      padding-left: 0 !important;
+    }
 
+    .mt-15 {
+      margin-top: 8rem !important;
+    }
+    @media (min-width: 768px) {
+      .top-15 {
+        top: -3.5rem;
+      }
+    }
+    .grid__servizi-bottom .col-45 {
+      display: flex;
+      align-items: center;
+    }
+    .grid__servizi-bottom .title-accordion {
+      margin: 3rem 0;
+    }
 
-    .ultima-col{flex-grow: 1;
-    padding-right: 12%;}
-.space{margin-bottom: 3rem  ;}
-    .p-cella{font-size: 1.5rem!important; font-weight: 500; padding-top: 0!important;}
+    .ultima-col {
+      flex-grow: 1;
+      padding-right: 12%;
+    }
+    .space {
+      margin-bottom: 3rem;
+    }
+    .p-cella {
+      font-size: 1.5rem !important;
+      font-weight: 500;
+      padding-top: 0 !important;
+    }
     .yellow-acc {
-      color: #ffd100!important;
-      border-bottom: none!important
+      color: #ffd100 !important;
+      border-bottom: none !important;
     }
     .card h4 {
       margin: 0 auto;
@@ -335,7 +366,7 @@ Affianchiamo il cliente nelle attività ordinarie di gestione, direzione e svilu
     .hero1c h2 {
       margin-left: 5.5rem;
       margin-top: 210px;
-      font-size: clamp(3rem, 1rem + 6vw,5.5rem);
+      font-size: clamp(3rem, 1rem + 6vw, 5.5rem);
       width: 44%;
       font-weight: 500;
       line-height: 90px;
@@ -355,13 +386,14 @@ Affianchiamo il cliente nelle attività ordinarie di gestione, direzione e svilu
       min-height: 330px;
       height: auto;
       display: flex;
-    flex-flow: column;
-    justify-content: space-between;
-    padding: 2rem;
-  
+      flex-flow: column;
+      justify-content: space-between;
+      padding: 2rem;
     }
 
-    .hero1c .card h4{font-size:clamp(1.3rem,1.5vw,2rem);}
+    .hero1c .card h4 {
+      font-size: clamp(1.3rem, 1.5vw, 2rem);
+    }
     .hero1c .card h4,
     .hero1c .card p {
       text-align: center;
@@ -372,13 +404,15 @@ Affianchiamo il cliente nelle attività ordinarie di gestione, direzione e svilu
       width: 100%;
     }
     .hero1c .card__img img {
-        height: 65%;
-    width: 100%;
+      height: 65%;
+      width: 100%;
     }
     .grid--card {
       margin-top: 55px !important;
     }
-    .hero1c .grid--card {gap: 2.5rem;}
+    .hero1c .grid--card {
+      gap: 2.5rem;
+    }
 
     .hero1c .col-33 {
       display: flex;
@@ -398,7 +432,7 @@ Affianchiamo il cliente nelle attività ordinarie di gestione, direzione e svilu
 
     .gridb__hero2b h4 {
       text-align: left;
-      font-size: clamp(1.5rem,6vw,7.5rem);
+      font-size: clamp(1.5rem, 6vw, 7.5rem);
       margin: 0;
       padding: 0 2rem;
       font-weight: 500;
@@ -417,74 +451,86 @@ Affianchiamo il cliente nelle attività ordinarie di gestione, direzione e svilu
       width: 85%;
       margin: 5.5rem auto;
       font-size: 3.3rem;
-    font-weight: 500;
-    line-height: 110%;
-    margin-bottom: 2rem!important;
-    margin-right: 5%;
+      font-weight: 500;
+      line-height: 110%;
+      margin-bottom: 2rem !important;
+      margin-right: 5%;
     }
 
     @media (max-width: 768px) {
-      .title-accordion{    
+      .title-accordion {
         /* width: calc(100% - 11rem); */
-        margin: 2rem auto !important; width: 84%;}
+        margin: 2rem auto !important;
+        width: 84%;
+      }
 
-        .grey-servizi .title-accordion{width: 100%!important;}
+      .grey-servizi .title-accordion {
+        width: 100% !important;
+      }
 
-        .grid__servizi-bottom{width: 84%; margin: 0 auto; margin-bottom: -3rem}
-        .bottom-img{width: calc(100% - 4rem)!important}
-
+      .grid__servizi-bottom {
+        width: 84%;
+        margin: 0 auto;
+        margin-bottom: -3rem;
+      }
+      .bottom-img {
+        width: calc(100% - 4rem) !important;
+      }
     }
-
-
 
     .title-accordion::before {
       content: "01";
-    color: #002169;
-    opacity: 0.2;
-    position: absolute;
-    /* left: 10px; */
-    /* width: 120px; */
-    /* height: auto; */
-    z-index: -1;
-    margin-left: -5.5rem;
-    top: 15%;
-    font-size: 11rem;
-    font-weight: 500;
-      
+      color: #002169;
+      opacity: 0.2;
+      position: absolute;
+      /* left: 10px; */
+      /* width: 120px; */
+      /* height: auto; */
+      z-index: -1;
+      margin-left: -5.5rem;
+      top: 15%;
+      font-size: 11rem;
+      font-weight: 500;
     }
 
-
     @media (max-width: 768px) {
-      .title-accordion::before{
-        top: -3%!important;
+      .title-accordion::before {
+        top: -3% !important;
       }
     }
     .due::before {
-      
-  content: "02"
+      content: "02";
     }
 
     .tre::before {
-     content: "03"
+      content: "03";
     }
 
-       .quattro::before {
-     content: "04"
+    .quattro::before {
+      content: "04";
     }
     .title-accordion:after {
       content: " +  ";
       position: absolute;
-color: #002169;
+      color: #002169;
       right: 10px;
       height: 30px;
       width: 30px;
     }
 
-    .content-accordion--show .title-accordion:after{color: #ffd100!important;}
+    .content-accordion--show .title-accordion:after {
+      color: #ffd100 !important;
+    }
     .content-accordion {
       max-height: 0;
       overflow: hidden;
       transition: all 0.8s cubic-bezier(0.215, 0.61, 0.355, 1);
+      white-space: pre-line;
+    }
+    @media (max-width: 768px) {
+      .content-accordion {
+        white-space: inherit;
+      }
     }
     .content-accordion h4 {
       color: #002169;
@@ -492,29 +538,31 @@ color: #002169;
     .content-accordion p {
       padding: 40px;
       /* padding-left:0; */
-    margin: 0 auto;
+      margin: 0 auto;
 
-    font-size: 1.1rem;
+      font-size: 1.1rem;
     }
 
-    .grid__servizi-bottom .content-accordion p{padding-left:0}
+    .grid__servizi-bottom .content-accordion p {
+      padding-left: 0;
+    }
 
-    .uno-acc{     
+    .uno-acc {
       padding-bottom: 3rem;
       margin-bottom: 0;
-      
+
       width: 80%;
       margin: 5.5rem auto;
       font-size: 3.3rem;
-    font-weight: 400;
-    line-height: 110%;
-    margin-bottom: 2rem;
-  line-height: 140%;
-padding-left: 0px!important;
-}
+      font-weight: 400;
+      line-height: 110%;
+      margin-bottom: 2rem;
+      line-height: 140%;
+      padding-left: 0px !important;
+    }
 
     .content-accordion--show {
-      max-height: 1000px;
+      max-height: fit-content;
     }
     .title-accordion.accordion-opened:after {
       content: " - "; /* Modifica l'indicatore quando l'accordion è aperto */
@@ -522,13 +570,13 @@ padding-left: 0px!important;
 
     .acc-1-img {
       width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin: 1% auto;
-    display: flex;
-    /* margin-left: 40px; */
-    /* max-width: 1000px; */
-    margin-right: 5.5rem;
+      height: auto;
+      border-radius: 10px;
+      margin: 1% auto;
+      display: flex;
+      /* margin-left: 40px; */
+      /* max-width: 1000px; */
+      margin-right: 5.5rem;
     }
     .bottom-img {
       width: calc(100% - 11rem);
@@ -537,8 +585,8 @@ padding-left: 0px!important;
       margin: 5% auto;
       display: flex;
       bottom: -4rem;
-    position: relative;
-    margin-top: 0;
+      position: relative;
+      margin-top: 0;
     }
 
     .grey-servizi {
@@ -555,7 +603,9 @@ padding-left: 0px!important;
       border-bottom: 1px solid #002169;
     }
 
-  .grey-servizi .cover__wallet p{width: 40%;}
+    .grey-servizi .cover__wallet p {
+      width: 40%;
+    }
     .grey-servizi h3 {
       font-size: clamp(1.5rem, 1rem + 5vw, 3.2rem);
       font-weight: 500;
@@ -565,14 +615,14 @@ padding-left: 0px!important;
 
     .p-secondo {
       font-size: 1.1rem;
-    width: 95%;
-    padding-left: 4rem;
+      width: 95%;
+      padding-left: 4rem;
     }
 
     .grey-servizi .content-accordion {
       margin: 5% auto;
       width: 80%;
-      margin-left: 0rem
+      margin-left: 0rem;
     }
     .grey-servizi .cover__wallet {
       bottom: 3rem;
@@ -580,30 +630,42 @@ padding-left: 0px!important;
     }
     @media (max-width: 768px) {
       .grey-servizi .cover__wallet {
-      bottom: -3rem;
+        bottom: -3rem;
       }
-          .grey-servizi .content-accordion {
-      margin-left: 2rem
-    }
+      .grey-servizi .content-accordion {
+        margin-left: 2rem;
+      }
     }
 
-    .ultima-cover-wallet{    z-index: 10;
-    position: relative;
-    margin-top: 8.5rem; margin-bottom: 3rem;}
-    .ultima-cover-wallet h4{    width: 70% !important;}
+    .ultima-cover-wallet {
+      z-index: 10;
+      position: relative;
+      margin-top: 8.5rem;
+      margin-bottom: 3rem;
+    }
+    .ultima-cover-wallet h4 {
+      width: 70% !important;
+    }
     .ultima-cover-wallet h4,
-    .ultima-cover-wallet p{color: #002169;}
+    .ultima-cover-wallet p {
+      color: #002169;
+    }
 
-@media (min-width: 768px) {
-    .gridb__hero2b{margin-bottom: 0; margin-right: 5.5rem;}
-}
+    @media (min-width: 768px) {
+      .gridb__hero2b {
+        margin-bottom: 0;
+        margin-right: 5.5rem;
+      }
+    }
     @media (max-width: 768px) {
       .grey-servizi h3 {
         text-align: center;
         margin: 0 auto;
         padding-bottom: 3rem;
       }
-      .grey-servizi{margin-bottom: -5rem;}
+      .grey-servizi {
+        margin-bottom: -5rem;
+      }
       .p-secondo {
         margin: 0 auto;
         padding-left: 0;
@@ -612,10 +674,9 @@ padding-left: 0px!important;
       }
       .acc-1-img {
         width: 94%;
-        margin-top: -3.5rem!important;
+        margin-top: -3.5rem !important;
         margin: 0 auto;
         margin-bottom: 3rem;
-     
       }
       .hero1c h2 {
         font-size: 2rem;
@@ -655,7 +716,7 @@ padding-left: 0px!important;
       }
 
       .col-33 {
-        width: 100%!important;
+        width: 100% !important;
       }
       .hero1c .card {
         height: auto;
@@ -699,7 +760,7 @@ padding-left: 0px!important;
         text-align: center;
       }
       .cover__wallet p {
-        width: 80%!important;
+        width: 80% !important;
         margin: 5% auto;
         text-align: center;
       }
@@ -713,87 +774,119 @@ padding-left: 0px!important;
         margin: 0 auto;
         row-gap: 3rem;
       }
-      .title-accordion{font-size: 1.5rem; margin: 2rem; }
+      .title-accordion {
+        font-size: 1.5rem;
+        margin: 2rem;
+      }
 
-      .title-accordion::before{    top: -80%;
-    transform: scale(0.3)}
-    .space{margin-bottom: 0;}
-    .mt-15{margin-top: 15rem;}
-    .m-left,
-    .m2-left{margin-left: 0rem;}
+      .title-accordion::before {
+        top: -80%;
+        transform: scale(0.3);
+      }
+      .space {
+        margin-bottom: 0;
+      }
+      .mt-15 {
+        margin-top: 15rem;
+      }
+      .m-left,
+      .m2-left {
+        margin-left: 0rem;
+      }
 
-.uno-acc{padding-left: 0rem!important;}
-.content-accordion p{ padding-bottom: 2.5rem; font-size: 1rem;}
-.p-cella{font-size: 0.8rem!important; padding: 0 1rem !important;}
+      .uno-acc {
+        padding-left: 0rem !important;
+      }
+      .content-accordion p {
+        padding-bottom: 2.5rem;
+        font-size: 1rem;
+      }
+      .p-cella {
+        font-size: 0.8rem !important;
+        padding: 0 1rem !important;
+      }
 
-.grid__servizi-bottom{margin-top: 11.5rem; padding-top: 8rem; }
-.bottom-img{bottom: 0}
+      .grid__servizi-bottom {
+        margin-top: 11.5rem;
+        padding-top: 8rem;
+      }
+      .bottom-img {
+        bottom: 0;
+      }
 
-.grid__servizi-bottom .title-accordion{ margin-top: 0; }
-.grey-servizi .title-accordion{font-size: 1.5rem; margin: 0 auto;}
-.ultima-cover-wallet{  
-    margin-top: 4.5rem;}
-  
-    .grey-servizi h3{font-size: 2rem}
+      .grid__servizi-bottom .title-accordion {
+        margin-top: 0;
+      }
+      .grey-servizi .title-accordion {
+        font-size: 1.5rem;
+        margin: 0 auto;
+      }
+      .ultima-cover-wallet {
+        margin-top: 4.5rem;
+      }
 
-
+      .grey-servizi h3 {
+        font-size: 2rem;
+      }
     }
     .title-accordion.minus::after {
-  content: " - ";
-  color: #ffd100;
-}
+      content: " - ";
+      color: #ffd100;
+    }
 
-.title-accordion.minus::before{
-  color: #ffd100!important;
-}
+    .title-accordion.minus::before {
+      color: #ffd100 !important;
+    }
 
-.grey-servizi .minus{color: #ffd100!important;}
-.fix-left{margin-left: 5.5rem!important;}
-.fix-top{padding-top: 40px;}
+    .grey-servizi .minus {
+      color: #ffd100 !important;
+    }
+    .fix-left {
+      margin-left: 5.5rem !important;
+    }
+    .fix-top {
+      padding-top: 40px;
+    }
 
-@media (max-width: 768px) {
-  .fix-left{margin-left: auto!important;}
-}
+    @media (max-width: 768px) {
+      .fix-left {
+        margin-left: auto !important;
+      }
+    }
 
-/* @media (min-width: 768px) {
+    /* @media (min-width: 768px) {
  .hero1c--img{margin-bottom: -46rem;}
 } */
-
-
   </style>
 
-<script>
-/// Seleziona tutti gli elementi con la classe "title-accordion"
-let accordions = document.querySelectorAll(".title-accordion");
+  <script>
+    /// Seleziona tutti gli elementi con la classe "title-accordion"
+    let accordions = document.querySelectorAll(".title-accordion");
 
-// Itera su ciascun elemento "title-accordion"
-accordions.forEach((accordion, ) => {
-  // Aggiungi un gestore di eventi per il clic su ciascun elemento "title-accordion"
-  accordion.addEventListener("click", function () {
-    // Seleziona l'elemento successivo (il contenuto dell'accordion)
-    let nextElement = accordion.nextElementSibling;
+    // Itera su ciascun elemento "title-accordion"
+    accordions.forEach((accordion) => {
+      // Aggiungi un gestore di eventi per il clic su ciascun elemento "title-accordion"
+      accordion.addEventListener("click", function () {
+        // Seleziona l'elemento successivo (il contenuto dell'accordion)
+        let nextElement = accordion.nextElementSibling;
 
-    // Controlla se l'accordion è aperto o chiuso
-    if (nextElement.classList.contains("content-accordion--show")) {
-      // Nascondi il contenuto dell'accordion
-      nextElement.classList.remove("content-accordion--show");
-      // Rimuovi la classe "minus" dall'elemento "title-accordion"
-      accordion.classList.remove("minus");
-    } else {
-      // Nascondi tutti gli altri accordion e mostra solo il contenuto dell'accordion corrente
-      accordions.forEach((item, i) => {
-        item.nextElementSibling.classList.remove("content-accordion--show");
-        item.classList.remove("minus");
+        // Controlla se l'accordion è aperto o chiuso
+        if (nextElement.classList.contains("content-accordion--show")) {
+          // Nascondi il contenuto dell'accordion
+          nextElement.classList.remove("content-accordion--show");
+          // Rimuovi la classe "minus" dall'elemento "title-accordion"
+          accordion.classList.remove("minus");
+        } else {
+          // Nascondi tutti gli altri accordion e mostra solo il contenuto dell'accordion corrente
+          accordions.forEach((item, i) => {
+            item.nextElementSibling.classList.remove("content-accordion--show");
+            item.classList.remove("minus");
+          });
+          nextElement.classList.add("content-accordion--show");
+          // Aggiungi la classe "minus" all'elemento "title-accordion"
+          accordion.classList.add("minus");
+        }
       });
-      nextElement.classList.add("content-accordion--show");
-      // Aggiungi la classe "minus" all'elemento "title-accordion"
-      accordion.classList.add("minus");
-    }
-  });
-});
-
-
-</script>
-
-
+    });
+  </script>
 </Layout>

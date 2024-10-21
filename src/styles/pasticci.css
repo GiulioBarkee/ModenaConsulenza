@@ -96,3 +96,35 @@
 
 
 
+.title-accordion:after {
+    content: " + ";
+    position: absolute;
+    color: #002169;
+    right: 10px;
+    height: 30px;
+    width: 30px;
+}
+
+.title-accordion{border-bottom: 1px solid #002169;}
+
+.cover__wallet .title-accordion{margin-block: 3rem!important;}
+.cover__wallet .title-accordion::before{display: none;}
+
+.contenuto-wallet{white-space: break-spaces;}
+@media (max-width: 768px) {
+  .contenuto-wallet{white-space: pre-line;}
+  .gridb__hero2b{white-space: pre-line; padding-block: 2rem!important;}
+}
+
+.bold{font-weight: bold;}
+
+.content-accordion {
+    max-width: 100%;
+
+    overflow-wrap: break-word;
+
+    word-wrap: break-word;
+
+}
+
+.cover__wallet img{object-fit: cover;}
