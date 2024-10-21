@@ -108,12 +108,14 @@
 .title-accordion{border-bottom: 1px solid #002169;}
 
 .cover__wallet .title-accordion{margin-block: 3rem!important;}
+.top-15 .title-accordion::before,
 .cover__wallet .title-accordion::before{display: none;}
 
 .contenuto-wallet{white-space: break-spaces;}
+.gridb__hero2b{padding-block: 2rem !important;}
 @media (max-width: 768px) {
   .contenuto-wallet{white-space: pre-line;}
-  .gridb__hero2b{white-space: pre-line; padding-block: 2rem!important;}
+  .gridb__hero2b{white-space: pre-line;}
 }
 
 .bold{font-weight: bold;}
@@ -128,3 +130,13 @@
 }
 
 .cover__wallet img{object-fit: cover;}
+
+
+.top-15 h3{margin-top: 22rem!important;
+}
+@media (max-width: 768px) {
+.grey-servizi h3{margin-top: 15rem!important; font-size: clamp(3rem, 3vw, 5rem)!important;}
+}
+.ultima-cover-wallet{margin-top: 0!important;}
+
+.grey-servizi .contenuto-wallet{padding-left: 0!important;}

@@ -85,6 +85,26 @@ Come Easy Wallet risolve i tuoi problemi
     • Decisioni basate su dati concreti: con un controllo preciso dei budget e dei consuntivi, puoi prendere decisioni informate che supportano gli obiettivi strategici della tua azienda.
     • Risparmio di tempo e risorse: automatizziamo il monitoraggio e l'analisi dei dati finanziari, riducendo il carico di lavoro amministrativo e permettendoti di concentrarti sul core business.
 Supporto continuo: ti affianchiamo con consulenze periodiche per adattare il tuo controllo di gestione alle mutevoli condizioni di mercato e alle tue specifiche esigenze aziendali.`;
+
+const contenutoUltimoAccordion = `In un mercato sempre più complesso e competitivo, garantire la conformità normativa e la trasparenza aziendale è essenziale. Modena Consulenza offre servizi di Revisione Legale per aziende che vogliono crescere in modo solido e sicuro.
+La revisione legale rappresenta una verifica indipendente e approfondita dei bilanci aziendali, un servizio che permette di identificare criticità e garantire la corretta gestione economica della tua impresa.
+Ecco cosa possiamo fare per te:
+<div style="padding-left: 2rem">
+       <span class="bold">• Verifica della correttezza dei bilanci</span>
+         Attraverso un'analisi rigorosa, assicuriamo che i tuoi bilanci siano redatti secondo i principi 
+         contabili riconosciuti, prevenendo errori e garantendo una rappresentazione fedele della
+        situazione finanziaria.
+       <span class="bold">• Controllo delle procedure contabili e amministrative</span>
+         Analizziamo in profondità le tue procedure contabili e amministrative, individuando
+        inefficienze e proponendo soluzioni per rendere i tuoi processi più fluidi e performanti.
+       <span class="bold">• Certificazione e revisione dei conti</span>
+         La nostra certificazione ufficiale offre una garanzia di affidabilità a investitori, banche
+        e stakeholder, rafforzando la credibilità della tua azienda.
+</div>
+
+Affidati all’esperienza di Modena Consulenza per gestire al meglio la tua azienda,
+rafforzandone la competitività e migliorando la trasparenza verso i tuoi stakeholder.
+Siamo pronti a sviluppare soluzioni su misura per te.`;
 ---
 
 <Layout title="Modena Consulenza">
@@ -205,7 +225,7 @@ Supporto continuo: ti affianchiamo con consulenze periodiche per adattare il tuo
 
     <div class="space"></div>
     <div class="cover__wallet relative">
-      <img src="/assets/hero5-img.png" alt="">
+      <img src="/assets/hero5-img.png" alt="" />
       <div style="padding-block: 2rem; ">
         <h3
           class="title-accordion no-before fade-in"
@@ -259,47 +279,24 @@ Supporto continuo: ti affianchiamo con consulenze periodiche per adattare il tuo
 
   <div class="grey-servizi">
     <div class="contain top-15">
-      <!-- <div class="grid__servizi-bottom">
-        <div class="col-55">
-          <h3 class="text-reveal">
-            Sei un privato o un libero professionista?
-          </h3>
-        </div>
-        <div class="col-45">
-          <p class="p-secondo fade-in">
-            Il nostro studio copre anche le richieste di privati e liberi
-            professionisti erogando servizi ordinari.
-          </p>
-        </div>
-        <div class="col-50">
-          <h4 class="title-accordion">Cliente<br />privato</h4>
-          <div class="content-accordion">
-            <p>
-              Affianchiamo il cliente nelle attività ordinarie di gestione,
-              direzione e sviluppo, al fine di perseguire una corretta
-              amministrazione, una contabilità fedele agli eventi aziendali e
-              una crescita sana.
-            </p>
-            <ul>
-              <li>Assistenza contabile e amministrativa</li>
-              <li>Consulenza direzionale e strategica</li>
-              <li>Sviluppo organizzativo</li>
-               <li>Operazioni di finanza straordinaria</li>
-            <li>Restructuring</li>
-            <li>Fusioni e acquisizioni</li>
-            <li>Contenziosi tributari</li> 
-            </ul>
+      <div style="padding-block: 2rem; ">
+        <h3
+          class="title-accordion no-before fade-in"
+          data-state="+"
+          id="easy-wallet"
+        >
+          Revisione Legale: un pilastro di sicurezza <br /> e trasparenza per la
+          tua Azienda
+          <!-- <span class="plus-icon">+</span> -->
+          <!-- Questa icona cambierà a "-" quando l'accordion è aperto -->
+        </h3>
+        <div class="content-accordion">
+          <div class="gridb__hero2b">
+            <p class="contenuto-wallet" set:html={contenutoUltimoAccordion} />
           </div>
         </div>
-        <div class="col-50">
-          <h4 class="title-accordion fix-left">Liberi<br />professionisti</h4>
-          <div class="content-accordion fix-left fix-top">
-            <li>Elaborazione dati contabili</li>
-            <li>Elaborazione dichiarazione dei redditi</li>
-            <li>Gestione IMI – contratti di locazione</li>
-          </div>
-        </div>
-      </div> -->
+      </div>
+
       <div class="ultima-cover-wallet">
         <div class="cover__wallet relative">
           <img src="/assets/hero5-img.png" alt="" />
@@ -597,7 +594,6 @@ Supporto continuo: ti affianchiamo con consulenze periodiche per adattare il tuo
       margin-bottom: -23rem;
     }
     .grey-servizi .title-accordion {
-      font-size: 2rem;
       font-weight: 500;
       padding-top: 1.8rem;
       border-bottom: 1px solid #002169;
@@ -607,7 +603,7 @@ Supporto continuo: ti affianchiamo con consulenze periodiche per adattare il tuo
       width: 40%;
     }
     .grey-servizi h3 {
-      font-size: clamp(1.5rem, 1rem + 5vw, 3.2rem);
+      font-size: clamp(1.5rem, 1rem + 5vw, 3rem);
       font-weight: 500;
       line-height: 110%;
       width: 85%;
