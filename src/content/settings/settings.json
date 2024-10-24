@@ -1,24 +1,49 @@
 {
   "team": [
     {
-      "title": "Nome e Cognome",
-      "subtitle": "Ruolo",
+      "title": "Riccardo Prati",
+      "subtitle": "",
       "img": "/assets/chisiamo6.png"
     },
     {
-      "title": "Nome e Cognome",
-      "subtitle": "Ruolo",
+      "title": "Stefano Anitori",
+      "subtitle": "",
       "img": "/assets/chisiamo7.png"
     },
     {
-      "title": "Nome e cognome",
-      "subtitle": "Ruolo",
+      "title": "Valentina Martinelli",
+      "subtitle": "",
       "img": "/assets/chisiamo8.png"
     },
     {
-      "title": "Nome e Cognome",
-      "subtitle": "Ruolo",
+      "title": "Monia de Benedettis",
+      "subtitle": "",
       "img": "/assets/chisiamo9.png"
+    },
+    {
+          "title": "Silvia Cappelli",
+      "subtitle": "",
+      "img": "/assets/chisiamo10.webp"
+    },
+       {
+          "title": "Alessia Giuliano",
+      "subtitle": "",
+      "img": "/assets/chisiamo11.webp"
+    },
+       {
+          "title": "Marisa Mirra",
+      "subtitle": "",
+      "img": "/assets/chisiamo12.webp"
+    },
+       {
+          "title": "Giorgio Borsetti",
+      "subtitle": "",
+      "img": "/assets/chisiamo13.webp"
+    },
+       {
+          "title": "Tommaso Segapeli",
+      "subtitle": "",
+      "img": "/assets/chisiamo14.webp"
     }
   ]
 }
