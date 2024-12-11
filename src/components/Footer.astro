@@ -17,10 +17,12 @@ const { page } = Astro.props;
       <div class="footer__column">
         <div class="footer__section">
           <h3>I nostri servizi</h3>
+          <p><a href="/servizi#revisione-legale">Revisione legale</a></p>
+          <p></p>
+          <p><a href="/servizi#revisione-legale">Revisione legale</a></p>
           <p>
             <a href="/servizi#controllo-di-gestione">Controllo di gestione</a>
           </p>
-          <p><a href="/servizi#revisione-legale">Revisione legale</a></p>
           <p><a href="/servizi#transactions">Transactions (M&A)</a></p>
         </div>
       </div>
@@ -43,13 +45,15 @@ const { page } = Astro.props;
               <a
                 target="_blank"
                 href="https://www.google.com/maps?q=Viale+G.+Verdi,+96,+Modena"
-                >Viale G. Verdi, 96</a>
+                >Viale G. Verdi, 96</a
+              >
             </p>
             <p>
               <a
                 target="_blank"
                 href="https://www.google.com/maps?q=Via+Bellini,+70/2,+Modena"
-                >Via Bellini, 70/2</a>
+                >Via Bellini, 70/2</a
+              >
             </p>
 
             <p>41121 - Modena (MO)</p>
@@ -71,11 +75,6 @@ const { page } = Astro.props;
           <p><a href="tel:+39059220522">+39 (0) 59 220522</a></p>
           <p><a href="tel:+39059210161">+39 (0) 59 210161</a></p>
           <p><a href="tel:+390594396905">+39 (0) 59 4396905</a></p>
-        </div>
-      </div>
-
-      <div class="footer__column">
-        <div class="footer__section">
           <p><a href="tel:+39059211132">+39 (0) 59 211132</a></p>
           <p>
             <a href="mailto:info@modenaconsulenza.it"
@@ -84,6 +83,17 @@ const { page } = Astro.props;
           </p>
         </div>
       </div>
+
+      <!-- <div class="footer__column">
+        <div class="footer__section">
+          <p><a href="tel:+39059211132">+39 (0) 59 211132</a></p>
+          <p>
+            <a href="mailto:info@modenaconsulenza.it"
+              >info@modenaconsulenza.it</a
+            >
+          </p>
+        </div>
+      </div> -->
     </div>
   </div>
 
@@ -171,7 +181,7 @@ const { page } = Astro.props;
     text-align: center;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
     padding-top: 15.5rem;
     /* padding-left: 3rem; */
     /* padding-right: 3rem; */
@@ -311,6 +321,12 @@ const { page } = Astro.props;
     height: 60vh;
   }
 
+  @media (min-width: 1384px) {
+    .contatti-footer .footer__column {
+      padding-top: 5rem;
+    }
+  }
+
   /* .servizi-footer{min-height: auto!important; padding-top: 0;} */
   @media (max-width: 1384px) {
     .contatti-footer {
@@ -318,6 +334,7 @@ const { page } = Astro.props;
       height: auto;
       padding-bottom: 8rem;
     }
+
     .contatti-footer .footer__grid {
       padding-top: 3rem;
     }
