@@ -48,10 +48,10 @@
 .button:hover{ background: #002169; transition: all 0.3s cubic-bezier(.215, .61, .355, 1); }
 /* .button__hero5:hover{ background: #FFD100; transition: all 0.3s cubic-bezier(.215, .61, .355, 1); } */
 .button__hero5:hover {
-transform: scale(1.1);
-  transition: all 0.3s cubic-bezier(.215, .61, .355, 1);
+background-color:#FFD100;
+  transition: all 0.1s cubic-bezier(.215, .61, .355, 1);
 }
-.hero5b .button__hero5:hover{ transform: scale(1.1); transition: all 0.2s cubic-bezier(.215, .61, .355, 1); background-color: #002169;}
+.hero5b .button__hero5:hover{  transition: all 0.1s cubic-bezier(.215, .61, .355, 1); background-color: #002169;}
 
 
 /* ! Grid System */
