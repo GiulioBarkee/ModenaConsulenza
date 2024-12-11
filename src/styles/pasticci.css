@@ -111,7 +111,7 @@
 .cover__wallet .title-accordion::before{display: none;}
 
 .contenuto-wallet{white-space: break-spaces;}
-.gridb__hero2b{padding-block: 3rem !important;}
+.gridb__hero2b{padding-block: 1rem !important;}
 @media (max-width: 768px) {
   .contenuto-wallet{white-space: pre-line;}
   .gridb__hero2b{white-space: pre-line;}

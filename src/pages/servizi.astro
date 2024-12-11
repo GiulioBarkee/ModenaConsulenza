@@ -2,7 +2,7 @@
 import Layout from "../layouts/Layout.astro";
 
 const contenuto1 = `Lo Studio offre consulenza fiscale e societaria, occupandosi di tutti gli aspetti legati
-alla creazione e gestione di aziende, sia in Italia che all'estero. Tra i servizi offerti.
+alla creazione e gestione di aziende, sia in Italia che all'estero. Tra i servizi offerti:
 
 • Costituzione di società in Italia e all’estero;
 • Operazioni sul capitale;
@@ -66,7 +66,7 @@ possibile collegare premi economici a raggiungimento dei diversi target fissati,
 a supporto del clima aziendale e della retention.
 `;
 
-const contenuto4 = `Consulenza specializzata in operazioni Straordinarie (M&A)
+const contenuto4 = `
 Forniamo una vasta gamma di servizi nel campo delle operazioni straordinarie e delle
 fusioni e acquisizioni. Tra i principali servizi offerti ci sono:
 • la valutazione d’impresa e analisi finanziaria,
@@ -77,21 +77,22 @@ e di redazione della contrattualistica, nonché l'assistenza nella fase post-tra
 
 const contenutoWallet = `<span class="bold">Easy Wallet: il controllo di gestione su misura per le piccole imprese</span>
 
-Sei una piccola impresa che desidera mantenere il controllo delle proprie finanze e
-migliorare la propria efficienza operativa?
+<span class="bold">Sei una piccola impresa che desidera mantenere il controllo delle proprie finanze e
+migliorare la propria efficienza operativa?</span>
 Gestire le finanze di una piccola impresa può essere complesso. Senza un controllo
 preciso del budget economico e finanziario, le decisioni aziendali rischiano di basarsi su
 informazioni incomplete o inaccurate, con conseguenti rischi per la crescita e la
 stabilità dell’azienda.
-Easy Wallet è la nostra soluzione di controllo di gestione progettata appositamente per le piccole imprese, che offre un approccio semplice e completo per mantenere il controllo dei costi, ottimizzare le risorse e garantire una crescita sostenibile.
-Come Easy Wallet risolve i tuoi problemi
-    1. <span class="bold">Budget economico:</span> pianifica e monitora i tuoi obiettivi finanziari
+<span class="bold">Easy Wallet è la nostra soluzione di controllo di gestione progettata appositamente per le piccole imprese, che offre un approccio semplice e completo per mantenere il controllo dei costi, ottimizzare le risorse e garantire una crescita sostenibile.
+
+Come Easy Wallet risolve i tuoi problemi</span>
+    1. <span class="bold">Budget economico: pianifica e monitora i tuoi obiettivi finanziari</span>
       • Cosa fa: elaboriamo un budget economico dettagliato che definisce gli obiettivi di ricavi e costi della tua azienda, aiutandoti a prevedere e pianificare i risultati operativi su base, trimestrale, semestrale o annuale.
-      • Perché ti serve: con un budget economico chiaro, puoi monitorare in tempo reale l’andamento della tua attività, identificando rapidamente eventuali scostamenti rispetto alle previsioni e adottando misure correttive tempestive.
-    2. <span class="bold">Budget finanziario:</span> gestisci la tua liquidità in modo efficiente
+      • Perché ti serve: con un budget economico chiaro, puoi definire obiettivi precisi per la tua attività.
+    2. <span class="bold">Budget finanziario: gestisci la tua liquidità in modo efficiente</span>
       • Cosa fa: costruiamo un budget finanziario che ti permette di prevedere i flussi di cassa in entrata e in uscita, garantendo una gestione ottimale della liquidità. 
       • Perché ti serve: un budget finanziario ben strutturato ti aiuta a prevenire crisi di liquidità, ottimizzando l'uso delle risorse finanziarie e permettendoti di pianificare investimenti strategici con maggiore sicurezza.
-    3. <span class="bold">Verifica dei consuntivi:</span> mantieni il controllo con analisi a consuntivo
+    3. <span class="bold">Verifica dei consuntivi: mantieni il controllo con analisi a consuntivo</span>
       • Cosa fa: offriamo un servizio di verifica dei consuntivi che confronta i dati effettivi con quelli pianificati nei budget economico e finanziario. 
       • Perché ti serve: la verifica dei consuntivi ti permette di avere una visione chiara e trasparente della performance della tua azienda, identificando aree di miglioramento e ottimizzazione per sostenere la crescita futura. 
       
@@ -237,11 +238,11 @@ const contenutoUltimoAccordion2 = `Lo studio offre un'ampia gamma di servizi nel
 
   <div class="contain">
     <h3
-      class="title-accordion mt-15 fade-in"
+      class="title-accordion mt-15 fade-in uno"
       id="pianificazione-fiscale"
       data-state="+"
     >
-      Consulenza fiscale, contabile - <br />amministrativa, societaria
+      Consulenza fiscale, <br />contabile - amministrativa, <br />societaria
     </h3>
     <div class="content-accordion">
       <div class="gridb__hero2b" style="gap: 2.5rem">
@@ -552,17 +553,23 @@ const contenutoUltimoAccordion2 = `Lo studio offre un'ampia gamma di servizi nel
       .title-accordion::before {
         top: -3% !important;
       }
+      .uno::before {
+        margin-left: -4.7rem;
+      }
     }
     .due::before {
       content: "02";
+      margin-left: -5.5rem;
     }
 
     .tre::before {
       content: "03";
+      margin-left: -5.5rem;
     }
 
     .quattro::before {
       content: "04";
+      margin-left: -5.5rem;
     }
     .title-accordion:after {
       content: " +  ";
@@ -596,6 +603,12 @@ const contenutoUltimoAccordion2 = `Lo studio offre un'ampia gamma di servizi nel
       margin: 0 auto;
 
       font-size: 1.1rem;
+    }
+
+    @media (max-width: 768px) {
+      .gridb__hero2b .contenuto-wallet {
+        padding: 0;
+      }
     }
 
     .grid__servizi-bottom .content-accordion p {
@@ -939,10 +952,10 @@ const contenutoUltimoAccordion2 = `Lo studio offre un'ampia gamma di servizi nel
           accordion.classList.remove("minus");
         } else {
           // Nascondi tutti gli altri accordion e mostra solo il contenuto dell'accordion corrente
-          accordions.forEach((item, i) => {
-            item.nextElementSibling.classList.remove("content-accordion--show");
-            item.classList.remove("minus");
-          });
+          // accordions.forEach((item, i) => {
+          //   item.nextElementSibling.classList.remove("content-accordion--show");
+          //   item.classList.remove("minus");
+          // });
           nextElement.classList.add("content-accordion--show");
           // Aggiungi la classe "minus" all'elemento "title-accordion"
           accordion.classList.add("minus");
