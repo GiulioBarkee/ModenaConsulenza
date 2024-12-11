@@ -119,6 +119,17 @@ Ecco cosa possiamo fare per te:
 Affidati all’esperienza di Modena Consulenza per gestire al meglio la tua azienda,
 rafforzandone la competitività e migliorando la trasparenza verso i tuoi stakeholder.
 Siamo pronti a sviluppare soluzioni su misura per te.`;
+
+const contenutoUltimoAccordion2 = `Lo studio offre un'ampia gamma di servizi nelle discipline fiscali e tributarie, fornendo consulenza personalizzata a imprese e professionisti, con particolare attenzione alla scelta della strategia fiscale più adatta a ciascun progetto.
+<div style="padding-left: 2rem" class="paragrafo-left">
+<span class="bold">• Pianificazione fiscale</span>
+<span class="bold">• Assitenza in materia di imposte dirette e indirette</span>
+<span class="bold">• Supporto nella gestione della fiscalità</span>
+<span class="bold">• Consulenza sulla fiscalità internazionale</span>
+<span class="bold">• Rappresentanza nelle fasi di contenzioso  e pre-contenzioso</span>
+<span class="bold">• Supporto nelle relazioni con l'Agenzia delle Entrate e l'Agenzia della Riscossione</span>
+<span class="bold">• Assistenza presso enti come l'Agenzia delle Entrate, l'Agenzia  della Riscossione, l' lNPS, la Camera di Commercio e altre istituzioni</span>
+</div>`;
 ---
 
 <Layout title="Modena Consulenza">
@@ -299,14 +310,37 @@ Siamo pronti a sviluppare soluzioni su misura per te.`;
 
   <div class="grey-servizi">
     <div class="contain top-15">
-      <div style="padding-block: 2rem; padding-top: 5rem;">
+      <div style="padding-top: 2rem; padding-top: 5rem;">
         <h3
           class="title-accordion no-before fade-in"
           data-state="+"
           id="revisione-legale"
         >
-          Revisione Legale: un pilastro di sicurezza <br /> e trasparenza per la
-          tua Azienda
+          Revisione Legale
+          <!-- <span class="plus-icon">+</span> -->
+          <!-- Questa icona cambierà a "-" quando l'accordion è aperto -->
+        </h3>
+        <div
+          style="padding-left: 2rem;  margin-block: 2rem"
+          class="content-accordion"
+        >
+          <div class="gridb__hero2b ultima-grid">
+            <p
+              style="padding:0"
+              class="contenuto-wallet"
+              set:html={contenutoUltimoAccordion}
+            />
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3
+          class="title-accordion no-before fade-in"
+          data-state="+"
+          id="revisione-legale"
+          style="margin-top: 0!important;"
+        >
+          Consulenza fiscale tributaria
           <!-- <span class="plus-icon">+</span> -->
           <!-- Questa icona cambierà a "-" quando l'accordion è aperto -->
         </h3>
@@ -315,7 +349,7 @@ Siamo pronti a sviluppare soluzioni su misura per te.`;
             <p
               style="padding:0"
               class="contenuto-wallet"
-              set:html={contenutoUltimoAccordion}
+              set:html={contenutoUltimoAccordion2}
             />
           </div>
         </div>
@@ -685,7 +719,7 @@ Siamo pronti a sviluppare soluzioni su misura per te.`;
       .grey-servizi h3 {
         text-align: center;
         margin: 0 auto;
-        padding-bottom: 3rem;
+        /* padding-bottom: 3rem; */
       }
       .grey-servizi {
         margin-bottom: -5rem;
