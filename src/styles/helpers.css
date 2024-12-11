@@ -67,6 +67,7 @@ transform: scale(1.1);
 }
 @media (max-width: 768px) {
  .hero1c .grid--card{margin-left: 0; margin-right: 0; margin: 0 auto!important; width: 84%!important;  width: calc(100% - 11rem);}
+.grid--hero6{margin: 0  auto}
 }
 
 @media (max-width: 412px) {

@@ -28,7 +28,7 @@ import { team } from "@/content/settings/settings.json";
       <img
         class="img-res dynamic-border"
         src="/assets/chisiamo1.png"
-        alt=""
+        alt="immagine chi siamo"
         data-borders="borderBottomLeftRadius,borderTopLeftRadius"
         data-value-big="30px"
       />
@@ -85,8 +85,16 @@ import { team } from "@/content/settings/settings.json";
       </div>
 
       <div class="img-left-right">
-        <img class="hero2bleft" src="/assets/chisiamo2.png" alt="" />
-        <img class="hero2bright" src="/assets/chisiamo3.png" alt="" />
+        <img
+          class="hero2bleft"
+          src="/assets/chisiamo2.png"
+          alt="Modena Consulenza in numeri"
+        />
+        <img
+          class="hero2bright"
+          src="/assets/chisiamo3.png"
+          alt="Modena Consulenza in numeri"
+        />
       </div>
     </div>
   </div>
@@ -113,14 +121,14 @@ import { team } from "@/content/settings/settings.json";
       <div class="grid__hero4b">
         <div class="col-50">
           <div class="piastrina piastrina-left">
-            <img src="/assets/chisiamo4.png" alt="" />
+            <img src="/assets/chisiamo4.png" alt="Luca Prati ragioniere commercialista" />
             <h4>Luca Prati</h4>
             <p>RAGIONIERE COMMERCIALISTA</p>
           </div>
         </div>
         <div class="col-50">
           <div class="piastrina piastrina-right">
-            <img src="/assets/chisiamo5.png" alt="" />
+            <img src="/assets/chisiamo5.png" alt="Marco Natalini ragioniere commercialista, revisore contabile" />
             <h4>Marco Natalini</h4>
             <p>RAGIONIERE COMMERCIALISTA, REVISORE CONTABILE</p>
           </div>
@@ -132,7 +140,7 @@ import { team } from "@/content/settings/settings.json";
           team.map((el) => (
             <div class="col-25">
               <div class="piastrina fade-in">
-                <img src={el.img} alt="" />
+                <img src={el.img} alt="membro del team" />
                 <h4 style="margin-bottom: 4rem;">{el.title}</h4>
                 <p>{el.subtitle}</p>
               </div>
@@ -161,7 +169,7 @@ import { team } from "@/content/settings/settings.json";
                 </div>
             </div> -->
       </div>
-      <img class="hero4b2-bottom" src="/assets/chisiamo10.png" alt="" />
+      <img class="hero4b2-bottom" src="/assets/chisiamo10.png" alt="Modena Consulenza" />
     </div>
   </div>
 
@@ -196,7 +204,7 @@ import { team } from "@/content/settings/settings.json";
 
       <div class="container">
         <div class="cover__wallet relative">
-          <img src="/assets/hero5-img.png" alt="" />
+          <img src="/assets/hero5-img.png" alt="immagine background card" />
           <h4>
             Scopri tutti i <br />
             nostri servizi
@@ -810,7 +818,9 @@ import { team } from "@/content/settings/settings.json";
       margin-bottom: 45%;
     }
   }
-  .da__oltre__par{@media (max-width: 768px) {
-    padding-left: 0 !important;
-  }}
+  .da__oltre__par {
+    @media (max-width: 768px) {
+      padding-left: 0 !important;
+    }
+  }
 </style>
